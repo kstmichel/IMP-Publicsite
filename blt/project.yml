@@ -1,7 +1,7 @@
 project:
   machine_name: im-publicwebsite
-  prefix: IMPW
-  human_name: 'Incident Managmement Public Website'
+  prefix: BLT
+  human_name: 'BLTed 8'
   profile:
     name: lightning
   local:
@@ -12,14 +12,14 @@ git:
   remotes: {  }
 drush:
   aliases:
-    remote: 'pantheon.imp-public.dev'
+    remote: '${project.machine_name}.test'
     local: self
     ci: self
   default_alias: '${drush.aliases.local}'
 modules:
   local:
     enable: [dblog, devel, seckit, views_ui]
-    uninstall: [acquia_connector, shield]
+    uninstall: [acsf, acquia_connector, shield]
   ci:
     enable: {  }
     uninstall: [acquia_connector, shield]
