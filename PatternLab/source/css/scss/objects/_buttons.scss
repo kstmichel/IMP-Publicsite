@@ -6,10 +6,11 @@
 	background: $gray-dark;
 	color: $white;
 	line-height: 1;
-	font-weight: bold;
-	padding: $pad;
+	font-weight: 400;
+	padding: 10px 15px;
 	border: 0;
 	text-align: center;
+	border-radius: 3px;
 	
 	&:hover, &:focus {
 		background: $gray;
@@ -19,6 +20,31 @@
 	&.disabled {
 		background: $gray-light-2;
 		color: $gray;
+	}
+
+	&-primary{
+		background: $p-blue-dark;
+
+		&:hover{
+			background: lighten($p-blue-dark,5%);
+		}
+	}
+
+	&-secondary{
+		background: $p-blue-light;
+
+		&:hover{
+			background: lighten($p-blue-light,5%);
+		}
+	}
+
+	&-action{
+		background: $p-green-light;
+		border: 2px solid $white;
+
+		&:hover{
+			background: darken($p-green-light,5%);
+		}
 	}
 }
 
