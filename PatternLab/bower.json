@@ -1,0 +1,20 @@
+{
+  "name": "imp-publicsite",
+  "homepage": "https://github.com/NorthcrossGroup/IMP-Publicsite",
+  "authors": [
+    "Katie St. Michel"
+  ],
+  "description": "public facing site for imp",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
