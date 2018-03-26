@@ -1,7 +1,15 @@
 <!-- Begin Footer -->
-<footer class="footer" role="contentinfo">
-	<div class="lc">
-		<p class="copyright">&copy; 2013 Company Name. All rights reserved.</p>
+<footer class="footer col-lg-12 col-md-12 col-sm-12 col-xs-12" role="contentinfo">
+	<div class="footer-inner">
+		{% include "molecules-footer-nav" %}
+		<div class="lc col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<ul class="nav-footer">
+				<li><span class="copyright">&copy; 2017 Northcross Group. All rights reserved.</span></li>
+				<li><a href="{{ url }}">Terms of Service</a></li>
+				<li><a href="{{ url }}">Privacy Statement</a></li>
+				<li><a href="{{ url }}">Responsible Disclosure</a></li>
+			</ul>
+		</div>
 	</div>
 </footer>
 <!-- End Footer -->

@@ -4,18 +4,27 @@
 .footer {
 	clear: both;
 	overflow: hidden;
-	background: $gray-dark-2;
+	background-image: linear-gradient(to bottom, $p-blue-dark 0%,  $p-blue-darker 100%);
 	color: $white;
 	line-height: 1.2;
+	padding: 10px 15px;
+
+	.footer-inner{
+		max-width: $bp-xxl;
+		margin:0 auto;
+	}
 
 	a {
 		color: $gray-light;
+	}
+
+	lc{
+		padding: 0 15px;
 	}
 }
 
 //Footer Nav
 .nav-footer {
-	margin: (-$pad) (-$pad) $space;
 
 	li {
 		border-bottom: 1px solid $gray-dark;
@@ -26,9 +35,10 @@
 		}
 	}
 
-	a {
+	a,span {
 		display: block;
 		padding: $pad;
+		font-size: 13px;
 	}
 }
 
