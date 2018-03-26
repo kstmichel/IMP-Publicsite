@@ -1,8 +1,17 @@
 .header {
 	background: $white;
+	background-image: linear-gradient(to bottom, $white 0%, #F0F0F0 90%, $p-gray-light 100%);
 	padding: 0;
 	border-bottom: 1px solid #dbdbdb;
-	@extend .lc;
+	max-width: none;
+
+	.header-inner{
+		max-width: $bp-xxl;
+		margin:0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 }
 
 .logo {
@@ -11,7 +20,7 @@
 	margin: 0.4rem;
 
 	@media all and (min-width: $bp-med) {
-		max-width: 9rem;
+		max-width:160px;
 	}
 }
 

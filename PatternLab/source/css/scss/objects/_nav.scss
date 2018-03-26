@@ -6,11 +6,38 @@
 	clear: both;
 	overflow: hidden;
 	max-height: 0;
+
+	&-header{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-footer{
+		align-items: center;
+		display: flex;
+
+		.company-name{
+			font-size: 16px;
+			font-weight: bold;
+		}
+	}
+
+	ul{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	li{
+		padding: $pad;
+	}
 	
 	a {
-		display: block;
-		padding: $pad;
+		display: inline-block;
 		border-top: 1px solid $gray-light-2;
+		font-size: 14px;
+		color: darken($p-gray, 30%);
 	}
 
 	&.active {
@@ -30,6 +57,12 @@
 			border: 0;
 		}
 		
+	}
+
+	&-list{
+		.btn-action{
+			margin-left: 15px;
+		}
 	}
 }
 
