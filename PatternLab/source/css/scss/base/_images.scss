@@ -1,0 +1,22 @@
+.image-icon{
+  margin-bottom: 20px;
+}
+
+.image-banner{
+  .banner--background{
+    max-height: 550px;
+    overflow: hidden;
+
+    img{
+      padding:0;
+    }
+  }
+  .banner--text{
+    position: absolute;
+    top: 150px;
+    max-width: $bp-xxl;
+    left:0;
+    right:0;
+    margin: 0 auto;
+  }
+}

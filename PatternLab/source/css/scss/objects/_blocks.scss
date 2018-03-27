@@ -16,6 +16,60 @@
 	}
 }
 
+.block.block-grid--list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 50px 0;
+
+	.block-grid{
+		text-align: center;
+		padding: 20px 0;
+		border: 1px solid #eee;
+
+		.grid-icon{
+			float: none;
+			margin: 0 auto;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+.block-splash{
+
+	&--content{
+		text-align: center;
+		padding: 40px 15px;
+	 	@extend .lc;
+
+		.splash--intro{
+			h4{
+				font-style: italic;
+			}
+		}
+
+		.splash--logo{
+			padding: 40px;
+
+			.imp-logo{
+				margin:0 auto;
+			}
+		}
+
+		.details--highlights{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			li{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 20px;
+			}
+		}
+	}
+}
+
 .headline {
 	line-height: 1.2;
 }
@@ -46,7 +100,7 @@
 }
 
 /* Block Thumbnail with Headline */
-.block-thumb {
+.block-media {
 	display: table;
 	width: 100%;
 	border-collapse: collapse;

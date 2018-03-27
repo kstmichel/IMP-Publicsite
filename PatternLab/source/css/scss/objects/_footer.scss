@@ -10,15 +10,16 @@
 	padding: 10px 15px;
 
 	.footer-inner{
-		max-width: $bp-xxl;
-		margin:0 auto;
+		display: flex;
+		flex-direction: column;
+		@extend .lc;
 	}
 
 	a {
 		color: $gray-light;
 	}
 
-	lc{
+	.lc{
 		padding: 0 15px;
 	}
 }

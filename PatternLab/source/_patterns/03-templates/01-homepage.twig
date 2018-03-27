@@ -1,33 +1,32 @@
-{% extends "templates-page-2col" %}
-{% block hero %}
-    {% if emergency %}
-        {% include "molecules-alert" with emergency %}
-    {% endif %}
-    {% if hero %}
-        {% include "molecules-block-hero" %}
-    {% endif %}
+{% extends "templates-page-1col" %}
 
-    <div class="g g-3up">
-        {% for tout in touts %}
-            <div class="gi">
-                {% include "molecules-block-inset" %}
-            </div>
-        {% endfor %}
-    </div><!--end 3up-->
-
-    <hr/>
+{% block splash %}
+    {% if splash %}
+        {% include "molecules-block-splash"%}
+    {% endif %}
 {% endblock %}
 
 {% block main %}
-    <section class="section latest-posts">
-        <h2 class="section-title">Latest Posts</h2>
-        <ul class="post-list">
-            {% for post in latest_posts %}
-                <li>{% include "molecules-media-block" %}</li>
-            {% endfor %}
-        </ul>
-        <a href="#" class="text-btn">View more posts</a>
-    </section>
+
+
+    {% block section_1 %}
+        {% if section_1 %}
+            {% include "molecules-block-grid-action" with section_1%}
+        {% endif %}
+    {% endblock %}
+
+    {% block section_2 %}
+        {% if section_2 %}
+            {% include "molecules-block-grid-list"%}
+        {% endif %}
+    {% endblock %}
+
+    {% block section_3 %}
+        {% if section_3 %}
+            {% include "molecules-block-grid"%}
+        {% endif %}
+    {% endblock %}
+
 {% endblock %}
 
 {% block sidebar %}

@@ -1,10 +1,9 @@
+<a href="#nav" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
+
 <nav id="nav" class="nav nav-header">
 	<ul class="nav-list">
-		<li><a href="{{ url }}">Features</a></li>
-		<li><a href="{{ url }}">How it Works</a></li>
-		<li><a href="{{ url }}">Support</a></li>
-		<li><a href="{{ url }}">Pricing</a></li>
-        <li><button class="btn btn-action">Try it for Free!</button></li>
-	</ul>
-
+        {% for item in menu_items %}
+            <li><a href="{{ item.href }}" class="{{ item.class }}">{{ item.title }}</a></li>
+        {% endfor %}
+    </ul>
 </nav><!--end .nav-->

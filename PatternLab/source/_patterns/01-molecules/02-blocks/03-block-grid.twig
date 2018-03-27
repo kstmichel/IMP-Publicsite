@@ -1,0 +1,12 @@
+<div class="block block-grid block-grid--list grid--3">
+    {% for item in data %}
+        <div class="block-grid col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="grid-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3>{{ item.subheader.html }}</h3>
+                <h2>{{ item.header.html }}</h2>
+
+                <p>{{ item.content.html }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>

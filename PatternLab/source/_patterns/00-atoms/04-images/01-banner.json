@@ -1,0 +1,12 @@
+{
+  "background":{
+    "banner":{
+      "src": "../../images/favicon_16x16.jpg",
+      "class": "image-banner",
+      "alt": "Splash Sample Logo"
+    },
+    "banner_text": {
+      "html": "Background Text"
+    }
+  }
+}

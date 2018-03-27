@@ -1,0 +1,12 @@
+{% for block in block_content %}
+    <div class="block block-content">
+         <div class="block-grid col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="grid-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3>{{ grid.subheader.html }}</h3>
+                <h2>{{ grid.header.html }}</h2>
+
+                <p>{{ grid.content.html }}</p>
+            </div>
+        </div>
+    </div>
+{% endfor %}

@@ -3,6 +3,10 @@
   "htmlClass": "pl",
   "bodyClass": "body",
   "img": {
+    "banner": {
+      "src": "../../images/fpo_16x9.jpg",
+      "alt": "Banner Image"
+    },
     "landscape_4x3": {
       "src": "../../images/fpo_4x3.png",
       "alt": "4x3 Image"
@@ -83,6 +87,7 @@
     { },
     { }
   ],
+  "splash": true,
   "latest_posts" : [
     { },
     { },

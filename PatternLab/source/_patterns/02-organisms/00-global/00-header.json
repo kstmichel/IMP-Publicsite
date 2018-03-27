@@ -1,0 +1,39 @@
+{
+  "logo" : {
+     "img": {
+       "src": "../../images/logo.png",
+       "class": "header--logo",
+       "alt": "NCG"
+     }
+    },
+  "primary_menu":{
+    "title": "",
+    "menu_items" :[
+      {
+        "href": "#features",
+        "class": "list-item",
+        "title":"Features"
+      },
+      {
+        "href": "#works",
+        "class": "list-item",
+        "title":"How it Works"
+      },
+      {
+        "href": "#support",
+        "class": "list-item",
+        "title":"Support"
+      },
+      {
+        "href": "#pricing",
+        "class": "list-item",
+        "title":"Pricing"
+      },
+      {
+        "href": "#tryFree",
+        "class": "btn btn-action",
+        "title": "Try it for Free!"
+      }
+    ]
+  }
+}

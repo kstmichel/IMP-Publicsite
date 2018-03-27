@@ -1,0 +1,26 @@
+<div class="block block-splash">
+    {% include "atoms-banner" with background.banner %}
+
+    <div class="block-splash--content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="splash--intro">
+            <h4>{{ content.intro }}</h4>
+        </div>
+
+        <div class="splash--logo">
+            <img src="{{ content.logo.src }}" class="{{ content.logo.class }}" alt="{{ content.logo.alt }}"  />
+        </div>
+
+        <div class="block-splash--details">
+            <h3>{{ content.details.header }}</h3>
+
+            <ul class="details--highlights">
+               {% for item in content.details.list %}
+                <li>
+                    <img src="{{ item.img.src }}" class="{{ item.img.class }}" alt="{{ item.img.alt }}" />
+                    <p>{{ item.description }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

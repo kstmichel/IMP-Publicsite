@@ -1,0 +1,29 @@
+{
+  "menu_items": [
+      {
+      "href": "#features",
+      "class": "list-item",
+      "title":"Item 1"
+      },
+      {
+        "href": "#works",
+        "class": "list-item",
+        "title":"Item 2"
+      },
+      {
+        "href": "#support",
+        "class": "list-item",
+        "title":"Item 3"
+      },
+      {
+        "href": "#pricing",
+        "class": "list-item",
+        "title":"Item 4"
+      },
+      {
+        "href": "#tryFree",
+        "class": "btn btn-action",
+        "title": "Item 5"
+      }
+    ]
+}

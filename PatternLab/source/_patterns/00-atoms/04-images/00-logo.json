@@ -1,0 +1,10 @@
+{
+  "link":{
+    "href": "www.sample.com"
+  },
+  "img":{
+    "src": "../../images/fpo_avatar.png",
+    "class": "header--logo",
+    "alt": "Sample Logo"
+  }
+}

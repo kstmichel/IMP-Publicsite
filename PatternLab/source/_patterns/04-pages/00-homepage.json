@@ -1,20 +1,227 @@
 {
 	"title" : "Home Page",
 	"bodyClass": "home",
-	"emergency" : false,
-	"hero" : [
+	"splash" : [
 		{
-			"img": {
-				"landscape_16x9": {
-					"src": "../../images/sample/landscape-16x9-mountains.jpg",
-					"alt": "Mountains"	
-				}
-			},
-			"headline" : {
-				"medium" : "Top 10 mountain ranges for hiking"
+			"banner": {
+				"src": "../../images/sample/landscape-16x9-mountains.jpg",
+				"class": "image-banner",
+				"alt": "Actual Mountains"
 			}
 		}
 	],
+	"section_2":{
+		"data" : [
+			{
+				"icon":{
+					"src": "../../images/sample/tout-4x3-stream.jpg",
+					"class": "grid-icon",
+					"alt": "Stream"
+				},
+				"header":{
+					"html": "Header 1"
+				},
+				"list":[
+					{
+						"html":"Actual List Item 1"
+					},
+					{
+						"html":"Actual List Item 2"
+					},
+					{
+						"html":"Actual List Item 3"
+					},
+					{
+						"html":"Actual List Item 4"
+					},
+					{
+						"html":"Actual List Item 5"
+					}
+				]
+			},
+			{
+				"icon":{
+					"src": "../../images/sample/tout-4x3-climbers.jpg",
+					"class": "grid-icon",
+					"alt": "Climbers"
+				},
+				"header":{
+					"html": "Header 2"
+				},
+				"list":[
+					{
+						"html":"Actual List Item 1"
+					},
+					{
+						"html":"Actual List Item 2"
+					},
+					{
+						"html":"Actual List Item 3"
+					},
+					{
+						"html":"Actual List Item 4"
+					},
+					{
+						"html":"Actual List Item 5"
+					}
+				]
+			},
+			{
+				"icon":{
+					"src": "../../images/sample/thumb-square-yosemite.jpg",
+					"class": "grid-icon",
+					"alt": "Yosemite"
+				},
+				"header":{
+					"html": "Header 3"
+				},
+				"list":[
+					{
+						"html":"Actual List Item 1"
+					},
+					{
+						"html":"Actual List Item 2"
+					},
+					{
+						"html":"Actual List Item 3"
+					},
+					{
+						"html":"Actual List Item 4"
+					},
+					{
+						"html":"Actual List Item 5"
+					}
+				]
+			},
+			{
+				"icon":{
+					"src": "../../images/sample/square-river.jpg",
+					"class": "grid-icon",
+					"alt": "River"
+				},
+				"header":{
+					"html": "Header 4"
+				},
+				"list":[
+					{
+						"html":"Actual List Item 1"
+					},
+					{
+						"html":"Actual List Item 2"
+					},
+					{
+						"html":"Actual List Item 3"
+					},
+					{
+						"html":"Actual List Item 4"
+					},
+					{
+						"html":"Actual List Item 5"
+					}
+				]
+			}
+		]
+	},
+	"section_1":{
+		"data" : [
+			{
+				"header":{
+					"html": "Actual 1 Header"
+				},
+				"content":{
+					"html": "Actual paragraph goes here........"
+				},
+				"button":{
+					"html": "Sign Up",
+					"class": "btn btn-primary"
+				}
+			},
+			{
+				"header":{
+					"html": "Actual 2 Header"
+				},
+				"content":{
+					"html": "Actual paragraph goes here........"
+				},
+				"button":{
+					"html": "Sign Up",
+					"class": "btn btn-primary"
+				}
+			},
+			{
+				"header":{
+					"html": "Actual 3 Header"
+				},
+				"content":{
+					"html": "Actual paragraph goes here........"
+				},
+				"button":{
+					"html": "Sign Up",
+					"class": "btn btn-primary"
+				}
+			},
+			{
+				"header":{
+					"html": "Actual 4 Header"
+				},
+				"content":{
+					"html": "Actual paragraph goes here........"
+				},
+				"button":{
+					"html": "Sign Up",
+					"class": "btn btn-primary"
+				}
+			}
+		]
+	},
+	"section_3":{
+		"data":[
+			{
+				"subheader":{
+					"html": "Sample Default 1 Subheader"
+				},
+				"header":{
+					"html": "Sample Default 1 Header"
+				},
+				"content":{
+					"html": "Sample paragraph goes here........"
+				}
+			},
+			{
+				"subheader":{
+					"html": "Sample Default 2 Subheader"
+				},
+				"header":{
+					"html": "Sample Default 2 Header"
+				},
+				"content":{
+					"html": "Sample paragraph goes here........"
+				}
+			},
+			{
+				"subheader":{
+					"html": "Sample Default 3 Subheader"
+				},
+				"header":{
+					"html": "Sample Default 3 Header"
+				},
+				"content":{
+					"html": "Sample paragraph goes here........"
+				}
+			},
+			{
+				"subheader":{
+					"html": "Sample Default 4 Subheader"
+				},
+				"header":{
+					"html": "Sample Default 4 Header"
+				},
+				"content":{
+					"html": "Sample paragraph goes here........"
+				}
+			}
+		]
+	},
 	"touts" : [
 		{
 			"img": {
