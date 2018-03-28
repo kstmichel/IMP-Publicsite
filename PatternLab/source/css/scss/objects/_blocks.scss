@@ -19,17 +19,76 @@
 .block.block-grid--list {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 50px 0;
+	margin: 50px auto;
+	max-width: $bp-xxxl;
+	float: none;
 
 	.block-grid{
 		text-align: center;
-		padding: 20px 0;
+		padding: 20px;
 		border: 1px solid #eee;
+
+		&.grid-stacked{
+			.list-item--content{
+				text-align: left;
+				list-style-type: disc;
+				display: list-item;
+			}
+		}
+
+		&.grid-simple{
+			text-align: left;
+
+			.list-item--content{
+				text-align: left;
+				margin-bottom: 10px;
+			}
+
+			&--media{
+				.list-item--content{
+					@media (max-width: $bp-small){
+						text-align: center;
+					}
+				}
+			}
+
+			.grid-icon{
+				float: left;
+				display: inline-block;
+			}
+		}
 
 		.grid-icon{
 			float: none;
 			margin: 0 auto;
 			margin-bottom: 5px;
+			padding-top: 5px;
+
+			img{
+				margin: 0 auto;
+			}
+		}
+
+		.grid-content--title{
+			margin: 10px 0;
+		}
+
+		.list-wrapper{
+			padding-top: 10px;
+
+			li{
+				padding: 0 10px 0 0;
+				text-align: center;
+
+				img{
+					margin:0 auto;
+					float: none;
+				}
+			}
+		}
+
+		.btn{
+			margin-top: 25px;
 		}
 	}
 }
@@ -114,7 +173,7 @@
 	.b-thumb {
 		@media all and (min-width: $bp-small-2) {
 			display: table-cell;
-			vertical-align: top;	
+			vertical-align: top;
 	  		width: 30%;
 	  		max-width: 10em;
 

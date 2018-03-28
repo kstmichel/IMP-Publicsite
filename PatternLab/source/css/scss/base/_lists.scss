@@ -4,6 +4,10 @@ ol, ul {
 	list-style: none;
 }
 
+li{
+	font-size: 14px;
+}
+
 /* Definition Lists */
 dl {
 	overflow: hidden;
@@ -16,4 +20,20 @@ dt {
 
 dd {
 	margin-left: 0;
+}
+
+.list-item{
+	&--block{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	&--icon{
+		margin-bottom: 20px;
+	}
+
+	&--content{
+		padding:0;
+	}
 }

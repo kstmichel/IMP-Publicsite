@@ -1,29 +1,21 @@
 {% extends "templates-page-1col" %}
 
 {% block splash %}
-    {% if splash %}
+    {% if splash is defined %}
         {% include "molecules-block-splash"%}
     {% endif %}
 {% endblock %}
 
 {% block main %}
+    {% block content %}
+        {% if content is defined%}
+                {% include "atoms-banner"%}
 
+                {% include "molecules-block-grid" %}
 
-    {% block section_1 %}
-        {% if section_1 %}
-            {% include "molecules-block-grid-action" with section_1%}
-        {% endif %}
-    {% endblock %}
+                {% include "atoms-banner" %}
 
-    {% block section_2 %}
-        {% if section_2 %}
-            {% include "molecules-block-grid-list"%}
-        {% endif %}
-    {% endblock %}
-
-    {% block section_3 %}
-        {% if section_3 %}
-            {% include "molecules-block-grid"%}
+                {% include "molecules-block-grid" %}
         {% endif %}
     {% endblock %}
 

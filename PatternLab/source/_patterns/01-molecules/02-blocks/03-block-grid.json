@@ -1,48 +1,177 @@
 {
   "data":[
     {
-      "subheader":{
-        "html": "Sample Default 1 Subheader"
+      "grid_class": "grid-stacked col-lg-4 col-md-4 col-sm-4 col-xs-12",
+      "icon_class": "col-lg-5 col-md-5 col-sm-5 col-xs-12",
+      "content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+      "icon":{
+        "src":"/images/sample/thumb-square-yosemite.jpg",
+        "class":"img-responsive",
+        "alt":"Sample Icon"
       },
-      "header":{
-        "html": "Sample Default 1 Header"
+      "title": "Sample Default 1 Header",
+      "list":[
+        {
+          "list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
+          "body": "This is a stacked list item (1)"
+        },
+        {
+          "list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
+          "body": "This is a stacked list item (2)"
+        },
+        {
+          "list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
+          "body": "This is a stacked list item (3)"
+        }
+      ]
+    },
+    {
+      "grid_class": "grid-simple grid-stacked grid-stacked--full col-lg-8 col-md-8 col-sm-8 col-xs-12",
+      "icon_class": "col-lg-3 col-md-3 col-sm-3 col-xs-12",
+      "content_class": "col-lg-9 col-md-9 col-sm-9 col-xs-12",
+      "icon":{
+        "src":"/images/sample/thumb-square-yosemite.jpg",
+        "class":"img-responsive",
+        "alt":"Sample Icon"
       },
-      "content":{
-        "html": "Sample paragraph goes here........"
+      "title": "Sample Default 1 Header",
+      "list":[
+        {
+          "list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
+          "body": "This is a stacked list item (1)"
+        },
+        {
+          "list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
+          "body": "This is a stacked list item (2)"
+        },
+        {
+          "list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
+          "body": "This is a stacked list item (3)"
+        }
+      ]
+    },
+    {
+      "grid_class": "grid-default col-lg-4 col-md-4 col-sm-4 col-xs-12",
+      "content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+      "title": "Sample Default 1 Header",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius sollicitudin tellus vitae iaculis. Aliquam placerat eget dui quis vehicula. Suspendisse est erat, ornare at accumsan nec, bibendum ac enim.",
+      "button":{
+        "href":"#",
+        "class":"btn btn-lg btn-primary",
+        "html": "Sign Up!"
       }
     },
     {
-      "subheader":{
-        "html": "Sample Default 2 Subheader"
-      },
-      "header":{
-        "html": "Sample Default 2 Header"
-      },
-      "content":{
-        "html": "Sample paragraph goes here........"
-      }
+      "grid_class": "grid-simple col-lg-8 col-md-8 col-sm-8 col-xs-12",
+      "content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+      "title": "Sample Default 1 Header",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius sollicitudin tellus vitae iaculis. Aliquam placerat eget dui quis vehicula. Suspendisse est erat, ornare at accumsan nec, bibendum ac enim. Nulla blandit in nulla vel sollicitudin. Phasellus nec ex at velit convallis porttitor eu pharetra dolor. Nunc vitae mi sed nulla tempor vulputate quis congue magna. Cras id lectus semper, bibendum nulla sit amet, gravida nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam id felis lectus."
     },
     {
-      "subheader":{
-        "html": "Sample Default 3 Subheader"
+      "grid_class": "grid-simple col-lg-12 col-md-12 col-sm-12 col-xs-12",
+      "icon_class": "col-lg-2 col-md-2 col-sm-2 col-xs-12",
+      "content_class": "col-lg-10 col-md-10 col-sm-10 col-xs-12",
+      "icon":{
+        "src":"/images/sample/thumb-square-yosemite.jpg",
+        "class":"img-responsive",
+        "alt":"Sample Icon"
       },
-      "header":{
-        "html": "Sample Default 3 Header"
-      },
-      "content":{
-        "html": "Sample paragraph goes here........"
-      }
+      "title": "Sample Default 1 Header",
+      "list":[
+        {
+          "list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
+          "icon":{
+            "src":"/images/sample/thumb-square-fire.jpg",
+            "class":"img-responsive",
+            "alt":"Sample Icon"
+          },
+          "body":"(1) Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+          "list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
+          "icon":{
+            "src":"/images/sample/thumb-square-fire.jpg",
+            "class":"img-responsive",
+            "alt":"Sample Icon"
+          },
+          "body":"(2) Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+          "list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
+          "icon":{
+            "src":"/images/sample/thumb-square-fire.jpg",
+            "class":"img-responsive",
+            "alt":"Sample Icon"
+          },
+          "body":"(3) Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+      ]
     },
     {
-      "subheader":{
-        "html": "Sample Default 4 Subheader"
+      "grid_class": "grid-simple grid-simple--media col-lg-12 col-md-12 col-sm-12 col-xs-12",
+      "icon_class": "col-lg-2 col-md-2 col-sm-2 col-xs-12",
+      "content_class": "col-lg-10 col-md-10 col-sm-10 col-xs-12",
+      "icon":{
+        "src":"/images/sample/thumb-square-yosemite.jpg",
+        "class":"img-responsive",
+        "alt":"Sample Icon"
       },
-      "header":{
-        "html": "Sample Default 4 Header"
+      "title": "Sample Default 1 Header",
+      "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius sollicitudin tellus vitae iaculis. Aliquam placerat eget dui quis vehicula. Suspendisse est erat, ornare at accumsan nec, bibendum ac enim. Nulla blandit in nulla vel sollicitudin. Phasellus nec ex at velit convallis porttitor eu pharetra dolor. Nunc vitae mi sed nulla tempor vulputate quis congue magna. Cras id lectus semper, bibendum nulla sit amet, gravida nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam id felis lectus.",
+      "list":[
+        {
+          "list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
+          "icon":{
+            "src":"/images/sample/thumb-square-fire.jpg",
+            "class":"img-responsive",
+            "alt":"Sample Icon"
+          },
+          "body":"(1) Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+          "list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
+          "icon":{
+            "src":"/images/sample/thumb-square-fire.jpg",
+            "class":"img-responsive",
+            "alt":"Sample Icon"
+          },
+          "body":"(2) Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+          "list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
+          "icon":{
+            "src":"/images/sample/thumb-square-fire.jpg",
+            "class":"img-responsive",
+            "alt":"Sample Icon"
+          },
+          "body":"(3) Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+      ]
+    },
+    {
+      "grid_class": "grid-simple col-lg-12 col-md-12 col-sm-12 col-xs-12",
+      "icon_class": "col-lg-2 col-md-2 col-sm-2 col-xs-12",
+      "content_class": "col-lg-10 col-md-10 col-sm-10 col-xs-12",
+      "icon":{
+        "src":"/images/sample/thumb-square-yosemite.jpg",
+        "class":"img-responsive",
+        "alt":"Sample Icon"
       },
-      "content":{
-        "html": "Sample paragraph goes here........"
-      }
+      "title": "Sample Default 1 Header",
+      "list":[
+        {
+          "list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
+          "body":"(1) Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+          "list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
+          "body":"(2) Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+          "list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
+          "body":"(3) Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+      ]
     }
   ]
 }

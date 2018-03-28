@@ -1,12 +1,9 @@
 {
-  "background":{
-    "banner":{
-      "src": "../../images/favicon_16x16.jpg",
+    "background":{
+      "src": "/images/fpo_16x9.png",
       "class": "image-banner",
       "alt": "Splash Sample Logo"
     },
-    "banner_text": {
-      "html": "Background Text"
-    }
-  }
+    "title":  "Background Title",
+    "body": "Body Text Sample"
 }

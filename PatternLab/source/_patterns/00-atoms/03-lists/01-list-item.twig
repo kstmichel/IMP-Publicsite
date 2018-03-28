@@ -1,0 +1,13 @@
+{% if icon is defined %}
+    <div class="list-item--icon col-lg-12 col-md-12 col-sm-12 col-xs-4">
+          {% include "atoms-square" with icon %}
+    </div>
+{% endif %}
+
+<div class="list-item--content col-lg-12 col-md-12 col-sm-12 col-xs-8">
+    {% if title is defined %}
+         <h3 class="list-item--title">{{ title }}</h3>
+    {% endif %}
+
+    {{ body }}
+</div>

@@ -6028,6 +6028,9 @@ ol, ul {
   padding: 0;
   list-style: none; }
 
+li {
+  font-size: 14px; }
+
 /* Definition Lists */
 dl {
   overflow: hidden;
@@ -6038,6 +6041,15 @@ dt {
 
 dd {
   margin-left: 0; }
+
+.list-item--block {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+.list-item--icon {
+  margin-bottom: 20px; }
+.list-item--content {
+  padding: 0; }
 
 /*------------------------------------*\
     $MEDIA ELEMENTS
@@ -6678,9 +6690,9 @@ td {
     background: #eee;
     color: #808080; }
   .btn-primary {
-    background: #164264; }
+    background: #2879b8; }
     .btn-primary:hover {
-      background: #1b5079; }
+      background: #164264; }
   .btn-secondary {
     background: #0094D6; }
     .btn-secondary:hover {
@@ -6721,15 +6733,47 @@ td {
 .block.block-grid--list {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px 0; }
+  margin: 50px auto;
+  max-width: 93em;
+  float: none; }
   .block.block-grid--list .block-grid {
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     border: 1px solid #eee; }
+    .block.block-grid--list .block-grid.grid-stacked .list-item--content {
+      text-align: left;
+      list-style-type: disc;
+      display: list-item; }
+    .block.block-grid--list .block-grid.grid-simple {
+      text-align: left; }
+      .block.block-grid--list .block-grid.grid-simple .list-item--content {
+        text-align: left;
+        margin-bottom: 10px; }
+      @media (max-width: 24em) {
+        .block.block-grid--list .block-grid.grid-simple--media .list-item--content {
+          text-align: center; } }
+      .block.block-grid--list .block-grid.grid-simple .grid-icon {
+        float: left;
+        display: inline-block; }
     .block.block-grid--list .block-grid .grid-icon {
       float: none;
       margin: 0 auto;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      padding-top: 5px; }
+      .block.block-grid--list .block-grid .grid-icon img {
+        margin: 0 auto; }
+    .block.block-grid--list .block-grid .grid-content--title {
+      margin: 10px 0; }
+    .block.block-grid--list .block-grid .list-wrapper {
+      padding-top: 10px; }
+      .block.block-grid--list .block-grid .list-wrapper li {
+        padding: 0 10px 0 0;
+        text-align: center; }
+        .block.block-grid--list .block-grid .list-wrapper li img {
+          margin: 0 auto;
+          float: none; }
+    .block.block-grid--list .block-grid .btn {
+      margin-top: 25px; }
 
 .block-splash--content {
   text-align: center;

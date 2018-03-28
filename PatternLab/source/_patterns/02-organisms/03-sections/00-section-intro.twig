@@ -1,0 +1,11 @@
+<section class="section section-intro">
+    <h3 class="section-title">{{ header }}</h3>
+
+    {% include "atoms-banner" with banner %}
+
+    {% if content is defined %}
+        <div class="section-intro--content">
+           {% include "molecules-block-grid"  %}
+        </div>
+    {% endif %}
+</section>

@@ -23,10 +23,10 @@
 	}
 
 	&-primary{
-		background: $p-blue-dark;
+		background: lighten($p-blue-dark, 20%);
 
 		&:hover{
-			background: lighten($p-blue-dark,5%);
+			background: $p-blue-dark;
 		}
 	}
 

@@ -1,342 +1,101 @@
 {
 	"title" : "Home Page",
 	"bodyClass": "home",
-	"splash" : [
-		{
-			"banner": {
-				"src": "../../images/sample/landscape-16x9-mountains.jpg",
-				"class": "image-banner",
-				"alt": "Actual Mountains"
-			}
-		}
-	],
-	"section_2":{
-		"data" : [
-			{
-				"icon":{
-					"src": "../../images/sample/tout-4x3-stream.jpg",
-					"class": "grid-icon",
-					"alt": "Stream"
+	"splash": {
+			"banner":{
+				"background":{
+					"src": "/images/sample/thumb-square-fire.jpg",
+					"class": "image-banner",
+					"alt": "Splash Sample Logo"
 				},
-				"header":{
-					"html": "Header 1"
-				},
-				"list":[
-					{
-						"html":"Actual List Item 1"
-					},
-					{
-						"html":"Actual List Item 2"
-					},
-					{
-						"html":"Actual List Item 3"
-					},
-					{
-						"html":"Actual List Item 4"
-					},
-					{
-						"html":"Actual List Item 5"
-					}
-				]
+				"title":  "Someone has breached your systems.",
+				"body": "Your data, your clients' data, your business…Do you know what to do?"
 			},
-			{
-				"icon":{
-					"src": "../../images/sample/tout-4x3-climbers.jpg",
-					"class": "grid-icon",
-					"alt": "Climbers"
+			"content":{
+				"intro": "Sample Leading text to the page....",
+				"logo": {
+					"src": "../../images/logo.png",
+					"class": "img-responsive imp-logo",
+					"alt": "Sample Image"
 				},
-				"header":{
-					"html": "Header 2"
-				},
-				"list":[
-					{
-						"html":"Actual List Item 1"
-					},
-					{
-						"html":"Actual List Item 2"
-					},
-					{
-						"html":"Actual List Item 3"
-					},
-					{
-						"html":"Actual List Item 4"
-					},
-					{
-						"html":"Actual List Item 5"
-					}
-				]
-			},
-			{
-				"icon":{
-					"src": "../../images/sample/thumb-square-yosemite.jpg",
-					"class": "grid-icon",
-					"alt": "Yosemite"
-				},
-				"header":{
-					"html": "Header 3"
-				},
-				"list":[
-					{
-						"html":"Actual List Item 1"
-					},
-					{
-						"html":"Actual List Item 2"
-					},
-					{
-						"html":"Actual List Item 3"
-					},
-					{
-						"html":"Actual List Item 4"
-					},
-					{
-						"html":"Actual List Item 5"
-					}
-				]
-			},
-			{
-				"icon":{
-					"src": "../../images/sample/square-river.jpg",
-					"class": "grid-icon",
-					"alt": "River"
-				},
-				"header":{
-					"html": "Header 4"
-				},
-				"list":[
-					{
-						"html":"Actual List Item 1"
-					},
-					{
-						"html":"Actual List Item 2"
-					},
-					{
-						"html":"Actual List Item 3"
-					},
-					{
-						"html":"Actual List Item 4"
-					},
-					{
-						"html":"Actual List Item 5"
-					}
-				]
-			}
-		]
-	},
-	"section_1":{
-		"data" : [
-			{
-				"header":{
-					"html": "Actual 1 Header"
-				},
-				"content":{
-					"html": "Actual paragraph goes here........"
-				},
-				"button":{
-					"html": "Sign Up",
-					"class": "btn btn-primary"
-				}
-			},
-			{
-				"header":{
-					"html": "Actual 2 Header"
-				},
-				"content":{
-					"html": "Actual paragraph goes here........"
-				},
-				"button":{
-					"html": "Sign Up",
-					"class": "btn btn-primary"
-				}
-			},
-			{
-				"header":{
-					"html": "Actual 3 Header"
-				},
-				"content":{
-					"html": "Actual paragraph goes here........"
-				},
-				"button":{
-					"html": "Sign Up",
-					"class": "btn btn-primary"
-				}
-			},
-			{
-				"header":{
-					"html": "Actual 4 Header"
-				},
-				"content":{
-					"html": "Actual paragraph goes here........"
-				},
-				"button":{
-					"html": "Sign Up",
-					"class": "btn btn-primary"
+				"details":{
+					"header": "Sample product highlights are below.",
+					"list":[
+						{
+							"img":{
+								"src":"../../images/fpo_avatar.png",
+								"class": "image-icon img-responsive col-lg-4 col-md-4 col-sm-6 col-xs-12",
+								"alt": "Sample Image"
+							},
+							"description": "This is sample 1 content for the splash details section."
+						},
+						{
+							"img":{
+								"src":"../../images/fpo_avatar.png",
+								"class": "image-icon img-responsive col-lg-4 col-md-4 col-sm-6 col-xs-12",
+								"alt": "Sample Image"
+							},
+							"description": "This is sample 2 content for the splash details section."
+						},
+						{
+							"img":{
+								"src":"../../images/fpo_avatar.png",
+								"class": "image-icon img-responsive col-lg-4 col-md-4 col-sm-6 col-xs-12",
+								"alt": "Sample Image"
+							},
+							"description": "This is sample 3 content for the splash details section."
+						}
+					]
 				}
 			}
-		]
-	},
-	"section_3":{
+		},
+	"content":{
+		"banner":[
+			{
+				"background":{
+					"src": "/images/sample/thumb-square-fire.jpg",
+					"class": "image-banner",
+					"alt": "Banner Sample"
+				},
+				"title":  "Background",
+				"body": "IMP was developed by NCG built from decades of incident management and data breach response efforts."
+			},
+			{
+				"background":{
+					"src": "/images/sample/landscape-16x9-mountains.jpg",
+					"class": "image-banner",
+					"alt": "Banner Sample"
+				},
+				"title":  "Features",
+				"body": "IMP was developed by NCG built from decades of incident management and data breach response efforts."
+			}
+		],
 		"data":[
 			{
-				"subheader":{
-					"html": "Sample Default 1 Subheader"
+				"grid_class": "grid-stacked col-lg-4 col-md-4 col-sm-4 col-xs-12",
+				"icon_class": "col-lg-5 col-md-5 col-sm-5 col-xs-12",
+				"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+				"icon":{
+					"src":"/images/sample/thumb-square-yosemite.jpg",
+					"class":"img-responsive",
+					"alt":"Sample Icon"
 				},
-				"header":{
-					"html": "Sample Default 1 Header"
-				},
-				"content":{
-					"html": "Sample paragraph goes here........"
-				}
-			},
-			{
-				"subheader":{
-					"html": "Sample Default 2 Subheader"
-				},
-				"header":{
-					"html": "Sample Default 2 Header"
-				},
-				"content":{
-					"html": "Sample paragraph goes here........"
-				}
-			},
-			{
-				"subheader":{
-					"html": "Sample Default 3 Subheader"
-				},
-				"header":{
-					"html": "Sample Default 3 Header"
-				},
-				"content":{
-					"html": "Sample paragraph goes here........"
-				}
-			},
-			{
-				"subheader":{
-					"html": "Sample Default 4 Subheader"
-				},
-				"header":{
-					"html": "Sample Default 4 Header"
-				},
-				"content":{
-					"html": "Sample paragraph goes here........"
-				}
+				"title": "Sample Default 1 Header",
+				"list":[
+					{
+						"list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
+						"body": "This is a stacked list item (1)"
+					},
+					{
+						"list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
+						"body": "This is a stacked list item (2)"
+					},
+					{
+						"list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
+						"body": "This is a stacked list item (3)"
+					}
+				]
 			}
 		]
-	},
-	"touts" : [
-		{
-			"img": {
-				"landscape_4x3": {
-					"src": "../../images/sample/tout-4x3-climber.jpg",
-					"alt": "Climber"	
-				}
-			},
-			"headline" : {
-				"short" : "Extreme climbing tips"
-			}
-		},
-		{
-			"img": {
-				"landscape_4x3": {
-					"src": "../../images/sample/tout-4x3-stream.jpg",
-					"alt": "Stream hiking"	
-				}
-			},
-			"headline" : {
-				"short" : "Stream hiking"
-			}
-		},
-		{
-			"img": {
-				"landscape_4x3": {
-					"src": "../../images/sample/tout-4x3-climbers.jpg",
-					"alt": "Explore hiking trails"	
-				}
-			},
-			"headline" : {
-				"short" : "Explore hiking trails"
-			}
-		}
-	],
-	"latest-posts" : [
-		{
-			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-river.jpg",
-					"alt": "Post Thumbnail"	
-				}
-			},
-			"headline" : {
-				"short" : "Navigate the Allegheny River"
-			},
-			"excerpt" : {
-				"medium" : "The Allegheny River is a principal tributary of the Ohio River; it is located in the Eastern United States. The Allegheny River joins with the Monongahela River to form the Ohio River at the Point of Point State Park in Downtown Pittsburgh, Pennsylvania."
-			}
-		},
-		{
-			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-ivy.jpg",
-					"alt": "Ivy"	
-				}
-			},
-			"headline" : {
-				"short" : "How to detect and avoid poison ivy"
-			},
-			"excerpt" : {
-				"medium" : "Toxicodendron radicans, commonly known as poison ivy is a poisonous North American plant that is well known for its production of urushiol"
-			}
-		},
-		{
-			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-yosemite.jpg",
-					"alt": "Yosemite"	
-				}
-			},
-			"headline" : {
-				"short" : "Top 10 hiking mountains"
-			},
-			"excerpt" : {
-				"medium" : "Yosemite National Park is a United States National Park spanning eastern portions of Tuolumne, Mariposa and Madera counties in the central eastern portion of the U.S. state of California."
-			}
-		},
-		{
-			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-fire.jpg",
-					"alt": "Fire"	
-				}
-			},
-			"headline" : {
-				"short" : "How to build a campfire"
-			},
-			"excerpt" : {
-				"medium" : "A campfire is a fire lit at a campsite, to serve the following functions: light, warmth, a beacon, an insect and/or apex predator deterrent, to cook, and for a psychological sense of security. "
-			}
-		},
-		{
-			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-gear.jpg",
-					"alt": "Camping Gear"	
-				}
-			},
-			"headline" : {
-				"short" : "Pick the right camping gear"
-			},
-			"excerpt" : {
-				"medium" : "The equipment used in camping varies with the particular type of camping. For instance, in survival camping the equipment consists of small items which have the purpose of helping the camper in providing food, heat and safety."
-			}
-		}
-	],
-	"inset-blocks" : [
-		{
-			"headline" : "This is the headline for the inset block"
-		}
-	],
-	"latest-block" : [
-		{
-			"headline" : "This is the headline for the latest block"
-		}
-	]
+	}
 }

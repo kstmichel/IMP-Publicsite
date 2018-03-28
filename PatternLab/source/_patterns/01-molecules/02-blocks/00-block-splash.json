@@ -1,13 +1,12 @@
 {
- "background":{
-   "banner":{
-     "src": "../../images/favicon_16x16.jpg",
+ "banner":{
+   "background":{
+     "src": "/images/sample/landscape-16x9-mountains.jpg",
      "class": "image-banner",
      "alt": "Splash Sample Logo"
    },
-   "banner_text": {
-     "html": "Background Text"
-   }
+   "title":  "Background Title",
+   "body": "Body Text Sample"
  },
  "content":{
     "intro": "Sample Leading text to the page....",

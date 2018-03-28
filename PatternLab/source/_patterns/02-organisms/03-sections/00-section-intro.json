@@ -1,0 +1,14 @@
+{
+  "header":"Section Title",
+  "banner":{
+    "background":{
+      "src": "/images/sample/landscape-16x9-mountains.jpg",
+      "class": "image-banner",
+      "alt": "Actual Banner"
+    },
+    "title":  "Section Title",
+    "body": "Section Text"
+  },
+    "title": "Sample Default 1 Header",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius sollicitudin tellus vitae iaculis. Aliquam placerat eget dui quis vehicula. Suspendisse est erat, ornare at accumsan nec, bibendum ac enim."
+}
