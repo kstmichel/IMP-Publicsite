@@ -1,0 +1,12 @@
+<div class="image-banner">
+    <div class="image-banner--background" style="background-image: url('{{ background.src }}');">
+
+        <div class="image-banner--text col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="image-banner--inner col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                {% if content is defined %}
+                      {% include "molecules-block-grid" with content only %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,23 +1,22 @@
 <div class="block block-splash">
-    {% include "atoms-banner"  with banner only%}
+    {% include "molecules-block-banner"  with banner only%}
 
     <div class="block-splash--content col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="splash--intro">
+        <div class="splash--intro col-lg-9 col-md-9 col-sm-9 col-xs-12">
             <h4>{{ content.intro }}</h4>
         </div>
 
-        <div class="splash--logo">
-            <img src="{{ content.logo.src }}" class="{{ content.logo.class }}" alt="{{ content.logo.alt }}"  />
+        <div class="splash--logo col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            {% include "atoms-logo" with content.logo %}
         </div>
 
-        <div class="block-splash--details">
+        <div class="block-splash--details col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h3>{{ content.details.header }}</h3>
 
             <ul class="details--highlights">
                {% for item in content.details.list %}
-                <li>
-                    <img src="{{ item.img.src }}" class="{{ item.img.class }}" alt="{{ item.img.alt }}" />
-                    <p>{{ item.description }}</p>
+                <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    {% include "molecules-caption-image" with item only%}
                 </li>
                 {% endfor %}
             </ul>

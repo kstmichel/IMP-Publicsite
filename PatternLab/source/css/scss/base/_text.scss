@@ -1,7 +1,13 @@
 /* Text-Related Elements */ 
 p {
-	margin-bottom: $space;
-  font-size: 14px;
+    margin-bottom: $space;
+    color: $p-blue-gray;
+    line-height: 1.8em;
+}
+
+p, li{
+    letter-spacing: 0.04em;
+    font-size: 16px;
 }
 
 /* Blockquote */

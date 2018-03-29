@@ -1,7 +1,6 @@
 {
   "list":[
     {
-      "list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
       "icon":{
         "src":"/images/sample/thumb-square-fire.jpg",
         "class":"img-responsive",
@@ -11,12 +10,15 @@
       "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-      "list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-4",
+      "icon":{
+        "src":"/images/sample/thumb-square-gear.jpg",
+        "class":"img-responsive",
+        "alt":"Sample Icon"
+      },
       "title":"List Title 2",
       "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-      "list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
       "icon":{
         "src":"/images/sample/thumb-square-ivy.jpg",
         "class":"img-responsive",

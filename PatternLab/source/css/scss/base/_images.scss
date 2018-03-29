@@ -2,21 +2,64 @@
   margin-bottom: 20px;
 }
 
-.image-banner{
-  .banner--background{
-    max-height: 550px;
-    overflow: hidden;
+.image-caption{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content:center;
 
-    img{
-      padding:0;
+  img{
+    margin: 10px auto;
+  }
+
+  .caption{
+    line-height: 1.4em;
+    color: darken($p-green-light, 10%);
+  }
+}
+
+.image-banner{
+  position: relative;
+
+  &--background{
+    overflow: hidden;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &:after{
+      content: '';
+      background-image: linear-gradient(to right, #edf5fd 0%, #ffffffeb 50%, rgba(22, 66, 100, 0.2) 100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
     }
   }
-  .banner--text{
-    position: absolute;
-    top: 150px;
+  &--text{
     max-width: $bp-xxl;
-    left:0;
-    right:0;
     margin: 0 auto;
+    padding: 10px 15px;
+    z-index: 5;
+
+    .image-banner--inner{
+      padding: 0 15px;
+
+      .title{
+        color: $p-blue-dark;
+        font-weight: bold;
+        font-size: 40px;
+      }
+
+      .body{
+        margin-top: 20px;
+        color: $p-blue-light;
+        text-shadow: 2px 2px 2px $white;
+      }
+    }
   }
 }

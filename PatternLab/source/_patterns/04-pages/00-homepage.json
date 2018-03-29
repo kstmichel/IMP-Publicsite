@@ -1,25 +1,37 @@
 {
 	"title" : "Home Page",
 	"bodyClass": "home",
-	"splash": {
+	"content_block":{
+		"splash_block": {
 			"banner":{
 				"background":{
-					"src": "/images/sample/thumb-square-fire.jpg",
+					"src": "/images/imp/splash.jpg",
 					"class": "image-banner",
 					"alt": "Splash Sample Logo"
 				},
-				"title":  "Someone has breached your systems.",
-				"body": "Your data, your clients' data, your business…Do you know what to do?"
+				"content": {
+					"data": [
+						{
+							"title": "Someone has breached your systems.",
+							"body": "Your data, your clients' data, your business…Do you know what to do?"
+						}
+					]
+				}
 			},
 			"content":{
-				"intro": "Sample Leading text to the page....",
+				"intro": "Every business must be prepared for a data breach or similar incident that puts operations or data at risk.",
 				"logo": {
-					"src": "../../images/logo.png",
-					"class": "img-responsive imp-logo",
-					"alt": "Sample Image"
+					"link":{
+						"href": "www.sample.com"
+					},
+					"img":{
+						"src": "../../images/logo.png",
+						"class": "header--logo",
+						"alt": "Sample Logo"
+					}
 				},
 				"details":{
-					"header": "Sample product highlights are below.",
+					"header": "The easy to use, cloud based platform to manage data breaches and incidents.",
 					"list":[
 						{
 							"img":{
@@ -27,7 +39,7 @@
 								"class": "image-icon img-responsive col-lg-4 col-md-4 col-sm-6 col-xs-12",
 								"alt": "Sample Image"
 							},
-							"description": "This is sample 1 content for the splash details section."
+							"description": "Tools to manage and target incident response efforts backed by expert support"
 						},
 						{
 							"img":{
@@ -35,7 +47,7 @@
 								"class": "image-icon img-responsive col-lg-4 col-md-4 col-sm-6 col-xs-12",
 								"alt": "Sample Image"
 							},
-							"description": "This is sample 2 content for the splash details section."
+							"description": "Easy to follow steps for people to know what to do and when."
 						},
 						{
 							"img":{
@@ -43,59 +55,483 @@
 								"class": "image-icon img-responsive col-lg-4 col-md-4 col-sm-6 col-xs-12",
 								"alt": "Sample Image"
 							},
-							"description": "This is sample 3 content for the splash details section."
+							"description": "Manage communication, coordination, and collaboration with internal and external parties."
 						}
 					]
 				}
 			}
 		},
-	"content":{
-		"banner":[
-			{
-				"background":{
-					"src": "/images/sample/thumb-square-fire.jpg",
-					"class": "image-banner",
-					"alt": "Banner Sample"
-				},
-				"title":  "Background",
-				"body": "IMP was developed by NCG built from decades of incident management and data breach response efforts."
+		"banner_background": {
+			"background":{
+				"src": "/images/imp/banner_background.jpg",
+				"class": "image-banner",
+				"alt": "Banner Sample"
 			},
-			{
-				"background":{
-					"src": "/images/sample/landscape-16x9-mountains.jpg",
-					"class": "image-banner",
-					"alt": "Banner Sample"
-				},
-				"title":  "Features",
-				"body": "IMP was developed by NCG built from decades of incident management and data breach response efforts."
-			}
-		],
-		"data":[
-			{
-				"grid_class": "grid-stacked col-lg-4 col-md-4 col-sm-4 col-xs-12",
-				"icon_class": "col-lg-5 col-md-5 col-sm-5 col-xs-12",
-				"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
-				"icon":{
-					"src":"/images/sample/thumb-square-yosemite.jpg",
-					"class":"img-responsive",
-					"alt":"Sample Icon"
-				},
-				"title": "Sample Default 1 Header",
-				"list":[
+			"content":{
+				"data":[
 					{
-						"list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
-						"body": "This is a stacked list item (1)"
-					},
-					{
-						"list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
-						"body": "This is a stacked list item (2)"
-					},
-					{
-						"list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
-						"body": "This is a stacked list item (3)"
+						"title":  "Background",
+						"body": "IMP was developed by NCG built from decades of incident management and data breach response efforts."
 					}
 				]
 			}
-		]
+		},
+		"banner_features":	{
+			"background":{
+				"src": "/images/imp/banner_features.jpg",
+				"class": "image-banner",
+				"alt": "Banner Sample"
+			},
+			"content": {
+				"data":[
+					{
+						"title":  "Features",
+						"body": "Empower your teams and be bettered prepared to handle incidents and data breach scenarios."
+					}
+				]
+			}
+		},
+		"banner_works":	{
+			"background":{
+				"src": "/images/imp/banner_works.jpg",
+				"class": "image-banner",
+				"alt": "Banner Sample"
+			},
+			"content": {
+				"data":[
+					{
+						"title":  "How it Works",
+						"body": "Getting started with IMP is easy and risk free!"
+					}
+				]
+			}
+		},
+		"banner_support":	{
+			"background":{
+				"src": "/images/imp/banner_support.jpg",
+				"class": "image-banner",
+				"alt": "Banner Sample"
+			},
+			"content": {
+				"data":[
+					{
+						"title":  "Support",
+						"body": "A Partnership for  your Incident Management Training – Incident Management Services – Commitment to Continuous Improvement"
+					}
+				]
+			}
+		},
+		"banner_pricing":	{
+			"background":{
+				"src": "/images/imp/banner_pricing.jpg",
+				"class": "image-banner",
+				"alt": "Banner Sample"
+			},
+			"content": {
+				"data":[
+					{
+						"title":  "Pricing",
+						"body": "Add users for $12/month each – volume discounts available."
+					}
+				]
+			}
+		},
+		"block_background":{
+			"data":[
+				{
+					"grid_class": "grid-simple grid-stacked col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"title": "Why IMP is needed…",
+					"body": "Existing incident management tools tend to be either very rudimentary applications not much beyond a glorified spreadsheet.  While others are part of complex systems that are very hard to use in the middle of an incident. Our clients faced many frustrations trying to find automation that could help them manage incidents and all the data and information associated with those activities. The automation available had quite a few challenges:",
+					"list":[
+						{
+							"body": "Too expensive and complicated to use"
+						},
+						{
+							"body": "Too hard to use or not rigorous enough"
+						},
+						{
+							"body": "Too rigid or not structured enough"
+						},
+						{
+							"body": "To open or too closed"
+						},
+						{
+							"body": "Too generic or too specific"
+						},
+						{
+							"body": "Not tied to industry standards like NIST or FBI evidence handling reporting—and thus requiring expensive gathering and collecting of data after the fact."
+						}
+					]
+				},
+				{
+					"grid_class": "grid-simple grid-stacked col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"title": "NCG and the Orchestration Platform",
+					"body": "Northcross Group (NCG) is an integration and cybersecurity firm working in both the public and private sector.  NCG has helped many clients build automation to meet specific business needs, like incident management because challenges out grew paper and spreadsheet methods and existing software was too generic, complicated, or expensive. NCG has run hundreds of command centers for clients in different industries, sizes, and complexity for event coordination, deployment, incident response.  This experience has given us great insight into what works and what does not for what needs to be communicated, how to manage efforts, how to coordinate people.  We have practical experience and lessons learned on how to capture the level of detail to support recovery efforts with legal, law enforcement, insurers, and other key external parties. IMP has and continues to be developed based on this past experience and NCG's current work efforts in the system and security fields.  IMP is supported by NCG subject matter experts to provide not only application support, but real world expertise in managing incidents.",
+					"list":[
+						{
+							"body": "About NCG"
+						},
+						{
+							"body": "About Orchestration Tools"
+						}
+					]
+				}
+			]
+		},
+		"block_features":{
+			"data":[
+				{
+					"grid_class": "grid-stacked col-lg-6 col-md-6 col-sm-6 col-xs-12",
+					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"icon":{
+						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"class":"img-responsive",
+						"alt":"Sample Icon"
+					},
+					"title": "Incident Management",
+					"list":[
+						{
+							"body": "Checklists to guide efforts—use templates based on NIST standards or create your own templates"
+						},
+						{
+							"body": "Data collection tools to capture events, streamline reporting, and manage evidence handling"
+						},
+						{
+							"body": "Tools to organize and direct teams, distribute notifications, and set alerts and messaging"
+						},
+						{
+							"body": "Ability to securely engage third parties to facilitate coordination and information sharing for a given incident"
+						},
+						{
+							"body": "Timeline and process tracking of efforts to support command and control functions."
+						},
+						{
+							"body": "Options for full incident handling processes as well as streamlined simple incident management"
+						}
+					]
+				},
+				{
+					"grid_class": "grid-stacked col-lg-6 col-md-6 col-sm-6 col-xs-12",
+					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"icon":{
+						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"class":"img-responsive",
+						"alt":"Sample Icon"
+					},
+					"title": "Organize and Empower Your Team",
+					"list":[
+						{
+							"body": "Frameworks to guide efforts through various types of incidents"
+						},
+						{
+							"body": "Functions to capture the impact and criticality of a given incident"
+						},
+						{
+							"body": "Processes for escalation and notification based on severity"
+						},
+						{
+							"body": "Definition and clarity of roles and responsibilities across teams"
+						},
+						{
+							"body": "Logging to track efforts and foster collaboration across team members"
+						}
+					]
+				},
+				{
+					"grid_class": "grid-stacked col-lg-6 col-md-6 col-sm-6 col-xs-12",
+					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"icon":{
+						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"class":"img-responsive",
+						"alt":"Sample Icon"
+					},
+					"title": "Drive Consistency and Completeness",
+					"list":[
+						{
+							"body": "Leverage existing or create your own organization templates and processes"
+						},
+						{
+							"body": "Incident data to support trend analysis and pattern identification"
+						},
+						{
+							"body": "Tracking of resources used for incident management"
+						},
+						{
+							"body": "Checklist/framework graphic"
+						}
+					]
+				},
+				{
+					"grid_class": "grid-stacked col-lg-6 col-md-6 col-sm-6 col-xs-12",
+					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"icon":{
+						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"class":"img-responsive",
+						"alt":"Sample Icon"
+					},
+					"title": "Lessons Learned and Continuous Improvements",
+					"list":[
+						{
+							"body": "Facilitate and capture lessons learned"
+						},
+						{
+							"body": "Easily leverage data and information from actual incidents"
+						},
+						{
+							"body": "Have lessons learned readily available to support future efforts"
+						},
+						{
+							"body": "Build organizational capabilities and maturity for dealing with incidents"
+						}
+					]
+				},
+				{
+					"grid_class": "grid-stacked col-lg-6 col-md-6 col-sm-6 col-xs-12",
+					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"icon":{
+						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"class":"img-responsive",
+						"alt":"Sample Icon"
+					},
+					"title": "Manage Teams",
+					"list":[
+						{
+							"body": "Set and clearly articulate roles and responsibilities for incident teams."
+						},
+						{
+							"body": "Create groups for notification or support engagement"
+						},
+						{
+							"body": "Provide secure access to third parties"
+						},
+						{
+							"body": "Direct notifications and messaging to team members"
+						}
+					]
+				},
+				{
+					"grid_class": "grid-stacked col-lg-6 col-md-6 col-sm-6 col-xs-12",
+					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"icon":{
+						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"class":"img-responsive",
+						"alt":"Sample Icon"
+					},
+					"title": "Dashboard Reporting",
+					"list":[
+						{
+							"body": "Overview of all active incidents in the organization at a glance"
+						},
+						{
+							"body": "Current incident statistics and metrics"
+						},
+						{
+							"body": "Communicate and coordinate across your organization with standardized reporting, alerts, and direct messaging to teams."
+						},
+						{
+							"body": "Easy access to information and updates on current and past incidents."
+						}
+					]
+				},
+				{
+					"grid_class": "grid-stacked col-lg-6 col-md-6 col-sm-6 col-xs-12",
+					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"icon":{
+						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"class":"img-responsive",
+						"alt":"Sample Icon"
+					},
+					"title": "Monthly Statistics Reporting",
+					"list":[
+						{
+							"body": "Incident data for awareness and analysis, with option to have it delivered right to your inbox"
+						},
+						{
+							"body": "Tacking to ensure completion of process steps and ensure complete documentation"
+						},
+						{
+							"body": "Metrics on volume and resolution times"
+						}
+					]
+				},
+				{
+					"grid_class": "grid-stacked col-lg-6 col-md-6 col-sm-6 col-xs-12",
+					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"icon":{
+						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"class":"img-responsive",
+						"alt":"Sample Icon"
+					},
+					"title": "Communicate throughout the organization and with third parties",
+					"list":[
+						{
+							"body": "Facilitate and control report and information flows"
+						},
+						{
+							"body": "Manage temporary access to incidents"
+						},
+						{
+							"body": "Tools to streamline and reduce manual efforts in preparing reports and information updates"
+						}
+					]
+				},
+				{
+					"grid_class": "grid-stacked grid-simple col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"title": "Streamline sharing of data and information with legal, insurance, and law enforcement partners",
+					"list":[
+						{
+							"body": "Invite third parties to participate with secure access to support a particular incident."
+						},
+						{
+							"body": "Manage data collection and memorialization of efforts to comply with law enforcement and regulator reporting standards."
+						},
+						{
+							"body": "Demonstrate incident management capabilities, processes, and policies."
+						},
+						{
+							"body": "Data and document management"
+						},
+						{
+							"body": "Legal graphic"
+						}
+					]
+				}
+			]
+		},
+		"block_works": {
+			"data": [
+				{
+					"grid_class": "grid-simple grid-simple--steps col-lg-4 col-md-4 col-sm-4 col-xs-12",
+					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"title": "Step #1: Create an IMP site for your company…",
+					"body":"Your site comes with an administrative account that can be used to create users and groups, as well as setting up any of your existing incident procedures."
+				},
+				{
+					"grid_class": "grid-simple grid-simple--steps col-lg-4 col-md-4 col-sm-4 col-xs-12",
+					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"title": "Step #2: Add Users…",
+					"body":"Users can be added individually or in bulk."
+				},
+				{
+					"grid_class": "grid-simple grid-simple--steps col-lg-4 col-md-4 col-sm-4 col-xs-12",
+					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"title": "Step #3: Setup training in the tools and/or overall incident management techniques …",
+					"body":"General and custom, live or online training is available."
+				},
+				{
+					"grid_class": "grid-simple col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"icon_class": "col-lg-3 col-md-3 col-sm-3 col-xs-12",
+					"content_class": "col-lg-9 col-md-9 col-sm-9 col-xs-12",
+					"icon":{
+						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"class":"img-responsive",
+						"alt":"Sample Icon"
+					},
+					"title": "System Architecture",
+					"body":"IMP is hosted securely in the cloud so you don't have to worry software installation, maintenance, or upgrades on your infrastructure.  Each IMP instance is its own container with only your information in it.  Your data is segmented from others and protected by application hardening, data encryption at rest, active monitoring, and other controls to protect your data and information. Users access IMP through a current browser such as Firefox, Chrome, Safari, or Internet Explorer from a phone, tablet, or PC.  The connection between your browser and IMP is encrypted and IMP does not store any data on the device you are using. Your organization's system administrator has the ability to manage users and groups in IMP.  Your administrator can add or remove users to comply with your own user management policies and procedures."
+				}
+			]
+		},
+		"block_support": {
+			"data": [
+				{
+					"grid_class": "grid-simple col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"icon_class": "col-lg-3 col-md-3 col-sm-3 col-xs-12",
+					"content_class": "col-lg-9 col-md-9 col-sm-9 col-xs-12",
+					"icon":{
+						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"class":"img-responsive",
+						"alt":"Sample Icon"
+					},
+					"title": "Training",
+					"body":"Part of effective incident response is to have a general awareness of how to identify an incident and expectations of what needs to be done to address the situation and recover from it.  We offer general incident management training and how to use IMP to support those efforts.  We offer training customization to fit your particular organization and industry as well. IMP training is available onsite in a classroom setting, or virtually.  On-demand and refresher training is also available."
+				},
+				{
+					"grid_class": "grid-simple grid-stacked col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"icon_class": "col-lg-3 col-md-3 col-sm-3 col-xs-12",
+					"content_class": "col-lg-9 col-md-9 col-sm-9 col-xs-12",
+					"icon":{
+						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"class":"img-responsive",
+						"alt":"Sample Icon"
+					},
+					"title": "Orchestration Support Model",
+					"body":"Our support model is not just focused on using the IMP tools, but on expanding and increasing your organization's incident management capabilities.  IMP was developed to augment incident and cybersecurity services, our support model continues our professional service oriented approach.",
+					"list":[
+						{
+							"body": "Incident Management SME – Training and support from practitioners experienced in incident management and data breach efforts."
+						},
+						{
+							"body": "Information security services – Incident management is part of an organization's overall information security program.  Our cybersecurity experts provide help address incident management within the broader security program context  with services and consultation"
+						},
+						{
+							"body": "Mitigation and recovery support services – Support to mitigate and recover from an active incident scenario."
+						},
+						{
+							"body": "Data breach forensics support – Services to exhume root cause and understand exposure of an incident."
+						}
+					]
+				},
+				{
+					"grid_class": "grid-simple grid-stacked col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"icon_class": "col-lg-3 col-md-3 col-sm-3 col-xs-12",
+					"content_class": "col-lg-9 col-md-9 col-sm-9 col-xs-12",
+					"icon":{
+						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"class":"img-responsive",
+						"alt":"Sample Icon"
+					},
+					"title": "Commitment to Community and Continuous Improvement",
+					"list":[
+						{
+							"body": "IMP has been developed based on input from dozens of organizations that NCG has supported with Incident Management services."
+						},
+						{
+							"body": "IMP is based on automation that has evolved since 2014 to meet evolving needs to deal with incidents, data breaches, ransomware, privacy issues, and other challenges to the confidentiality, integrity, and availability of data and system functions."
+						}
+					]
+				}
+			]
+		},
+		"block_pricing": {
+			"data": [
+				{
+					"grid_class": "col-lg-4 col-md-4 col-sm-4 col-xs-12",
+					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"title": "Getting Started",
+					"body":"Create a private and secure IMP instance for your Company. Your company instance comes with an administrator account for your company. $50/month billed annually",
+					"button":{
+						"href":"#",
+						"class":"btn btn-lg btn-primary",
+						"html": "Setup"
+					}
+				},
+				{
+					"grid_class": "col-lg-4 col-md-4 col-sm-4 col-xs-12",
+					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"title": "Adding Users",
+					"body":"Add users from your organization as needed.  If you need to add third party users for a particular incident, those accounts are free. $12 per user/month billed annually",
+					"button":{
+						"href":"#",
+						"class":"btn btn-lg btn-primary",
+						"html": "Setup"
+					}
+				},
+				{
+					"grid_class": "col-lg-4 col-md-4 col-sm-4 col-xs-12",
+					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
+					"title": "Getting Training & Support",
+					"body":"Standard or tailored training delivered onsite or online for IMP and general incident management. Custom training starts at $500",
+					"button":{
+						"href":"#",
+						"class":"btn btn-lg btn-primary",
+						"html": "Setup"
+					}
+				}
+			]
+		}
 	}
 }

@@ -1,0 +1,8 @@
+{
+  "img":{
+    "src":"../../images/fpo_avatar.png",
+    "class": "image-icon img-responsive col-lg-4 col-md-4 col-sm-6 col-xs-12",
+    "alt": "Sample Image"
+  },
+  "description": "This is sample content for a caption with image."
+}

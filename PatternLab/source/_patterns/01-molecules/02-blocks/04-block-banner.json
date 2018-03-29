@@ -1,0 +1,15 @@
+{
+  "background":{
+    "src": "/images/fpo_16x9.png",
+    "class": "image-banner",
+    "alt": "Splash Sample Logo"
+  },
+  "content":{
+    "data":[
+      {
+        "title":  "Background Title",
+        "body": "Body Text Sample"
+      }
+    ]
+  }
+}

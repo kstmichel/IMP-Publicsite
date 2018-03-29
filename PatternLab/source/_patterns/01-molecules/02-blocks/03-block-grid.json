@@ -12,15 +12,12 @@
       "title": "Sample Default 1 Header",
       "list":[
         {
-          "list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
           "body": "This is a stacked list item (1)"
         },
         {
-          "list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
           "body": "This is a stacked list item (2)"
         },
         {
-          "list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
           "body": "This is a stacked list item (3)"
         }
       ]
@@ -37,15 +34,12 @@
       "title": "Sample Default 1 Header",
       "list":[
         {
-          "list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
           "body": "This is a stacked list item (1)"
         },
         {
-          "list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
           "body": "This is a stacked list item (2)"
         },
         {
-          "list_class":"col-lg-12 col-md-12 col-sm-12 col-xs-12",
           "body": "This is a stacked list item (3)"
         }
       ]
@@ -64,7 +58,7 @@
     {
       "grid_class": "grid-simple col-lg-8 col-md-8 col-sm-8 col-xs-12",
       "content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
-      "title": "Sample Default 1 Header",
+      "title": "Grid-Simple Block Header",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius sollicitudin tellus vitae iaculis. Aliquam placerat eget dui quis vehicula. Suspendisse est erat, ornare at accumsan nec, bibendum ac enim. Nulla blandit in nulla vel sollicitudin. Phasellus nec ex at velit convallis porttitor eu pharetra dolor. Nunc vitae mi sed nulla tempor vulputate quis congue magna. Cras id lectus semper, bibendum nulla sit amet, gravida nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam id felis lectus."
     },
     {

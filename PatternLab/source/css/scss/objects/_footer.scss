@@ -29,6 +29,8 @@
 
 	li {
 		border-bottom: 1px solid $gray-dark;
+		list-style-type: none;
+		padding:0;
 
 		@media all and (min-width: $bp-med) {
 			border: 0;

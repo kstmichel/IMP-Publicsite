@@ -1,24 +1,41 @@
 {% extends "templates-page-1col" %}
 
-{% block splash %}
-    {% if splash is defined %}
-        {% include "molecules-block-splash"%}
-    {% endif %}
-{% endblock %}
+{% block content %}
+        {% if content_block is defined %}
 
-{% block main %}
-    {% block content %}
-        {% if content is defined%}
-                {% include "atoms-banner"%}
+            {% include "molecules-block-splash" with splash_block%}
 
-                {% include "molecules-block-grid" %}
+            <div id="background" class="content_block">
+                {% include "molecules-block-banner" with content_block.banner_background %}
 
-                {% include "atoms-banner" %}
+                {% include "molecules-block-grid" with content_block.block_background %}
+            </div>
 
-                {% include "molecules-block-grid" %}
+            <div id="features" class="content_block">
+                {% include "molecules-block-banner" with content_block.banner_features %}
+
+                {% include "molecules-block-grid" with content_block.block_features %}
+            </div>
+
+            <div id="works" class="content_block">
+                {% include "molecules-block-banner" with content_block.banner_works%}
+
+                {% include "molecules-block-grid" with content_block.block_works %}
+            </div>
+
+            <div id="support" class="content_block">
+                {% include "molecules-block-banner" with content_block.banner_support%}
+
+                {% include "molecules-block-grid"  with content_block.block_support %}
+            </div>
+
+            <div id="pricing" class="content_block">
+                {% include "molecules-block-banner" with content_block.banner_pricing%}
+
+                {% include "molecules-block-grid"  with content_block.block_pricing %}
+            </div>
+
         {% endif %}
-    {% endblock %}
-
 {% endblock %}
 
 {% block sidebar %}
