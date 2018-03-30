@@ -21,21 +21,20 @@
 			"content":{
 				"intro": "Every business must be prepared for a data breach or similar incident that puts operations or data at risk.",
 				"logo": {
-					"link":{
-						"href": "www.sample.com"
-					},
+					"content_class":"col-lg-7 col-md-7 col-sm-7 col-xs-12",
 					"img":{
-						"src": "../../images/logo.png",
-						"class": "header--logo",
-						"alt": "Sample Logo"
-					}
+						"src":"/images/imp/logo_imp.png",
+						"class": "image-icon img-responsive",
+						"alt": "Incident Management Portal"
+					},
+					"title": "Incident Management Portal"
 				},
 				"details":{
 					"header": "The easy to use, cloud based platform to manage data breaches and incidents.",
 					"list":[
 						{
 							"img":{
-								"src":"../../images/fpo_avatar.png",
+								"src":"../../images/imp/icon_tools.png",
 								"class": "image-icon img-responsive col-lg-4 col-md-4 col-sm-6 col-xs-12",
 								"alt": "Sample Image"
 							},
@@ -43,7 +42,7 @@
 						},
 						{
 							"img":{
-								"src":"../../images/fpo_avatar.png",
+								"src":"../../images/imp/icon_steps.png",
 								"class": "image-icon img-responsive col-lg-4 col-md-4 col-sm-6 col-xs-12",
 								"alt": "Sample Image"
 							},
@@ -51,7 +50,7 @@
 						},
 						{
 							"img":{
-								"src":"../../images/fpo_avatar.png",
+								"src":"../../images/imp/icon_communication.png",
 								"class": "image-icon img-responsive col-lg-4 col-md-4 col-sm-6 col-xs-12",
 								"alt": "Sample Image"
 							},
@@ -70,102 +69,24 @@
 			"content":{
 				"data":[
 					{
-						"title":  "Background",
-						"body": "IMP was developed by NCG built from decades of incident management and data breach response efforts."
-					}
-				]
-			}
-			},
-		"banner_features":	{
-			"background":{
-				"src": "/images/imp/banner_features.jpg",
-				"class": "image-banner",
-				"alt": "Banner Sample"
-			},
-			"content":{
-				"data":[
-					{
 						"grid_class": "grid-simple grid-simple--steps col-lg-12 col-md-12 col-sm-12 col-xs-12",
-						"title":  "Features",
-						"body": "Empower your teams and be bettered prepared to handle incidents and data breach scenarios.",
+						"title":  "Background",
 						"list":[
 							{
-								"list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
+								"icon_class": "col-lg-3 col-md-3 col-sm-3 col-xs-12",
+								"content_class":"col-lg-9 col-md-9 col-sm-9 col-xs-12",
 								"icon":{
-									"src":"/images/sample/thumb-square-fire.jpg",
+									"src":"/images/imp/logo_imp.png",
 									"class":"img-responsive",
-									"alt":"Sample Icon"
+									"alt":"Incident Management"
 								},
-								"body":"Provide structure, consistency, and leverage best practices for working incidents"
-							},
-							{
-								"list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
-								"icon":{
-									"src":"/images/sample/thumb-square-fire.jpg",
-									"class":"img-responsive",
-									"alt":"Sample Icon"
-								},
-								"body":"Orchestrate collaboration and coordination with internal and external partners"
-							},
-							{
-								"list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
-								"icon":{
-									"src":"/images/sample/thumb-square-fire.jpg",
-									"class":"img-responsive",
-									"alt":"Sample Icon"
-								},
-								"body":"Streamline documentation and manage communication"
+								"body": "IMP was developed by NCG built from decades of incident management and data breach response efforts."
 							}
 						]
 					}
 				]
 			}
-		},
-		"banner_works":	{
-			"background":{
-				"src": "/images/imp/banner_works.jpg",
-				"class": "image-banner",
-				"alt": "Banner Sample"
 			},
-			"content":{
-				"data":[
-					{
-						"title":  "How it Works",
-						"body": "Getting started with IMP is easy and risk free!"
-					}
-				]
-			}
-		},
-		"banner_support":	{
-			"background":{
-				"src": "/images/imp/banner_support.jpg",
-				"class": "image-banner",
-				"alt": "Banner Sample"
-			},
-			"content":{
-				"data":[
-					{
-						"title":  "Support",
-						"body": "A Partnership for  your Incident Management Training – Incident Management Services – Commitment to Continuous Improvement"
-					}
-				]
-			}
-		},
-		"banner_pricing":	{
-			"background":{
-				"src": "/images/imp/banner_pricing.jpg",
-				"class": "image-banner",
-				"alt": "Banner Sample"
-			},
-			"content":{
-				"data":[
-					{
-						"title":  "Pricing",
-						"body": "Add users for $12/month each – volume discounts available."
-					}
-				]
-			}
-		},
 		"block_background":{
 			"data":[
 				{
@@ -210,6 +131,65 @@
 				}
 			]
 		},
+		"banner_features":	{
+			"background":{
+				"src": "/images/imp/banner_features.jpg",
+				"class": "image-banner",
+				"alt": "Banner Sample"
+			},
+			"content":{
+				"data":[
+					{
+						"grid_class": "grid-simple grid-simple--steps col-lg-12 col-md-12 col-sm-12 col-xs-12",
+						"title":  "Features",
+						"body": "Empower your teams and be bettered prepared to handle incidents and data breach scenarios.",
+						"list":[
+							{
+								"list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
+								"caption":{
+									"img":{
+										"src":"/images/imp/icon_features_structure.png",
+										"class": "image-icon img-responsive col-lg-4 col-md-4 col-sm-6 col-xs-12",
+										"alt": "Collaboration"
+									},
+									"description": "Provide structure, consistency, and leverage best practices for working incidents"
+								}
+							},
+							{
+								"list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
+								"caption":{
+									"img":{
+										"src":"/images/imp/icon_features_collaboration.png",
+										"class": "image-icon img-responsive col-lg-4 col-md-4 col-sm-6 col-xs-12",
+										"alt": "Collaboration"
+									},
+									"description": "Orchestrate collaboration and coordination with internal and external partners"
+								}
+							},
+							{
+								"list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
+								"caption":{
+									"img":{
+										"src":"/images/imp/icon_features_communication.png",
+										"class": "image-icon img-responsive col-lg-4 col-md-4 col-sm-6 col-xs-12",
+										"alt": "Collaboration"
+									},
+									"description": "Streamline documentation and manage communication"
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		"header_features":{
+			"img":{
+				"src":"/images/imp/logo_imp.png",
+				"class": "image-icon img-responsive",
+				"alt": "Incident Management Portal"
+			},
+			"title": "Providing Structure, Consistency, and Leveraging Best Practices for Incident Management"
+	},
 		"block_features":{
 			"data":[
 				{
@@ -431,6 +411,21 @@
 				}
 			]
 		},
+		"banner_works":	{
+			"background":{
+				"src": "/images/imp/banner_works.jpg",
+				"class": "image-banner",
+				"alt": "Banner Sample"
+			},
+			"content":{
+				"data":[
+					{
+						"title":  "How it Works",
+						"body": "Getting started with IMP is easy and risk free!"
+					}
+				]
+			}
+		},
 		"block_works": {
 			"data": [
 				{
@@ -464,6 +459,21 @@
 					"body":"IMP is hosted securely in the cloud so you don't have to worry software installation, maintenance, or upgrades on your infrastructure.  Each IMP instance is its own container with only your information in it.  Your data is segmented from others and protected by application hardening, data encryption at rest, active monitoring, and other controls to protect your data and information. Users access IMP through a current browser such as Firefox, Chrome, Safari, or Internet Explorer from a phone, tablet, or PC.  The connection between your browser and IMP is encrypted and IMP does not store any data on the device you are using. Your organization's system administrator has the ability to manage users and groups in IMP.  Your administrator can add or remove users to comply with your own user management policies and procedures."
 				}
 			]
+		},
+		"banner_support":	{
+			"background":{
+				"src": "/images/imp/banner_support.jpg",
+				"class": "image-banner",
+				"alt": "Banner Sample"
+			},
+			"content":{
+				"data":[
+					{
+						"title":  "Support",
+						"body": "A Partnership for  your Incident Management Training – Incident Management Services – Commitment to Continuous Improvement"
+					}
+				]
+			}
 		},
 		"block_support": {
 			"data": [
@@ -525,6 +535,21 @@
 					]
 				}
 			]
+		},
+		"banner_pricing":	{
+			"background":{
+				"src": "/images/imp/banner_pricing.jpg",
+				"class": "image-banner",
+				"alt": "Banner Sample"
+			},
+			"content":{
+				"data":[
+					{
+						"title":  "Pricing",
+						"body": "Add users for $12/month each – volume discounts available."
+					}
+				]
+			}
 		},
 		"block_pricing": {
 			"data": [

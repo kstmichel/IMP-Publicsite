@@ -60,14 +60,6 @@
 				}
 			}
 
-			ul{
-				padding: 0;
-
-				li{
-					list-style-type: none;
-				}
-			}
-
 			.grid-icon{
 				float: left;
 				display: inline-block;
@@ -96,7 +88,6 @@
 		.list-wrapper{
 
 			img{
-				margin:0 auto;
 				float: none;
 			}
 		}
@@ -117,11 +108,12 @@
 
 			&:after{
 				content: '';
-				background-image: linear-gradient(to right, #5c6979 0%, #d6eeff3b 60%, #0e3a5c 100%);
+				background-image: linear-gradient(to top right, rgba(#becede, 0.2) 0%, rgba($white, 0.3) 30%, transparent 100%);
 				position: absolute;
 				top: 0;
 				left: 0;
 				right: 0;
+				border-bottom: 2px solid #c8def1;
 				height: 100%;
 			}
 
@@ -142,17 +134,22 @@
 				text-align: left;
 				padding: 0;
 
-				.grid-content--title{
-					color: $white;
-					font-size: 40px;
-					font-weight: 400;
-					text-shadow: 2px 2px 2px $p-blue-darker;
-				}
+				.grid-content{
+					max-width: 500px;
 
-				.body{
-					color: white;
-					text-shadow: none;
-					font-size: 24px;
+					&--title{
+						color: $splash-title;
+						font-size: 40px;
+						font-weight: bold;
+						margin-bottom: 30px;
+						text-shadow: 2px 2px 2px $splash-title-shadow;
+					}
+
+					&--body{
+						color: $splash-body;
+						font-size: 24px;
+						text-shadow: 2px 2px 2px $splash-body-shadow;
+					}
 				}
 			}
 		}
@@ -168,29 +165,45 @@
 			float: none;
 
 			h4{
-				font-style: italic;
-				font-size: 20px;
-				line-height: 1.6em;
-				color: $gray-med;
+              font-size: 22px;
 			}
 		}
 
 		.splash--logo{
-			padding: 40px;
 
-			.imp-logo{
-				margin:0 auto;
+			.image-header{
+				justify-content: center;
+				display: flex;
+				flex-direction: column;
+				padding: 0;
+				margin: 45px 0;
+			}
+
+			.image-header--image img{
+				float: right;
+			}
+
+			.image-header--content{
+				padding-top: 10px;
 			}
 		}
 
 		.block-splash--details{
 			margin:0 auto;
 			float: none;
+			display: inline-block;
+
+			&-title{
+				color: $p-blue-light;
+				float: none;
+				margin: 0 auto;
+			}
 		}
 
 		.details--highlights{
 			display: flex;
 			justify-content: center;
+			margin-top: 30px;
 
 			li{
 				display: flex;

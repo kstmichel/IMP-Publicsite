@@ -1,8 +1,18 @@
 {
+  "icon_class":"col-lg-3 col-md-3 col-sm-3 col-xs-12",
+  "content_class":"col-lg-9 col-md-9 col-sm-9 col-xs-12",
   "icon":{
     "src":"/images/favicon_32x32.jpg",
     "class":"img-responsive",
     "alt":"Sample Icon"
+  },
+  "caption":{
+    "img":{
+      "src":"../../images/fpo_avatar.png",
+      "class": "image-icon img-responsive col-lg-4 col-md-4 col-sm-6 col-xs-12",
+      "alt": "Sample Image"
+    },
+    "description": "This is sample content for a caption with image."
   },
   "title":"List Title",
   "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."

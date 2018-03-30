@@ -1,7 +1,7 @@
 {
   "logo" : {
      "img": {
-       "src": "../../images/logo.png",
+       "src": "../../images/imp/logo.png",
        "class": "header--logo",
        "alt": "NCG"
      }

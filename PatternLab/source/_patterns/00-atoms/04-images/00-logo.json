@@ -3,7 +3,7 @@
     "href": "www.sample.com"
   },
   "img":{
-    "src": "../../images/fpo_avatar.png",
+    "src": "../../images/imp/logo.png",
     "class": "header--logo",
     "alt": "Sample Logo"
   }

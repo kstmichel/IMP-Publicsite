@@ -1,0 +1,34 @@
+{
+  "headings":[
+    {
+      "tag": "h1",
+      "class": "heading-default",
+      "content": "Heading Level 1"
+    },
+    {
+      "tag": "h2",
+      "class": "heading-default",
+      "content": "Heading Level 2"
+    },
+    {
+      "tag": "h2",
+      "class": "heading-passive",
+      "content": "Heading Level 2: Passive Style"
+    },
+    {
+      "tag": "h3",
+      "class": "heading-default",
+      "content": "Heading Level 3"
+    },
+    {
+      "tag": "h4",
+      "class": "heading-default",
+      "content": "Heading Level 4"
+    },
+    {
+      "tag": "h5",
+      "class": "heading-default",
+      "content": "Heading Level 5"
+    }
+  ]
+}

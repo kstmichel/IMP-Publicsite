@@ -17,14 +17,11 @@
  "content":{
     "intro": "Sample Leading text to the page....",
     "logo": {
-      "link":{
-        "href": "www.sample.com"
-      },
       "img":{
-        "src": "../../images/fpo_4x3.png",
-        "class": "header--logo",
-        "alt": "Sample Logo"
-      }
+        "class": "image-icon img-responsive",
+        "alt": "Sample Image"
+      },
+      "title": "Logo Title Here"
     },
     "details":{
       "header": "Sample product highlights are below.",

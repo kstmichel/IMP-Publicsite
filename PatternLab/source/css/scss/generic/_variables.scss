@@ -22,8 +22,9 @@ $information : #000db5;
 //Palette
 $p-blue-darker: #113048;
 $p-blue-dark: #164264;
-$p-blue: #1d6aa5;
+$p-blue: #1876be;
 $p-blue-light: #0094D6;
+$p-blue-lighter: #7ac5ef;
 $white : #fff;
 $p-gray-light: #E8E8E8;
 $p-gray: #C1C1C1;
@@ -32,6 +33,11 @@ $p-blue-gray: #506576;
 $p-green-light: #70B85D;
 $p-green-dark: #267929;
 
+//Page Variables
+$splash-title: $p-blue;
+$splash-title-shadow: $white;
+$splash-body: $p-blue-gray;
+$splash-body-shadow: $white;
 
 //Typography
 $font : "HelveticaNeue", "Helvetica", "Arial", sans-serif;

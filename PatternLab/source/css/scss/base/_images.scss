@@ -2,6 +2,23 @@
   margin-bottom: 20px;
 }
 
+.image-header{
+  display: flex;
+  align-items: center;
+  @extend .lw;
+  margin: 30px auto;
+  padding-top: 30px;
+  float: none;
+
+  &--title{
+    color: $gray-med;
+  }
+
+  img{
+    margin: 0 auto;
+  }
+}
+
 .image-caption{
   display: flex;
   flex-direction: column;
@@ -10,6 +27,8 @@
 
   img{
     margin: 10px auto;
+    width: auto;
+    height: 100px;
   }
 
   .caption{
@@ -19,11 +38,13 @@
 }
 
 .image-banner{
-  position: relative;
+
 
   &--background{
+    position: relative;
     overflow: hidden;
     padding: 20px 15px;
+    min-height: 200px;
     display: flex;
     align-items: center;
     background-repeat: no-repeat;
@@ -63,11 +84,28 @@
             font-size: 38px;
           }
 
-          .body{
+          .grid-content--body{
             color: $p-blue-light;
             line-height: 1.6em;
             font-size: 20px;
             text-shadow: 2px 2px 2px $white;
+          }
+
+          .list-wrapper li{
+            list-style-type: none;
+          }
+
+          .list-item--icon{
+            margin:0;
+          }
+
+          .list-item--content{
+            font-size: 20px;
+            padding: 0 15px;
+          }
+
+          .image-caption{
+            text-align: center;
           }
         }
       }

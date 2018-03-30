@@ -2,6 +2,7 @@
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1, .alpha   { 
 	line-height: 1.2;
+	color: $p-blue-dark;
 }
 
 h2, .beta    { 
@@ -11,14 +12,15 @@ h2, .beta    {
 
 h3, .gamma   { 
 	line-height: 1.2;
+	color: $p-blue-gray;
 }
 
 h4, .delta   {
-	
+	color: $p-blue-gray;
 }
 
-h5, .epsilon { 
-	
+h5, .epsilon {
+	color: $gray-med;
 }
 
 h6, .zeta    { 
@@ -29,4 +31,12 @@ h6, .zeta    {
 .subheading {
 	font-family: $font-secondary;
 	font-weight: normal;
+}
+
+.heading{
+	&-passive{
+		font-style: italic;
+		line-height: 1.6em;
+		color:rgba($p-blue-gray, 0.7);
+	}
 }
