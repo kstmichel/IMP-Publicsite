@@ -1,9 +1,10 @@
 {% extends "templates-page-1col" %}
 
+
 {% block content %}
         {% if content_block is defined %}
 
-            {% include "molecules-block-splash" with splash_block%}
+            {% include "molecules-block-splash" with content_block.splash_block only %}
 
             <div id="background" class="content_block">
                 {% include "molecules-block-banner" with content_block.banner_background %}

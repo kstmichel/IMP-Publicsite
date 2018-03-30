@@ -1,5 +1,5 @@
 <div class="list-wrapper">
-    <ul>
+    <ul class="{{ list_class }}">
         {% for item in list %}
             <li class="{{ item.list_class }}">
                 {% include "atoms-list-item" with item only%}

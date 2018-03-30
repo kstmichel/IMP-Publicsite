@@ -9,8 +9,8 @@
 					"class": "image-banner",
 					"alt": "Splash Sample Logo"
 				},
-				"content": {
-					"data": [
+				"content":{
+					"data":[
 						{
 							"title": "Someone has breached your systems.",
 							"body": "Your data, your clients' data, your business…Do you know what to do?"
@@ -62,11 +62,11 @@
 			}
 		},
 		"banner_background": {
-			"background":{
-				"src": "/images/imp/banner_background.jpg",
-				"class": "image-banner",
-				"alt": "Banner Sample"
-			},
+				"background":{
+					"src": "/images/imp/banner_background.jpg",
+					"class": "image-banner",
+					"alt": "Banner Sample"
+				},
 			"content":{
 				"data":[
 					{
@@ -75,18 +75,48 @@
 					}
 				]
 			}
-		},
+			},
 		"banner_features":	{
 			"background":{
 				"src": "/images/imp/banner_features.jpg",
 				"class": "image-banner",
 				"alt": "Banner Sample"
 			},
-			"content": {
+			"content":{
 				"data":[
 					{
+						"grid_class": "grid-simple grid-simple--steps col-lg-12 col-md-12 col-sm-12 col-xs-12",
 						"title":  "Features",
-						"body": "Empower your teams and be bettered prepared to handle incidents and data breach scenarios."
+						"body": "Empower your teams and be bettered prepared to handle incidents and data breach scenarios.",
+						"list":[
+							{
+								"list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
+								"icon":{
+									"src":"/images/sample/thumb-square-fire.jpg",
+									"class":"img-responsive",
+									"alt":"Sample Icon"
+								},
+								"body":"Provide structure, consistency, and leverage best practices for working incidents"
+							},
+							{
+								"list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
+								"icon":{
+									"src":"/images/sample/thumb-square-fire.jpg",
+									"class":"img-responsive",
+									"alt":"Sample Icon"
+								},
+								"body":"Orchestrate collaboration and coordination with internal and external partners"
+							},
+							{
+								"list_class":"col-lg-4 col-md-4 col-sm-4 col-xs-12",
+								"icon":{
+									"src":"/images/sample/thumb-square-fire.jpg",
+									"class":"img-responsive",
+									"alt":"Sample Icon"
+								},
+								"body":"Streamline documentation and manage communication"
+							}
+						]
 					}
 				]
 			}
@@ -97,7 +127,7 @@
 				"class": "image-banner",
 				"alt": "Banner Sample"
 			},
-			"content": {
+			"content":{
 				"data":[
 					{
 						"title":  "How it Works",
@@ -112,7 +142,7 @@
 				"class": "image-banner",
 				"alt": "Banner Sample"
 			},
-			"content": {
+			"content":{
 				"data":[
 					{
 						"title":  "Support",
@@ -127,7 +157,7 @@
 				"class": "image-banner",
 				"alt": "Banner Sample"
 			},
-			"content": {
+			"content":{
 				"data":[
 					{
 						"title":  "Pricing",

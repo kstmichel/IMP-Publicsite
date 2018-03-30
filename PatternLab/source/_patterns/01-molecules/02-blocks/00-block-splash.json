@@ -5,8 +5,8 @@
      "class": "image-banner",
      "alt": "Splash Sample Logo"
    },
-   "content": {
-     "data": [
+   "content":{
+     "data":[
        {
          "title":  "Background Title",
          "body": "Body Text Sample"

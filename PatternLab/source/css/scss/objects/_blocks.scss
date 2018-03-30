@@ -60,6 +60,14 @@
 				}
 			}
 
+			ul{
+				padding: 0;
+
+				li{
+					list-style-type: none;
+				}
+			}
+
 			.grid-icon{
 				float: left;
 				display: inline-block;
@@ -72,7 +80,6 @@
 		}
 
 		.grid-icon{
-			float: none;
 			margin: 0 auto;
 			margin-bottom: 5px;
 			padding-top: 5px;
@@ -124,26 +131,29 @@
 		}
 
 		&--text{
-			top: 60px;
+			top: 130px;
 			position: absolute;
 			max-width: $bp-xxl;
 			left: 0;
 			right: 0;
 			padding: 0 15px;
 
-			.block-grid  .grid-content--title{
-				color: $white;
-				font-size: 42px;
-				font-weight: 400;
-				text-shadow: 2px 2px 2px $p-blue-darker;
+			.block.block-grid--list .block-grid{
 				text-align: left;
-			}
+				padding: 0;
 
-			p{
-				color: white;
-				font-size: 20px;
-				text-align: left;
-				margin-top: 30px;
+				.grid-content--title{
+					color: $white;
+					font-size: 40px;
+					font-weight: 400;
+					text-shadow: 2px 2px 2px $p-blue-darker;
+				}
+
+				.body{
+					color: white;
+					text-shadow: none;
+					font-size: 24px;
+				}
 			}
 		}
 	}
