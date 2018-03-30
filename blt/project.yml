@@ -1,7 +1,7 @@
 project:
-  machine_name: im-publicwebsite
-  prefix: BLT
-  human_name: 'BLTed 8'
+  machine_name: imp-public
+  prefix: IMPW
+  human_name: 'Incident Management Portal - Website'
   profile:
     name: lightning
   local:
@@ -9,10 +9,11 @@ project:
     hostname: 'local.${project.machine_name}.com'
 git:
   default_branch: master
-  remotes: {  }
+  remotes:
+    pantheon: 'ssh://codeserver.dev.2b65110f-c371-4713-b76d-e1a2332761a5@codeserver.dev.2b65110f-c371-4713-b76d-e1a2332761a5.drush.in:2222/~/repository.git'
 drush:
   aliases:
-    remote: '${project.machine_name}.test'
+    remote: 'pantheon.${project.machine_name}.dev'
     local: self
     ci: self
   default_alias: '${drush.aliases.local}'
