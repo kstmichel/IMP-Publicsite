@@ -1,10 +1,6 @@
 {
-  "link":{
-    "href": "www.sample.com"
-  },
-  "img":{
-    "src": "../../images/imp/logo.png",
-    "class": "header--logo",
-    "alt": "Sample Logo"
-  }
+  "href": "www.sample.com",
+  "src": "../../images/fpo_4x3.png",
+  "class": "header--logo",
+  "alt": "Sample Logo"
 }

@@ -16,16 +16,19 @@
 	}
 }
 
-.block.block-grid--list {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 50px auto;
-	max-width: $bp-xxxl;
-	float: none;
+.block.block-grid {
+	display: inline-block;
+
+	.block-grid--list{
+		display: flex;
+		flex-wrap: wrap;
+		margin: 50px auto;
+		max-width: $bp-xxxl;
+		float: none;
+	}
 
 	.block-grid{
 		text-align: center;
-		padding: 20px;
 		margin-bottom: 25px;
 
 		&.grid-stacked .list-item--content{
@@ -35,6 +38,7 @@
 
 		&.grid-simple{
 			text-align: left;
+			margin: 40px 0;
 
 			&--steps{
 				.grid-content--title{
@@ -72,7 +76,6 @@
 		}
 
 		.grid-icon{
-			margin: 0 auto;
 			margin-bottom: 5px;
 			padding-top: 5px;
 
@@ -99,12 +102,22 @@
 }
 
 .block-splash{
+	display: flex;
+	flex-direction: column;
 
-	.image-banner{
+	.block-banner{
+		margin:0;
+
 		&--background {
 			min-height: 500px;
 			display: block;
 			position: relative;
+
+			@media(max-width: $bp-med){
+				background-position: right -150px;
+				background-size: auto;
+				min-height: 100vh;
+			}
 
 			&:after{
 				content: '';
@@ -115,6 +128,10 @@
 				right: 0;
 				border-bottom: 2px solid #c8def1;
 				height: 100%;
+
+				@media(max-width: $bp-med){
+					background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2) 0%, rgb(255, 255, 255) 30%, transparent 100%);
+				}
 			}
 
 			img{
@@ -123,34 +140,35 @@
 		}
 
 		&--text{
-			top: 130px;
-			position: absolute;
-			max-width: $bp-xxl;
-			left: 0;
-			right: 0;
-			padding: 0 15px;
+			top: 100px;
 
-			.block.block-grid--list .block-grid{
-				text-align: left;
-				padding: 0;
+			@media(max-width: $bp-med){
+				top: 360px;
+				background-color: #ffffff;
+				padding-bottom: 20px;
+				display: inline-block;
+			}
 
-				.grid-content{
-					max-width: 500px;
+			.block.block-grid .block-grid--list{
 
-					&--title{
-						color: $splash-title;
-						font-size: 40px;
-						font-weight: bold;
-						margin-bottom: 30px;
-						text-shadow: 2px 2px 2px $splash-title-shadow;
+				.block-grid {
+
+					.grid-content{
+						&--title{
+							color: $splash-title;
+							font-size: 40px;
+							font-weight: bold;
+							margin-bottom: 30px;
+							text-shadow: 2px 2px 2px $splash-title-shadow;
+						}
+
+						&--body{
+							color: $splash-body;
+							font-size: 24px;
+							text-shadow: 2px 2px 2px $splash-body-shadow;
+						}
 					}
-
-					&--body{
-						color: $splash-body;
-						font-size: 24px;
-						text-shadow: 2px 2px 2px $splash-body-shadow;
-					}
-				}
+			}
 			}
 		}
 	}
@@ -171,7 +189,7 @@
 
 		.splash--logo{
 
-			.image-header{
+			.image-header--inner{
 				justify-content: center;
 				display: flex;
 				flex-direction: column;
@@ -202,6 +220,7 @@
 
 		.details--highlights{
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: center;
 			margin-top: 30px;
 
@@ -211,6 +230,93 @@
 				padding: 20px;
 			}
 		}
+	}
+}
+
+.block-banner{
+	display: inline-block;
+	padding:0;
+	margin-bottom: 20px;
+
+	&--inner{
+		padding:0;
+	}
+
+	&--background{
+		position: relative;
+		overflow: hidden;
+		padding: 20px 15px;
+		min-height: 200px;
+		display: flex;
+		align-items: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+		&:after{
+			content: '';
+			background-image: linear-gradient(to right, rgba(#eef7ff, 0.9) 0%, #fff 50%, rgba(255, 255, 255, 0.7) 100%);
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+		}
+	}
+
+	&--text{
+		@extend .lc;
+		padding: 0;
+		z-index: 5;
+
+		.block.block-grid  .block-grid--list {
+				margin: 0;
+
+				.block-grid{
+					text-align: left;
+					margin: 0;
+					padding: 0;
+
+					.grid-content--title{
+						color: $p-blue-dark;
+						font-weight: bold;
+						font-size: 38px;
+					}
+
+					.grid-content--body{
+						color: $p-blue-light;
+						line-height: 1.6em;
+						font-size: 20px;
+						text-shadow: 2px 2px 2px $white;
+					}
+
+					.list-wrapper li{
+						list-style-type: none;
+					}
+
+					.list-item--icon{
+						margin:0;
+
+						img{
+							@extend .image-small;
+						}
+					}
+
+					.list-item--content{
+						font-size: 20px;
+						padding: 0 15px;
+					}
+
+					.image-caption{
+						text-align: center;
+
+						img{
+							@extend .image-small;
+						}
+					}
+				}
+			}
+
 	}
 }
 

@@ -1,8 +1,10 @@
 <div class="image-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <div class="image-header--image {{ image_class }}">
-        {% include "atoms-square" with img %}
-    </div>
-    <div class="image-header--content {{ content_class }}">
-         <h2 class="image-header--title">{{ title }}</h2>
+    <div class="image-header--inner col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="image-header--image {{ image_class }}">
+            {% include "atoms-logo" with img %}
+        </div>
+        <div class="image-header--content {{ content_class }}">
+            <h2 class="image-header--title">{{ title }}</h2>
+        </div>
     </div>
 </div>

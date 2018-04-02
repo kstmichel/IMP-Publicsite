@@ -17,10 +17,11 @@
  "content":{
     "intro": "Sample Leading text to the page....",
     "logo": {
-      "img":{
-        "class": "image-icon img-responsive",
-        "alt": "Sample Image"
-      },
+        "img":{
+          "src": "../../images/sample/thumb-square-fire.jpg",
+          "class": "image-icon img-responsive",
+          "alt": "Sample Logo"
+        },
       "title": "Logo Title Here"
     },
     "details":{

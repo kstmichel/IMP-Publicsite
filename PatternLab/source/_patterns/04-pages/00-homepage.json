@@ -9,6 +9,7 @@
 					"class": "image-banner",
 					"alt": "Splash Sample Logo"
 				},
+				"text_class":"col-lg-6 col-md-6 col-sm-6 col-xs-12",
 				"content":{
 					"data":[
 						{
@@ -73,8 +74,8 @@
 						"title":  "Background",
 						"list":[
 							{
-								"icon_class": "col-lg-3 col-md-3 col-sm-3 col-xs-12",
-								"content_class":"col-lg-9 col-md-9 col-sm-9 col-xs-12",
+								"icon_class": "col-lg-2 col-md-2 col-sm-2 col-xs-12",
+								"content_class":"col-lg-7 col-md-7 col-sm-7 col-xs-12",
 								"icon":{
 									"src":"/images/imp/logo_imp.png",
 									"class":"img-responsive",
@@ -196,9 +197,9 @@
 					"grid_class": "grid-stacked col-lg-6 col-md-6 col-sm-6 col-xs-12",
 					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
 					"icon":{
-						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"src":"/images/imp/features_incidentManagement.png",
 						"class":"img-responsive",
-						"alt":"Sample Icon"
+						"alt":"Incident Management Tools"
 					},
 					"title": "Incident Management",
 					"list":[
@@ -226,7 +227,7 @@
 					"grid_class": "grid-stacked col-lg-6 col-md-6 col-sm-6 col-xs-12",
 					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
 					"icon":{
-						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"src":"/images/imp/features_empower_team.png",
 						"class":"img-responsive",
 						"alt":"Sample Icon"
 					},
@@ -253,7 +254,7 @@
 					"grid_class": "grid-stacked col-lg-6 col-md-6 col-sm-6 col-xs-12",
 					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
 					"icon":{
-						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"src":"/images/imp/features_drive_consistency.png",
 						"class":"img-responsive",
 						"alt":"Sample Icon"
 					},
@@ -277,9 +278,9 @@
 					"grid_class": "grid-stacked col-lg-6 col-md-6 col-sm-6 col-xs-12",
 					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
 					"icon":{
-						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"src":"/images/imp/features_lessons_learned.png",
 						"class":"img-responsive",
-						"alt":"Sample Icon"
+						"alt":"Lessons Learned"
 					},
 					"title": "Lessons Learned and Continuous Improvements",
 					"list":[
@@ -301,9 +302,9 @@
 					"grid_class": "grid-stacked col-lg-6 col-md-6 col-sm-6 col-xs-12",
 					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
 					"icon":{
-						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"src":"/images/imp/features_manage_team.png",
 						"class":"img-responsive",
-						"alt":"Sample Icon"
+						"alt":"Manage Teams"
 					},
 					"title": "Manage Teams",
 					"list":[
@@ -325,7 +326,7 @@
 					"grid_class": "grid-stacked col-lg-6 col-md-6 col-sm-6 col-xs-12",
 					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
 					"icon":{
-						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"src":"/images/imp/features_dashboard.png",
 						"class":"img-responsive",
 						"alt":"Sample Icon"
 					},
@@ -349,7 +350,7 @@
 					"grid_class": "grid-stacked col-lg-6 col-md-6 col-sm-6 col-xs-12",
 					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
 					"icon":{
-						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"src":"/images/imp/features_monthly.png",
 						"class":"img-responsive",
 						"alt":"Sample Icon"
 					},
@@ -370,11 +371,11 @@
 					"grid_class": "grid-stacked col-lg-6 col-md-6 col-sm-6 col-xs-12",
 					"content_class": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
 					"icon":{
-						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"src":"/images/imp/features_communicate.png",
 						"class":"img-responsive",
-						"alt":"Sample Icon"
+						"alt":"Icons relating to communication"
 					},
-					"title": "Communicate throughout the organization and with third parties",
+					"title": "Communicate Throughout the Organization and with Third Parties",
 					"list":[
 						{
 							"body": "Facilitate and control report and information flows"
@@ -450,11 +451,6 @@
 					"grid_class": "grid-simple col-lg-12 col-md-12 col-sm-12 col-xs-12",
 					"icon_class": "col-lg-3 col-md-3 col-sm-3 col-xs-12",
 					"content_class": "col-lg-9 col-md-9 col-sm-9 col-xs-12",
-					"icon":{
-						"src":"/images/sample/thumb-square-yosemite.jpg",
-						"class":"img-responsive",
-						"alt":"Sample Icon"
-					},
 					"title": "System Architecture",
 					"body":"IMP is hosted securely in the cloud so you don't have to worry software installation, maintenance, or upgrades on your infrastructure.  Each IMP instance is its own container with only your information in it.  Your data is segmented from others and protected by application hardening, data encryption at rest, active monitoring, and other controls to protect your data and information. Users access IMP through a current browser such as Firefox, Chrome, Safari, or Internet Explorer from a phone, tablet, or PC.  The connection between your browser and IMP is encrypted and IMP does not store any data on the device you are using. Your organization's system administrator has the ability to manage users and groups in IMP.  Your administrator can add or remove users to comply with your own user management policies and procedures."
 				}
@@ -482,7 +478,7 @@
 					"icon_class": "col-lg-3 col-md-3 col-sm-3 col-xs-12",
 					"content_class": "col-lg-9 col-md-9 col-sm-9 col-xs-12",
 					"icon":{
-						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"src":"/images/imp/support_training.png",
 						"class":"img-responsive",
 						"alt":"Sample Icon"
 					},
@@ -494,9 +490,9 @@
 					"icon_class": "col-lg-3 col-md-3 col-sm-3 col-xs-12",
 					"content_class": "col-lg-9 col-md-9 col-sm-9 col-xs-12",
 					"icon":{
-						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"src":"/images/imp/support_orchestration.png",
 						"class":"img-responsive",
-						"alt":"Sample Icon"
+						"alt":"Orchestration Gear Logo"
 					},
 					"title": "Orchestration Support Model",
 					"body":"Our support model is not just focused on using the IMP tools, but on expanding and increasing your organization's incident management capabilities.  IMP was developed to augment incident and cybersecurity services, our support model continues our professional service oriented approach.",
@@ -520,9 +516,9 @@
 					"icon_class": "col-lg-3 col-md-3 col-sm-3 col-xs-12",
 					"content_class": "col-lg-9 col-md-9 col-sm-9 col-xs-12",
 					"icon":{
-						"src":"/images/sample/thumb-square-yosemite.jpg",
+						"src":"/images/imp/support_continuous.png",
 						"class":"img-responsive",
-						"alt":"Sample Icon"
+						"alt":"continuous improvement icon"
 					},
 					"title": "Commitment to Community and Continuous Improvement",
 					"list":[

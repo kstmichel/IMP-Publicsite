@@ -49,11 +49,7 @@ $font-size-med : 1em;
 $font-size-med-2: 1.0625em;
 $font-size-large : 1.4375em;
 
-
-//Layout
-$max-width: 72em;
-
-//Defaults
+  //Defaults
 $space : 1em;
 $space-and-half : $space*1.5;
 $space-double : $space*2;
@@ -80,6 +76,7 @@ $bp-large : 50em;
 $bp-large-2 : 66em;
 $bp-xl : 73em;
 $bp-xxl : 89em;
-$bp-xxxl : 93em;
+$bp-xxxl : 1170px;
 
-//
+//Layout
+$page-width: $bp-xxxl;

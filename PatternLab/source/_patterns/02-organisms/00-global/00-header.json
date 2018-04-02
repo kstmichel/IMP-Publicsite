@@ -1,11 +1,9 @@
 {
-  "logo" : {
-     "img": {
-       "src": "../../images/imp/logo.png",
-       "class": "header--logo",
-       "alt": "NCG"
-     }
-    },
+   "img": {
+     "src": "../../images/imp/logo.png",
+     "class": "header--logo",
+     "alt": "NCG"
+   },
   "primary_menu":{
     "title": "",
     "menu_items" :[

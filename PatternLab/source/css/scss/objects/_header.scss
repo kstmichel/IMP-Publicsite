@@ -10,14 +10,20 @@
 	max-width: none;
 
 	.header-inner{
-		max-width: $bp-xxl;
+		max-width: $page-width;
 		margin:0 auto;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 
-		.header--logo{
-			padding: 10px;
+		&--logo{
+			.header--logo{
+				max-width: 200px;
+
+				@media(max-width: $bp-med-2){
+					padding: 10px;
+				}
+			}
 		}
 	}
 }

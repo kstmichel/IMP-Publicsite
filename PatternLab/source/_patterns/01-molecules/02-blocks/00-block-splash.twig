@@ -2,18 +2,18 @@
     {% include "molecules-block-banner"  with banner only%}
 
     <div class="block-splash--content col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="splash--intro col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        <div class="splash--intro row col-lg-7 col-md-7 col-sm-7 col-xs-12">
             <h4 class="heading-passive">{{ content.intro }}</h4>
         </div>
 
-        <div class="splash--logo col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            {% include "molecules-header-image" with content.logo %}
+        <div class="splash--logo row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            {% include "molecules-header-image" with content.logo only %}
         </div>
 
-        <div class="block-splash--details col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h3 class="block-splash--details-title col-lg-8 col-md-8 col-sm-8 col-sm-8 col-xs-12">{{ content.details.header }}</h3>
+        <div class="block-splash--details row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3 class="block-splash--details-title row  col-lg-8 col-md-8 col-sm-8 col-sm-8 col-xs-12">{{ content.details.header }}</h3>
 
-            <ul class="details--highlights col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <ul class="details--highlights row col-lg-12 col-md-12 col-sm-12 col-xs-12">
                {% for item in content.details.list %}
                 <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     {% include "molecules-caption-image" with item only%}
