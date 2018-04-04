@@ -1,0 +1,86 @@
+@import '../../00-protons/variables';
+
+.block.block-grid {
+  display: inline-block;
+
+  .block-grid--list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: $bp-xxxl;
+    float: none;
+  }
+
+  .block-grid{
+    text-align: center;
+    margin-bottom: 25px;
+
+    &.grid-stacked .list-item--content{
+      text-align: left;
+      float: none;
+    }
+
+    &.grid-simple{
+      text-align: left;
+      margin: 40px 0;
+
+      &--steps{
+        .grid-content--title{
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+
+      .grid-content--title{
+        font-size: 28px;
+        font-weight: normal;
+      }
+
+      .list-item--content{
+        text-align: left;
+      }
+
+      &--media{
+        .list-item--content{
+          @media (max-width: $bp-small){
+            text-align: center;
+          }
+        }
+      }
+
+      .grid-icon{
+        float: left;
+        display: inline-block;
+      }
+    }
+
+    .grid-content--title{
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .grid-icon{
+      margin-bottom: 5px;
+      padding-top: 5px;
+
+      img{
+        margin: 0 auto;
+      }
+    }
+
+    .grid-content--title{
+      margin: 10px auto;
+    }
+
+    .list-wrapper{
+
+      img{
+        float: none;
+      }
+    }
+
+    .btn{
+      margin-top: 25px;
+    }
+  }
+}

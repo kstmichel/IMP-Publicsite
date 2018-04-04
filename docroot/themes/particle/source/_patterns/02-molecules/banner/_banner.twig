@@ -1,0 +1,14 @@
+<div class="block-banner col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="block-banner--inner col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="block-banner--background" style="background-image: url('{{ background.src }}');">
+
+            <div class="block-banner--text col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="{{ text_class }}">
+                    {% if content is defined %}
+                            {% include "molecules-block-grid" with content only %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

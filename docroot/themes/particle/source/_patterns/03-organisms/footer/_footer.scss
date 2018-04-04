@@ -1,0 +1,68 @@
+// All component Sass needs non-printing base config
+@import '../../00-protons/variables';
+
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+.footer {
+  clear: both;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, $p-blue-dark 0%,  $p-blue-darker 100%);
+  color: $white;
+  line-height: 1.2;
+  padding: 10px 15px;
+
+  .footer-inner{
+    display: flex;
+    flex-direction: column;
+    @extend %lc;
+  }
+
+  a {
+    color: $gray-light;
+  }
+
+  %lc{
+    padding: 0 15px;
+  }
+}
+
+//Footer Nav
+.nav-footer {
+  padding: 0;
+
+  li {
+    border-bottom: 1px solid $gray-dark;
+    list-style-type: none;
+    padding: 0;
+
+    @media all and (min-width: $bp-med) {
+      border: 0;
+      float: left;
+    }
+  }
+
+  .copyright{
+    color: $white;
+    padding: 0;
+    padding-right: 20px;
+  }
+
+
+  .company-name a{
+    font-size: 18px;
+    padding: 20px 20px 20px 0;
+  }
+
+  a,span {
+    display: block;
+    padding: $pad;
+    font-size: 13px;
+  }
+}
+
+.copyright {
+  @media all and (min-width: $bp-med) {
+    float: right;
+  }
+}

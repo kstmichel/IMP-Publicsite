@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * footer
+ *
+ * Available variables for footer:
+ *    - footer.variable_name [variable_type]: Description of the variable. Example below.
+ *    - footer.slogan [String]: Site footer slogan seen on most pages.
+ */
+#}
+
+<footer class="footer container p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12 " role="contentinfo">
+  {% block footer %}
+    <div class="footer-inner">
+        {% include "molecules-footer-nav" %}
+      <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <ul class="nav-footer">
+          <li><span class="copyright">&copy; 2017 Northcross Group. All rights reserved.</span></li>
+          <li><a href="{{ url }}">Terms of Service</a></li>
+          <li><a href="{{ url }}">Privacy Statement</a></li>
+          <li><a href="{{ url }}">Responsible Disclosure</a></li>
+        </ul>
+      </div>
+    </div>
+  {% endblock footer %}
+</footer>
+

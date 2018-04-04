@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+
+{% set classes = [
+  'form-inline',
+] %}
+
+<form {{ attributes.addClass(classes) }}>
+  <input class="form-control mr-sm-2" type="search" placeholder="Search" name="keys" aria-label="Search">
+    {% include '@atoms/button/_button.twig' with {
+    button_color: 'primary',
+    button_outline: true,
+    button_other_classes: 'my-2 my-sm-0',
+    button_type: 'submit',
+    button_text: 'Search'
+    } %}
+</form>

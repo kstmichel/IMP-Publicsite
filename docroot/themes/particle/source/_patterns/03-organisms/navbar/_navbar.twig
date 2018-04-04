@@ -1,0 +1,39 @@
+{#
+  Navbar!
+  navbar_classes: Array: The html classes for the navbar.
+  navbar_other_classes: Array: The classes from YAML to merge into navbar_classes.
+  navbar_arialebelledby: String: The aria labelled by value.
+  navbar_attributes: Array: Attributes for the Navbar.
+  navbar_brand_link: String: The URL the brand text will link to.
+  navbar_brand_text: String: The text of the brand.
+  navbar_id: String: The html id for the navbar.
+#}
+
+{% set navbar_classes = navbar_other_classes|default([])|merge([
+  'navbar',
+]) | sort | join(' ') | trim %}
+sdf
+<nav role="navigation" aria-labelledby="{{ navbar_arialebelledby }}" {{ navbar_attributes }} class="{{ navbar_classes }}">
+
+  {# navbar #}
+  {% block navbar_content %}
+    <div class="collapse navbar-collapse" id="{{ navbar_id }}">
+      {% include '@molecules/nav/_nav.twig' with {
+        nav_element: 'ul',
+        nav_other_classes: 'navbar-nav mr-auto',
+        nav_items: navbar_items,
+      } %}
+
+      <div class="try-free">
+          {% include '@atoms/button/_button.twig' with {
+          button_color: 'success',
+          button_outline: true,
+          button_other_classes: 'my-2 my-sm-0',
+          button_type: 'submit',
+          button_text: 'Try it for Free!'
+          } %}
+      </div>
+    </div>
+  {% endblock navbar_content %}
+
+</nav>

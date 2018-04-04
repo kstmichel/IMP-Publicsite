@@ -1,0 +1,31 @@
+<div class="block block-grid col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="block-grid--list">
+        {% for item in data %}
+            <div class="block-grid {{ item.grid_class }}">
+                {% if item.icon is defined %}
+                    <div class="grid-icon {{ item.icon_class }}">
+                        {% include "atoms-square" with item.icon only %}
+                    </div>
+                {% endif %}
+
+                <div class="grid-content {{ item.content_class }}">
+                    {% if item.title is defined %}
+                      <h2 class="grid-content--title">{{ item.title }}</h2>
+                    {% endif %}
+
+                    {% if item.body is defined %}
+                          <p class="grid-content--body">{{ item.body }}</p>
+                    {% endif %}
+
+                    {% if item.list is defined %}
+                         {% include "molecules-complex-list" with item only %}
+                    {% endif %}
+
+                    {% if item.button is defined %}
+                         {% include "atoms-buttons-primary" with item.button %}
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

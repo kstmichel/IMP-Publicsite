@@ -9,7 +9,8 @@
         "drupal/bootstrap": "^3.11",
         "drupal/entity_embed": "^1.0@beta",
         "drupal/url_embed": "^1.0@alpha",
-        "drupal/paragraphs": "^1.2"
+        "drupal/paragraphs": "^1.2",
+        "drupal/components": "^1.0"
     },
     "require-dev": {},
     "extra": {
