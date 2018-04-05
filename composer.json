@@ -10,7 +10,9 @@
         "drupal/entity_embed": "^1.0@beta",
         "drupal/url_embed": "^1.0@alpha",
         "drupal/paragraphs": "^1.2",
-        "drupal/components": "^1.0"
+        "drupal/components": "^1.0",
+        "drupal/smtp": "^1.0@beta",
+        "drupal/maillog": "1.x-dev"
     },
     "require-dev": {},
     "extra": {
@@ -19,6 +21,11 @@
             "bower-asset",
             "npm-asset"
         ],
+        "patches": {
+            "drupal/smtp": {
+                "fix config file format": "https://cgit.drupalcode.org/smtp/patch/?id=c9496a9d2b7d1eea35c3b3ef21b8cbe6482a9f44"
+            }
+        },
         "installer-paths": {
             "docroot/core": [
                 "type:drupal-core"
