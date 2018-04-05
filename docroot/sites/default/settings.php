@@ -786,11 +786,13 @@ $settings['entity_update_batch_size'] = 50;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 
+$config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
+
 $conf['configurable_timezones'] = 0;
 $conf['date_default_timezone'] = "America/New_York";
 
 
-$settings['install_profile'] = 'standard';
+#$settings['install_profile'] = 'standard';
 require DRUPAL_ROOT . "/../vendor/acquia/blt/settings/blt.settings.php";
 
 
@@ -812,3 +814,4 @@ if( isset($_SERVER['PANTHEON_SITE_NAME']) ) {
     require dirname(__FILE__) . "/settings.pantheon.{$env}.php";
   }
 }
+$settings['install_profile'] = 'northcrossgroup';
