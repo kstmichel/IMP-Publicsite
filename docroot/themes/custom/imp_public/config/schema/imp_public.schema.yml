@@ -1,5 +1,5 @@
-# Schema for the theme setting configuration file of the THEMETITLE theme.
+# Schema for the theme setting configuration file of the IMP Public theme.
 
-THEMENAME.settings:
+imp_public.settings:
   type: theme_settings
-  label: 'THEMETITLE settings'
+  label: 'IMP Public settings'

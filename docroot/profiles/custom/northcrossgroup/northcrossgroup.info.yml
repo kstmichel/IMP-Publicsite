@@ -18,6 +18,7 @@ dependencies:
   - ckeditor
   - components
   - views
+  - ctools
 themes:
   - particle
   - seven
