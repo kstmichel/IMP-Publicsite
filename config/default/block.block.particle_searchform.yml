@@ -1,0 +1,22 @@
+uuid: de52dd51-8a23-434e-8a93-2a710a7f3cf9
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - particle
+_core:
+  default_config_hash: BGtcKKku6Wn1Ij10bnF_FSFkGBVLoWWo9sKdTJwhi-I
+id: particle_searchform
+theme: particle
+region: primary_menu
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+visibility: {  }

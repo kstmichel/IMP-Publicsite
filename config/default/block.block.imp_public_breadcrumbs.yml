@@ -1,0 +1,22 @@
+uuid: b2fb48d5-5e7f-42d8-92a8-4e3775fcfe88
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - imp_public
+_core:
+  default_config_hash: 6zXPun5VZ6ph0qYcUHftclMuIeHppy_FnHGdMGoYa_A
+id: imp_public_breadcrumbs
+theme: imp_public
+region: breadcrumb
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

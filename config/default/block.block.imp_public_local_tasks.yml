@@ -1,0 +1,22 @@
+uuid: 429f1a72-caba-439e-9818-1371fc2339c6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - imp_public
+_core:
+  default_config_hash: N4j176H4iBS_CsfUrl9KFPo_1IX2SnaIIAj7znUhyO4
+id: imp_public_local_tasks
+theme: imp_public
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

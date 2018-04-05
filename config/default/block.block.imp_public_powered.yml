@@ -1,0 +1,22 @@
+uuid: 3ada9a06-3163-4a36-a6ea-184b48156bc6
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - imp_public
+_core:
+  default_config_hash: uh0Xy-9uihBKlgv11aaIgiBk8UtqDjPJlLDmwUTf_T4
+id: imp_public_powered
+theme: imp_public
+region: footer
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

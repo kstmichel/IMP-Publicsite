@@ -1,0 +1,22 @@
+uuid: 103c1647-7317-4c9b-8e31-865ebbba73ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - imp_public
+_core:
+  default_config_hash: 6Vei8gMW0DFGauZHKw47YV8SrtNtYQmJF0xtVlh5Sts
+id: imp_public_help
+theme: imp_public
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

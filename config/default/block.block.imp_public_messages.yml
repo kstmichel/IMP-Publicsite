@@ -1,0 +1,22 @@
+uuid: 7a70a24a-1615-40a4-b9e0-3f98639bc353
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - imp_public
+_core:
+  default_config_hash: jdsZiDkr1DEjt5wgk0yVmoe7k6HX8HoM98POpnpIPq4
+id: imp_public_messages
+theme: imp_public
+region: highlighted
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

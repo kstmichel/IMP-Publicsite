@@ -1,0 +1,42 @@
+uuid: edc3f4db-2e5e-4369-ac79-0a2b83f61dff
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.splash_banner
+    - field.field.paragraph.section.field_body
+    - field.field.paragraph.section.field_image
+    - field.field.paragraph.section.field_title
+    - paragraphs.paragraphs_type.section
+  module:
+    - image
+id: paragraph.section.splash_banner
+targetEntityType: paragraph
+bundle: section
+mode: splash_banner
+content:
+  field_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

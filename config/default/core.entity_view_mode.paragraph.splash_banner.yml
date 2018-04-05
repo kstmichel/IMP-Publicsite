@@ -1,0 +1,10 @@
+uuid: 07e9d3cb-cf57-4082-9e96-203a3d3ad4bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.splash_banner
+label: 'Splash Banner'
+targetEntityType: paragraph
+cache: true

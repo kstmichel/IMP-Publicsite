@@ -1,0 +1,31 @@
+uuid: d7b8d8ae-659e-42dd-8330-f091404478dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_browser_entity_form
+name: sections
+label: Sections
+display: iframe
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select Reusable Sections'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration:
+  view: content
+  view_display: default
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  3501fd83-abba-40db-b938-f866d22419d8:
+    settings:
+      entity_type: paragraph
+      bundle: section
+      form_mode: default
+      submit_text: 'Save Component'
+    uuid: 3501fd83-abba-40db-b938-f866d22419d8
+    weight: -9
+    label: Create
+    id: entity_form

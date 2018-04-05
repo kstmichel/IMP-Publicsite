@@ -1,0 +1,26 @@
+uuid: afbde510-7d89-4b65-a921-39b2eca4b3ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - imp_public
+_core:
+  default_config_hash: 9s3Zh34q0RoM1IHDlyQP4sw6jvEdP2ubs1BvlWk_4r8
+id: imp_public_useraccountmenu
+theme: imp_public
+region: secondary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }

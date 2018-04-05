@@ -1,0 +1,26 @@
+uuid: fa0d87bd-d650-4a59-953c-c79ba81e7af1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - particle
+_core:
+  default_config_hash: jSmraWyi5g6_O9xSMS7IIGbGsVhxVbh_udoB1iqSOcY
+id: particle_mainnavigation
+theme: particle
+region: primary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }

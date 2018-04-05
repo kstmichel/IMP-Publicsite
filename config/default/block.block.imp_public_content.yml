@@ -1,0 +1,22 @@
+uuid: c4db26fe-d6f2-4626-b9eb-ab0fa0ba2d22
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - imp_public
+_core:
+  default_config_hash: f_27ZdesfpXyOVLKnapUB7M_U-in5atXfGAloTUzkMo
+id: imp_public_content
+theme: imp_public
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: b058f97d-0ce8-4a20-a1f3-0b022b6329a4
+langcode: en
+status: true
+dependencies: {  }
+id: section
+label: Section
+icon_uuid: null
+description: 'A section has a Headline, optional image, and some body text. It can be displayed in many formats.'
+behavior_plugins: {  }

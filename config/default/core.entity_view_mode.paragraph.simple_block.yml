@@ -1,0 +1,10 @@
+uuid: b9dc9994-f6c3-4421-9f2b-60ac8b9c761e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.simple_block
+label: 'Simple Block'
+targetEntityType: paragraph
+cache: true

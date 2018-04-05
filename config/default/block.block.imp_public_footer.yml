@@ -1,0 +1,26 @@
+uuid: 72d66cc2-505e-4536-b372-8dbfd0759433
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - imp_public
+_core:
+  default_config_hash: RDdG8idrS1ACmuDlKXrR87whP2-2x-JDU15NaRZ4rGs
+id: imp_public_footer
+theme: imp_public
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

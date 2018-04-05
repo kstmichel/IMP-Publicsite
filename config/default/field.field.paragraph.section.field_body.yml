@@ -1,0 +1,19 @@
+uuid: 07f03e0f-a0e3-4020-8288-5ea5e0e37b3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.section
+id: paragraph.section.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: section
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
