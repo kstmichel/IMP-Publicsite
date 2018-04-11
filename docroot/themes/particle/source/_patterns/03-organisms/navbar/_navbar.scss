@@ -11,4 +11,17 @@ $navbar-brand-font-size: $font-size-lg;
 
 .navbar {
   flex-shrink: 0;
+
+  /* Links */
+  a {
+    color: $gray-dark;
+    text-decoration: none;
+    outline: 0;
+
+    &:hover, &:focus {
+      color: $gray;
+    }
+  }
 }
+
+

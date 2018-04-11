@@ -9,19 +9,24 @@
  */
 #}
 
-<footer class="footer container p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12 " role="contentinfo">
+<footer class="footer col-lg-12 col-md-12 col-sm-12 col-xs-12" role="contentinfo">
   {% block footer %}
     <div class="footer-inner">
-        {% include "molecules-footer-nav" %}
-      <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <ul class="nav-footer">
-          <li><span class="copyright">&copy; 2017 Northcross Group. All rights reserved.</span></li>
-          <li><a href="{{ url }}">Terms of Service</a></li>
-          <li><a href="{{ url }}">Privacy Statement</a></li>
-          <li><a href="{{ url }}">Responsible Disclosure</a></li>
-        </ul>
-      </div>
+        {% block footer_nav %}
+            {% if footer_nav %}
+                <nav class="nav-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    {% include "@organisms/_navbar-footer.twig" with footer_nav %}
+                </nav>
+             {% endif %}
+        {% endblock footer_nav %}
+
+        {% block footer_copyright %}
+            {% if footer_copyright %}
+              <nav class="nav-footer">
+                  {% include "@organisms/_navbar-footer.twig" with footer_copyright  %}
+              </nav>
+            {% endif %}
+        {% endblock footer_copyright %}
     </div>
   {% endblock footer %}
 </footer>
-

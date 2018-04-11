@@ -35,56 +35,63 @@
   }
 
   &--text {
-    @extend %lc;
-    padding: 0;
+    @extend %lw;
+    margin: 0 auto;
+    padding: 0 15px;
     z-index: 5;
 
-    .block-grid--list {
-      margin: 0;
-
-      .block-grid {
-        text-align: left;
-        margin: 0;
+    .image-header{
+      &--inner{
+        justify-content: baseline;
         padding: 0;
+      }
 
-        .grid-content--title {
-          color: $p-blue-dark;
-          font-weight: bold;
-          font-size: 38px;
+      &--title{
+        font-size: 24px;
+      }
+    }
+
+    .block-grid {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+
+      .grid-content--title {
+        color: $p-blue-dark;
+        font-weight: bold;
+        font-size: 34px;
+      }
+
+      .grid-content--body {
+        color: $p-blue-light;
+        line-height: 1.6em;
+        font-size: 20px;
+        text-shadow: 2px 2px 2px $white;
+      }
+
+      .list-wrapper li {
+        list-style-type: none;
+        display: inline-block;
+        float: left;
+      }
+
+      .list-item--icon {
+        margin: 0;
+
+        img {
+          @extend %image-small;
         }
+      }
 
-        .grid-content--body {
-          color: $p-blue-light;
-          line-height: 1.6em;
-          font-size: 20px;
-          text-shadow: 2px 2px 2px $white;
-        }
+      .list-item--content {
+        padding: 0 15px;
+      }
 
-        .list-wrapper li {
-          list-style-type: none;
-          display: inline-block;
-          float: left;
-        }
+      .image-caption {
+        text-align: center;
 
-        .list-item--icon {
-          margin: 0;
-
-          img {
-            @extend %image-small;
-          }
-        }
-
-        .list-item--content {
-          font-size: 20px;
-          padding: 0 15px;
-        }
-
-        .image-caption {
-          text-align: center;
-
-          img {
-            @extend %image-small;
-          }
+        img {
+          @extend %image-small;
         }
       }
     }

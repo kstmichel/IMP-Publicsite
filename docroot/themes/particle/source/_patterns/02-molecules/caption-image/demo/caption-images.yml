@@ -1,0 +1,17 @@
+caption_1:
+  caption_class: col-lg-5 col-md-5 col-sm-5 col-xs-12
+  caption_image:
+    class: image-icon img-responsive col-lg-4 col-md-4 col-sm-6 col-xs-12
+    img:
+      src: ../../../assets/thumb-square-yosemite.jpg
+      alt: Sample Image
+  caption_body: This is sample content for a caption with image.
+
+caption_2:
+  caption_class: col-lg-5 col-md-5 col-sm-5 col-xs-12
+  caption_image:
+    class: image-icon img-responsive col-lg-4 col-md-4 col-sm-6 col-xs-12
+    img:
+      src: ../../../assets/thumb-square-fire.jpg
+      alt: Sample Image
+  caption_body: This is sample content for a caption with image.

@@ -1,27 +1,24 @@
-<!-- Begin .header -->
-<div class="header-inner">
-    <div class="header-inner--logo col-lg-3 col-md-3 col-sm-3 col-xs-12">
-        {% block branding %}
-            {% include "@atoms/_branding.twig" with {
-            url: '#',
-            logo_img_src: paths.assets ~ '/logo.png',
-            site_name: '',
-            site_slogan: '',
-            } %}
-        {% endblock branding%}
-    </div>
-
-    <div class="header-inner--nav col-lg-9 col-md-9 col-sm-9 col-xs-12">
-        <div>
-            {% block nav %}
-             {% include "@organisms/_navbar.twig" %}
-            {% endblock nav%}
+<header class="header cf">
+    <div class="header-inner">
+        <div class="header-inner--logo col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            {% block branding %}
+                {% include "@atoms/_branding.twig" with {
+                url: '#',
+                logo_img_src: paths.assets ~ '/ncg_logo.png',
+                site_name: '',
+                site_slogan: '',
+                } %}
+            {% endblock branding%}
         </div>
 
-        <div>
-        {% block secondary_menu %}
-        {% endblock secondary_menu%}
+        <div class="header-inner--nav col-lg-9 col-md-9 col-sm-9 col-xs-12">
+
+            {% include "@organisms/_navbar.twig"  %}
+
+            <div>
+            {% block secondary_menu %}
+            {% endblock secondary_menu%}
+            </div>
         </div>
     </div>
-</div>
-<!-- End .header -->
+</header>

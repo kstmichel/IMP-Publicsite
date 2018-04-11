@@ -1,0 +1,47 @@
+@import '../../00-protons/variables';
+
+li {
+  color: darken($p-gray, 30%);
+  padding-bottom: 10px;
+}
+/* Definition Lists */
+dl {
+  overflow: hidden;
+  margin: 0 0 $space;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 0;
+}
+.list-item {
+  &--block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &--icon {
+    margin-bottom: 20px;
+  }
+
+  &--content {
+    padding: 0;
+  }
+}
+.list-item {
+  &--block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &--icon {
+    margin-bottom: 20px;
+  }
+
+  &--content {
+    padding: 0;
+  }
+}

@@ -1,0 +1,52 @@
+banner_basic:
+  img:
+    src: ../../../assets/banner_features.jpg
+    class: image-banner
+    alt: Splash Sample Logo
+  content:
+    block_class: grid-stacked
+    content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+    block_title:  Banner Title
+
+banner_grid_block:
+  img:
+    src: ../../../assets/banner_background.jpg
+    class: image-banner
+    alt: Splash Sample Logo
+  content:
+    block_class:  grid-simple
+    content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+    block_title:  Banner Title with Caption Images
+    block_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.
+    block_list:
+      items:
+       - item_text:
+         content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+         caption:
+           caption_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+           caption_image:
+             class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
+             img:
+               src: ../../../assets/thumb-square-fire.jpg
+               alt: Sample Image
+           caption_body: First item in the caption list. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.
+       - item_text:
+         content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+         caption:
+           caption_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+           caption_image:
+             class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
+             img:
+               src: ../../../assets/thumb-square-fire.jpg
+               alt: Sample Image
+           caption_body: Second item in the caption list. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.
+       - item_text:
+         content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+         caption:
+           caption_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+           caption_image:
+             class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
+             img:
+               src: ../../../assets/thumb-square-fire.jpg
+               alt: Sample Image
+           caption_body: Third item in the caption list. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.

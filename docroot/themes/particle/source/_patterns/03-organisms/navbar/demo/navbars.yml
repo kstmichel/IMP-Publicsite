@@ -2,6 +2,8 @@ navbar_helper: Documentation and examples for Bootstrap's powerful, responsive n
 
 navbar_other_classes:
   - navbar-expand-lg
+  - navbar-light
+  - bg-light
 navbar_brand_link: #
 navbar_brand_text: Navbar
 navbar_id: navbarSupportedContent

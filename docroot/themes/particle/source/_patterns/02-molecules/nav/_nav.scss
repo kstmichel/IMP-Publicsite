@@ -9,8 +9,75 @@ $nav-link-disabled-color: $gray-600;
 
 // Add custom code here
 .nav {
+  clear: both;
+  overflow: hidden;
+  max-height: 0;
+
   &--border {
     border-color: $light;
     border-style: solid;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-footer {
+    align-items: center;
+    display: flex;
+
+    .company-name {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 0;
+  }
+
+  li {
+    padding: $pad;
+  }
+
+  a {
+    display: inline-block;
+    border-top: 1px solid $gray-light-2;
+    font-size: 14px;
+    color: darken($p-gray, 30%);
+
+    &.btn-action {
+      color: $white;
+    }
+  }
+
+  &.active {
+    max-height: 40em;
+  }
+
+  @media all and (min-width: $bp-med) {
+    max-height: none;
+    float: right;
+    clear: none;
+
+    li {
+      float: left;
+    }
+
+    a {
+      border: 0;
+    }
+
+  }
+
+  &-list {
+    .btn-action {
+      margin-left: 15px;
+    }
   }
 }

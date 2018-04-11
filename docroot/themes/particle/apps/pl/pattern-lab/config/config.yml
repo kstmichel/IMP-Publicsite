@@ -65,19 +65,23 @@ plugins:
           - ../../../source/_patterns/01-atoms/branding
           - ../../../source/_patterns/01-atoms/dropdown
           - ../../../source/_patterns/01-atoms/breadcrumb
+          - ../../../source/_patterns/01-atoms/image-logo
           - ../../../source/_patterns/01-atoms/list-group
       molecules:
         paths:
           - ../../../source/_patterns/02-molecules
           - ../../../source/_patterns/02-molecules/nav
           - ../../../source/_patterns/02-molecules/card
-          - ../../../source/_patterns/02-molecules/media
           - ../../../source/_patterns/02-molecules/banner
           - ../../../source/_patterns/02-molecules/splash
           - ../../../source/_patterns/02-molecules/carousel
           - ../../../source/_patterns/02-molecules/jumbotron
+          - ../../../source/_patterns/02-molecules/list-item
           - ../../../source/_patterns/02-molecules/block-grid
           - ../../../source/_patterns/02-molecules/pagination
+          - ../../../source/_patterns/02-molecules/complex-list
+          - ../../../source/_patterns/02-molecules/header-image
+          - ../../../source/_patterns/02-molecules/caption-image
           - ../../../source/_patterns/02-molecules/example-widget
       organisms:
         paths:

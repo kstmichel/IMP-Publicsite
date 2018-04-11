@@ -1,0 +1,9 @@
+<figure class="image-caption {{ caption_class }}">
+    {% if caption_image %}
+         {% include "@atoms/_image.twig" with caption_image %}
+    {% endif %}
+
+    {% if caption_body %}
+        <p class="caption">{{ caption_body }}</p>
+    {% endif %}
+</figure>

@@ -1,0 +1,414 @@
+title : Home Page,
+bodyClass: home,
+content:
+  splash_block:
+    banner:
+      img:
+        src: ../../../assets/splash.jpg
+        class: image-banner
+        alt: Splash Sample Logo
+      content:
+        block_class: grid-simple
+        content_class: col-lg-7 col-md-7 col-sm-7 col-xs-12
+        block_title:  Someone has breached your systems—
+        block_body: Your data, your clients' data, your business is at risk…  Do you know what to do?
+    splash_content:
+      intro: Every business must be prepared for a data breach or similar incident that puts operations or data at risk.
+      header_image:
+        block_header:
+          img_class: col-lg-3 col-md-3 col-sm-3 col-xs-12
+          class: image-icon img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
+          img:
+            src: ../../../assets/IMP_logo.png
+            alt: Sample Image
+        block_content:
+          content_class: col-lg-9 col-md-9 col-sm-9 col-xs-12
+          title: Incident Management Portal
+      title: Logo Title Here
+      details:
+        header: The easy to use, cloud based platform to manage data breaches and incidents.
+        block_class:  grid-simple grid-simple--centered
+        content_class: col-lg-9 col-md-9 col-sm-9 col-xs-12
+        block_list:
+          items:
+           - item_text:
+             content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+             caption:
+               caption_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+               caption_image:
+                 class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
+                 img:
+                   src: ../../../assets/thumb-square-fire.jpg
+                   alt: Sample Image
+               caption_body: First item in the caption list.
+           - item_text:
+             content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+             caption:
+               caption_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+               caption_image:
+                 class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
+                 img:
+                   src: ../../../assets/thumb-square-fire.jpg
+                   alt: Sample Image
+               caption_body: Second item in the caption list.
+           - item_text:
+             content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+             caption:
+               caption_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+               caption_image:
+                 class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
+                 img:
+                   src: ../../../assets/thumb-square-fire.jpg
+                   alt: Sample Image
+               caption_body: Third item in the caption list.
+
+  background_banner:
+    img:
+      src: ../../../assets/banner_background.jpg
+      class: image-banner
+      alt: Splash Sample Logo
+    content:
+      block_class:  grid-simple
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      block_title:  Background
+      block_header_image:
+        block_header:
+          img_class: col-lg-2 col-md-2 col-sm-2 col-xs-12
+          class: image-icon img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
+          img:
+            src: ../../../assets/IMP_logo.png
+            alt: Sample Image
+        block_content:
+          content_class: col-lg-6 col-md-6 col-sm-6 col-xs-12
+          title: IMP was developed by NCG built from decades of incident management and data breach response efforts.
+
+  background_block_1:
+    block_class: grid-simple grid-stacked col-lg-12 col-md-12 col-sm-12 col-xs-12
+    content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+    block_title: Why IMP is needed…
+    block_body: Existing incident management tools tend to be either very rudimentary applications not much beyond a glorified spreadsheet.  While others are part of complex systems   that are very hard to use in the middle of an incident. Our clients faced many frustrations trying to find automation that could help them manage incidents and all the data and information associated with those activities. The automation available had quite a few challenges:
+    block_list:
+      items:
+        - item_text: Too expensive and complicated to use
+        - item_text: Too hard to use or not rigorous enough
+        - item_text: Too rigid or not structured enough
+        - item_text: To open or too closed
+        - item_text: Too generic or too specific
+        - item_text:  Not tied to industry standards like NIST or FBI evidence handling reporting—and thus requiring expensive gathering and collecting of data after the fact.
+
+  background_block_2:
+    block_class: grid-simple grid-stacked col-lg-12 col-md-12 col-sm-12 col-xs-12
+    content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+    block_title: NCG and the Orchestration Platform
+    block_body: Northcross Group (NCG) is an integration and cybersecurity firm working in both the public and private sector.  NCG has helped many clients build automation to meet specific business needs, like incident management because challenges out grew paper and spreadsheet methods and existing software was too generic, complicated, or expensive. NCG has run hundreds of command centers for clients in different industries, sizes, and complexity for event coordination, deployment, incident response.  This experience has given us great insight into what works and what does not for what needs to be communicated, how to manage efforts, how to coordinate people.  We have practical experience and lessons learned on how to capture the level of detail to support recovery efforts with legal, law enforcement, insurers, and other key external parties. IMP has and continues to be developed based on this past experience and NCG's current work efforts in the system and security fields.  IMP is supported by NCG subject matter experts to provide not only application support, but real world expertise in managing incidents.
+    block_list:
+      items:
+        - item_text: About NCG
+        - item_text: About Orchestration Tools
+
+  features_banner:
+    img:
+      src: ../../../assets/banner_features.jpg
+      class: image-banner
+      alt: features banner
+    content:
+      block_class:  grid-simple
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      block_title:  Features
+      block_body: Empower your teams and be bettered prepared to handle incidents and data breach scenarios
+
+  features_header_image:
+    block_header:
+      href: www.sample.com
+      class: header--logo image-icon img-responsive
+      img:
+        src: ../../../assets/IMP_logo.png
+        alt: Sample Logo
+    block_content:
+      content_class: col-lg-9 col-md-9 col-sm-9 col-xs-12
+      title: Providing Structure, Consistency, and Leveraging Best Practices for Incident Management
+
+  features_block_1:
+    block_class: grid-stacked col-lg-12 col-md-12 col-sm-12 col-xs-12
+    content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+    block_header:
+      icon_class: col-lg-4 col-md-4 col-sm-4 col-xs-12
+      class: img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
+      img:
+        src: ../../../assets/features_incidentManagement.png
+        alt: Incident Management Tools
+    block_title: Incident Management
+    block_list:
+      items:
+        - item_text: Checklists to guide efforts—use templates based on NIST standards or create your own templates
+        - item_text: Data collection tools to capture events, streamline reporting, and manage evidence handling
+        - item_text: Tools to organize and direct teams, distribute notifications, and set alerts and messaging
+        - item_text: Ability to securely engage third parties to facilitate coordination and information sharing for a given incident
+        - item_text: Timeline and process tracking of efforts to support command and control functions.
+        - item_text: Options for full incident handling processes as well as streamlined simple incident management
+
+  features_block_2:
+      block_class: grid-stacked col-lg-12 col-md-12 col-sm-12 col-xs-12
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      block_header:
+        icon_class: col-lg-4 col-md-4 col-sm-4 col-xs-12
+        class: img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
+        img:
+          src: ../../../assets/features_empower_team.png
+          alt: Organize and Empower Your Team
+      block_title: Organize and Empower Your Team
+      block_list:
+        items:
+          - item_text: Checklists to guide efforts—use templates based on NIST standards or create your own templates
+          - item_text: Data collection tools to capture events, streamline reporting, and manage evidence handling
+          - item_text: Tools to organize and direct teams, distribute notifications, and set alerts and messaging
+          - item_text: Ability to securely engage third parties to facilitate coordination and information sharing for a given incident
+          - item_text: Timeline and process tracking of efforts to support command and control functions.
+          - item_text: Options for full incident handling processes as well as streamlined simple incident management
+
+  features_block_3:
+      block_class: grid-stacked col-lg-12 col-md-12 col-sm-12 col-xs-12
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      block_header:
+        icon_class: col-lg-4 col-md-4 col-sm-4 col-xs-12
+        class: img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
+        img:
+          src: ../../../assets/features_drive_consistency.png
+          alt: Drive Consistency and Completeness
+      block_title: Drive Consistency and Completeness
+      block_list:
+        items:
+          - item_text: Leverage existing or create your own organization templates and processes
+          - item_text: Incident data to support trend analysis and pattern identification
+          - item_text: Tracking of resources used for incident management
+          - item_text: Checklist/framework graphic
+
+  features_block_4:
+      block_class: grid-stacked col-lg-12 col-md-12 col-sm-12 col-xs-12
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      block_header:
+        icon_class: col-lg-4 col-md-4 col-sm-4 col-xs-12
+        class: img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
+        img:
+          src: ../../../assets/features_lessons_learned.png
+          alt: Drive Consistency and Completeness
+      block_title: Lessons Learned and Continuous Improvements
+      block_list:
+        items:
+          - item_text: Leverage existing or create your own organization templates and processes
+          - item_text: Incident data to support trend analysis and pattern identification
+          - item_text: Tracking of resources used for incident management
+          - item_text: Checklist/framework graphic
+
+  features_block_5:
+      block_class: grid-stacked col-lg-12 col-md-12 col-sm-12 col-xs-12
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      block_header:
+        icon_class: col-lg-4 col-md-4 col-sm-4 col-xs-12
+        class: img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
+        img:
+          src: ../../../assets/features_manage_team.png
+          alt: Manage Teams
+      block_title: Manage Teams
+      block_list:
+        items:
+          - item_text: Leverage existing or create your own organization templates and processes
+          - item_text: Incident data to support trend analysis and pattern identification
+          - item_text: Tracking of resources used for incident management
+          - item_text: Checklist/framework graphic
+
+  features_block_6:
+      block_class: grid-stacked col-lg-12 col-md-12 col-sm-12 col-xs-12
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      block_header:
+        icon_class: col-lg-4 col-md-4 col-sm-4 col-xs-12
+        class: img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
+        img:
+          src: ../../../assets/features_dashboard.png
+          alt: Dashboard Reporting
+      block_title: Lessons Learned and Continuous Improvements
+      block_list:
+        items:
+          - item_text: Overview of all active incidents in the organization at a glance
+          - item_text: Incident data to support trend analysis and pattern identification
+          - item_text: Tracking of resources used for incident management
+          - item_text: Checklist/framework graphic
+
+  features_block_7:
+      block_class: grid-stacked col-lg-12 col-md-12 col-sm-12 col-xs-12
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      block_header:
+        icon_class: col-lg-4 col-md-4 col-sm-4 col-xs-12
+        class: img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
+        img:
+          src: ../../../assets/features_monthly.png
+          alt: Monthly Statistics Reporting
+      block_title: Monthly Statistics Reporting
+      block_list:
+        items:
+          - item_text: Leverage existing or create your own organization templates and processes
+          - item_text: Incident data to support trend analysis and pattern identification
+          - item_text: Tracking of resources used for incident management
+          - item_text: Checklist/framework graphic
+
+  features_block_8:
+      block_class: grid-stacked col-lg-12 col-md-12 col-sm-12 col-xs-12
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      block_header:
+        icon_class: col-lg-4 col-md-4 col-sm-4 col-xs-12
+        class: img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
+        img:
+          src: ../../../assets/features_communicate.png
+          alt: Third Party Communication
+      block_title: Communicate throughout the organization and with third parties
+      block_list:
+        items:
+          - item_text: Overview of all active incidents in the organization at a glance
+          - item_text: Incident data to support trend analysis and pattern identification
+          - item_text: Tracking of resources used for incident management
+          - item_text: Checklist/framework graphic
+
+  features_block_9:
+    block_class: grid-stacked grid-simple col-lg-9 col-md-9 col-sm-9 col-xs-12
+    content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+    block_title: Streamline sharing of data and information with legal, insurance, and law enforcement partners
+    block_list:
+      items:
+        - item_text: Overview of all active incidents in the organization at a glance
+        - item_text: Incident data to support trend analysis and pattern identification
+        - item_text: Tracking of resources used for incident management
+        - item_text: Checklist/framework graphic
+
+  features_header_image_2:
+      block_header:
+        href: www.sample.com
+        class: header--logo image-icon img-responsive
+        img:
+          src: ../../../assets/IMP_logo.png
+          alt: Incident Management
+      block_content:
+        content_class: col-lg-6 col-md-6 col-sm-6 col-xs-12
+        title: Orchestrate Collaboration and Communication
+
+  features_header_image_3:
+      block_header:
+        href: www.sample.com
+        class: header--logo image-icon img-responsive
+        img:
+          src: ../../../assets/IMP_logo.png
+          alt: Incident Management
+      block_content:
+        content_class: col-lg-6 col-md-6 col-sm-6 col-xs-12
+        title: Coordination with Key Third Parties
+
+  how_banner:
+    img:
+      src: ../../../assets/banner_works.jpg
+      class: image-banner
+      alt: features banner
+    content:
+      block_class:  grid-simple
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      block_title:  How it Works
+      block_body: Getting started with IMP is easy and risk free!
+
+  how_block_1:
+    block_class: grid-stacked grid-simple col-lg-12 col-md-12 col-sm-12 col-xs-12
+    content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+    block_subtitle: Step 1
+    block_title: Create an IMP site for your company…
+    block_body: Your site comes with an administrative account that can be used to create users and groups, as well as setting up any of your existing incident procedures.
+
+  how_block_2:
+    block_class: grid-stacked grid-simple col-lg-12 col-md-12 col-sm-12 col-xs-12
+    content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+    block_subtitle: Step 2
+    block_title: Add users…
+    block_body: Users can be added individually or in bulk.
+
+  how_block_3:
+    block_class: grid-stacked grid-simple col-lg-12 col-md-12 col-sm-12 col-xs-12
+    content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+    block_subtitle: Step 3
+    block_title: Setup training in the tools and/or overall incident management techniques …
+    block_body: General and custom, live or online training is available.
+
+  how_block_4:
+    block_class: grid-stacked grid-simple col-lg-12 col-md-12 col-sm-12 col-xs-12
+    content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+    block_header_image:
+      block_header:
+        img_class: col-lg-3 col-md-3 col-sm-3 col-xs-12
+        class: image-icon img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
+        img:
+          src: ../../../assets/IMP_logo.png
+          alt: Sample Image
+      block_content:
+        content_class: col-lg-9 col-md-9 col-sm-9 col-xs-12
+        title: System Architecture
+    block_body: IMP is hosted securely in the cloud so you don't have to worry software installation,
+                maintenance, or upgrades on your infrastructure. Each IMP instance is its own container
+                with only your information in it. Your data is segmented from others and protected by
+                application hardening, data encryption at rest, active monitoring, and other controls to
+                protect your data and information.
+                Users access IMP through a current browser such as Firefox, Chrome, Safari, or Internet
+                Explorer from a phone, tablet, or PC. The connection between your browser and IMP is
+                encrypted and IMP does not store any data on the device you are using.
+                Your organization's system administrator has the ability to manage users and groups in
+                IMP. Your administrator can add or remove users to comply with your own user
+                management policies and procedures.
+
+  training_banner:
+    img:
+      src: ../../../assets/banner_support.jpg
+      class: image-banner
+      alt: features banner
+    content:
+      block_class:  grid-simple
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      block_title:  Support
+      block_body: A Partnership for your Incident Management Training – Incident Management Services – Commitment to Continuous Improvement
+
+  training_block_1:
+    block_class: grid-stacked grid-simple col-lg-12 col-md-12 col-sm-12 col-xs-12
+    content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+    block_header_image:
+      block_header:
+        img_class: col-lg-3 col-md-3 col-sm-3 col-xs-12
+        class: image-icon img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
+        img:
+          src: ../../../assets/IMP_logo.png
+          alt: Sample Image
+      block_content:
+        content_class: col-lg-9 col-md-9 col-sm-9 col-xs-12
+        title: Training
+    block_body: Part of effective incident response is to have a general
+                 awareness of how to identify an incident and expectations
+                 of what needs to be done to address the situation and
+                 recover from it. We offer general incident management
+                 training and how to use IMP to support those efforts. We
+                 offer training customization to fit your particular
+                 organization and industry as well.
+                 IMP training is available onsite in a classroom setting, or
+                 virtually. On-demand and refresher training is also available.
+
+footer_block:
+ footer_nav:
+   navbar_brand_link: http://www.northcrossgroup.com
+   navbar_brand_text: Northcross Group
+   navbar_id: footerNav
+   navbar_items:
+     - nav_item_text: Corporate Site
+     - nav_item_text: About
+     - nav_item_text: Capabilities
+     - nav_item_text: Press Releases
+     - nav_item_text: Contact
+ footer_copyright:
+   navbar_brand_link:
+   navbar_brand_text:
+   navbar_id: footerNav
+   navbar_items:
+    - nav_item_text: © 2017 Northcross Group. All rights reserved.
+    - nav_item_text: Terms of Service
+    - nav_item_text: Privacy Statement
+    - nav_item_text: Responsible Disclosure

@@ -1,0 +1,23 @@
+<ul class="list-items">
+    {% for item in items %}
+         <li>
+             {% if item.list_icon %}
+                 <div class="list-item--icon {{ item.list_icon.icon_class }}">
+                     {% include "@atoms/_image.twig" with item.list_icon %}
+                 </div>
+             {% endif %}
+
+             <div class="list-item--content {{ item.content_class }}">
+                 {% if item.item_title %}
+                     <h3 class="list-item--title">{{ item.item_title }}</h3>
+                 {% endif %}
+
+                 {{ item.item_text }}
+
+                 {% if item.caption  %}
+                     {% include "@molecules/caption-image/_caption-image.twig" with item.caption  %}
+                 {% endif %}
+             </div>
+         </li>
+    {% endfor %}
+</ul>

@@ -1,28 +1,29 @@
 <div class="block block-splash">
+    {% if banner %}
+        <div class="block-splash--banner col-lg-12 col-md-12 col-sm-12 col-xs-12">
+             {% include "@molecules/_banner.twig" with banner %}
+        </div>
+    {% endif %}
+
     <div class="block-splash--content col-lg-12 col-md-12 col-sm-12 col-xs-12">
-         {% include "@molecules/_banner.twig"  with banner only%}
-        CATS
-    </div>
-
-    <div class="block-splash--content col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="splash--intro row col-lg-7 col-md-7 col-sm-7 col-xs-12">
-            <h4 class="heading-passive">{{ content.intro }}</h4>
+        <div class="splash--intro col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <h4 class="heading-passive">{{ splash_content.intro }}</h4>
         </div>
 
-        <div class="splash--logo row col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            {% include "@molecules/_header-image.twig" with content.logo only %}
-        </div>
+        {% if splash_content.header_image %}
+            <div class="splash--logo col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                {% include "@molecules/_header-image.twig" with splash_content.header_image %}
+            </div>
+        {% endif %}
 
-        <div class="block-splash--details row col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h3 class="block-splash--details-title row  col-lg-8 col-md-8 col-sm-8 col-sm-8 col-xs-12">{{ content.details.header }}</h3>
+        {% if splash_content.details %}
+            <div class="block-splash--details row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3 class="block-splash--details-title col-lg-6 col-md-6 col-sm-6 col-sm-6 col-xs-12">{{ splash_content.details.header }}</h3>
 
-            <ul class="details--highlights row col-lg-12 col-md-12 col-sm-12 col-xs-12">
-               {% for item in content.details.list %}
-                <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    {% include "molecules-caption-image" with item only%}
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
+                <div class="details--highlights row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    {% include "@molecules/_block-grid.twig" with splash_content.details %}
+                </div>
+            </div>
+        {% endif %}
     </div>
 </div>

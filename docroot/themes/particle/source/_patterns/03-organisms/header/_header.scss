@@ -11,29 +11,29 @@
   border-bottom: 1px solid #dbdbdb;
   max-width: none;
 
-  .header-inner {
+  &-inner {
     max-width: $page-width;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
 
-  .header--logo {
-    max-width: 200px;
-  }
-
-  .logo {
-    float: left;
-    max-width: 8rem;
-    margin: 0.4rem;
-
-    @media all and (min-width: $bp-med) {
-      max-width: 160px;
+    &--logo {
+      max-width: 200px;
     }
 
     img {
-      padding: 10px;
+      float: left;
+      max-width: 8rem;
+      margin: 0.4rem;
+
+      @media all and (min-width: $bp-med) {
+        max-width: 160px;
+      }
+
+      img {
+        padding: 10px;
+      }
     }
   }
 }

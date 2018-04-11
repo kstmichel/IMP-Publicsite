@@ -24,7 +24,7 @@ const dev = {
   plugins: [
     new WebpackShellPlugin({
       onBuildEnd: [
-        'drush cr',
+        'echo \nWebpack drupal dev build complete! Edit apps/drupal/webpack.drupal.dev.js to replace this line with `drupal cr all` now.',
       ],
       dev: false, // Runs on EVERY rebuild
     }),

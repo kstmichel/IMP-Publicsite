@@ -1,31 +1,38 @@
-<div class="block block-grid col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <div class="block-grid--list">
-        {% for item in data %}
-            <div class="block-grid {{ item.grid_class }}">
-                {% if item.icon is defined %}
-                    <div class="grid-icon {{ item.icon_class }}">
-                        {% include "atoms-square" with item.icon only %}
-                    </div>
-                {% endif %}
-
-                <div class="grid-content {{ item.content_class }}">
-                    {% if item.title is defined %}
-                      <h2 class="grid-content--title">{{ item.title }}</h2>
-                    {% endif %}
-
-                    {% if item.body is defined %}
-                          <p class="grid-content--body">{{ item.body }}</p>
-                    {% endif %}
-
-                    {% if item.list is defined %}
-                         {% include "molecules-complex-list" with item only %}
-                    {% endif %}
-
-                    {% if item.button is defined %}
-                         {% include "atoms-buttons-primary" with item.button %}
-                    {% endif %}
-                </div>
+<div class="block block-grid {{ block_class }}">
+    {% block block_header %}
+        {% if block_header %}
+            <div class="grid-icon {{ block_header.icon_class }} block-header">
+              {% include "@atoms/_image.twig"  with  block_header %}
             </div>
-        {% endfor %}
-    </div>
+        {% endif %}
+    {% endblock block_header %}
+
+    {% block block_body %}
+        <div class="grid-content {{ content_class }}">
+            {% if block_subtitle %}
+                <h4 class="grid-content--subtitle">{{ block_subtitle }}</h4>
+            {% endif %}
+
+            {% if block_title %}
+                <h3 class="grid-content--title">{{ block_title }}</h3>
+            {% endif %}
+
+            {% if block_header_image %}
+                {% include "@molecules/header-image/_header-image.twig" with block_header_image  %}
+            {% endif %}
+
+            {% if block_body %}
+                <p class="grid-content--body">{{ block_body }}</p>
+            {% endif %}
+
+            {% if block_list %}
+                  {% include "@molecules/list-item/_list-item.twig" with block_list  %}
+            {% endif %}
+
+            {% if block_button %}
+                {% include "@atoms/button/_button.twig" with block_button.button %}
+            {% endif %}
+        </div>
+    {% endblock block_body %}
 </div>
+

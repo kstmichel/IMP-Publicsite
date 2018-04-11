@@ -1,0 +1,9 @@
+{% extends '@atoms/grid/_grid-1-up.twig' %}
+  {% set container = true %}
+
+  {% block column_1 %}
+      <h1>Image Logos</h1>
+      <div class="mb-3">
+          {% include '@atoms/_image-logo.twig' with image_logos %}
+      </div>
+  {% endblock column_1 %}

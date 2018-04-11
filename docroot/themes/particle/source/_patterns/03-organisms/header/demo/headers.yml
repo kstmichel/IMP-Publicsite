@@ -1,2 +1,7 @@
-header:
-  slogan: 'Powered by <a href="http://patternlab.io/" target="_blank">Pattern Lab</a>'
+header_block:
+  navbar_block:
+    nav_items:
+      - nav_item_text: Features
+      - nav_item_text: How it Works
+      - nav_item_text: Support
+      - nav_item_text: Pricing

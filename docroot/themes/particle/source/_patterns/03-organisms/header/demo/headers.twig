@@ -1,1 +1,9 @@
-{% include '@organisms/_header.twig' %}
+{% extends '@atoms/grid/_grid-1-up.twig' %}
+  {% set container = true %}
+
+  {% block column_1 %}
+      <h1>Header</h1>
+
+       {% include '@organisms/_header.twig' with header_block %}
+
+  {% endblock column_1 %}

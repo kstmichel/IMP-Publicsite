@@ -1,0 +1,9 @@
+<div class="list-wrapper">
+    <ul class="{{ wrapper_class }}">
+        {% for item in list %}
+            <li class="{{ item.list_class }}">
+                {% include "@atoms/list-item/_list-item.twig" with item only%}
+            </li>
+        {% endfor %}
+    </ul>
+</div>

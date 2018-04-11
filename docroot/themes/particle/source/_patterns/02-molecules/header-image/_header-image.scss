@@ -1,0 +1,24 @@
+@import '../../00-protons/variables';
+
+.image-header{
+  display: inline-block;
+
+  &--inner{
+    display: flex;
+    align-items: center;
+    margin: 30px auto;
+    padding-top: 30px;
+    float: none;
+    justify-content: center;
+  }
+
+  &--title{
+    color: $gray-med;
+  }
+
+  img{
+    margin: 0 auto;
+    max-height: 75px;
+    width: auto;
+  }
+}

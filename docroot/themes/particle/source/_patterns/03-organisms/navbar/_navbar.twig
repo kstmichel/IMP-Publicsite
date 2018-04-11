@@ -24,15 +24,15 @@
         nav_items: navbar_items,
       } %}
 
-      <div class="try-free">
-          {% include '@atoms/button/_button.twig' with {
-          button_color: 'success',
+      <form class="form-inline my-2 my-lg-0">
+        {% include '@atoms/button/_button.twig' with {
+          button_color: 'primary',
           button_outline: true,
           button_other_classes: 'my-2 my-sm-0',
           button_type: 'submit',
-          button_text: 'Try it for Free!'
-          } %}
-      </div>
+          button_text: 'Try it Free!'
+        } %}
+      </form>
     </div>
   {% endblock navbar_content %}
 

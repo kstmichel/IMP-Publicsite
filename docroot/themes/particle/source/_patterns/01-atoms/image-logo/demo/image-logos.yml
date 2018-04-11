@@ -1,0 +1,6 @@
+image_logos:
+  href: www.sample.com
+  class: header--logo
+  img:
+    src: ../../../assets/ncg_logo.png
+    alt: Sample Logo

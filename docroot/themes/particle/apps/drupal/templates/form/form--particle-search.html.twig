@@ -15,13 +15,6 @@
   'form-inline',
 ] %}
 
-<form {{ attributes.addClass(classes) }}>
-  <input class="form-control mr-sm-2" type="search" placeholder="Search" name="keys" aria-label="Search">
-    {% include '@atoms/button/_button.twig' with {
-    button_color: 'primary',
-    button_outline: true,
-    button_other_classes: 'my-2 my-sm-0',
-    button_type: 'submit',
-    button_text: 'Search'
-    } %}
+<form{{ attributes.addClass(classes) }}>
+  {{ children }}
 </form>

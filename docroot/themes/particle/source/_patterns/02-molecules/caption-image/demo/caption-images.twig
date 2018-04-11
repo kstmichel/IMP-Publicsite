@@ -1,0 +1,10 @@
+{% extends '@atoms/grid/_grid-1-up.twig' %}
+  {% set container = true %}
+
+  {% block column_1 %}
+      <h1>Caption Images</h1>
+      <div class="mb-3">
+          {% include '@molecules/caption-image/_caption-image.twig' with caption_1 %}
+          {% include '@molecules/caption-image/_caption-image.twig' with caption_2 %}
+      </div>
+  {% endblock column_1 %}

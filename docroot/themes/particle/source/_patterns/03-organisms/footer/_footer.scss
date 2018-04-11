@@ -1,5 +1,7 @@
 // All component Sass needs non-printing base config
 @import '../../00-protons/variables';
+@import '../../00-protons/layout';
+@import '../../00-protons/global-classes';
 
 /*------------------------------------*\
     $FOOTER
@@ -7,26 +9,32 @@
 .footer {
   clear: both;
   overflow: hidden;
-  background-image: linear-gradient(to bottom, $p-blue-dark 0%,  $p-blue-darker 100%);
+  background-image: linear-gradient(to bottom, $p-blue-dark 0%, $p-blue-darker 100%);
   color: $white;
   line-height: 1.2;
+  max-height: 150px;
   padding: 10px 15px;
 
-  .footer-inner{
+  .footer-inner {
     display: flex;
     flex-direction: column;
-    @extend %lc;
+    @extend %lw;
+    margin: 0 auto;
   }
 
-  a {
+  .nav-link {
     color: $gray-light;
+    font-size: 13px;
+
+    &:hover, &:focus{
+      color: $white;
+    }
   }
 
-  %lc{
+  .lc {
     padding: 0 15px;
   }
 }
-
 //Footer Nav
 .nav-footer {
   padding: 0;
@@ -42,25 +50,24 @@
     }
   }
 
-  .copyright{
+  .copyright {
     color: $white;
     padding: 0;
     padding-right: 20px;
   }
 
-
-  .company-name a{
+  .navbar-brand {
     font-size: 18px;
+    color: $white;
     padding: 20px 20px 20px 0;
   }
 
-  a,span {
+  a, span {
     display: block;
     padding: $pad;
     font-size: 13px;
   }
 }
-
 .copyright {
   @media all and (min-width: $bp-med) {
     float: right;

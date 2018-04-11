@@ -43,20 +43,37 @@ seconds: Faker.numberBetween(1, 59)
 
 navbar_other_classes:
   - navbar-expand-lg
-  - navbar-light
 navbar_brand_link: #
-navbar_brand_text:
+navbar_brand_text: Navbar
 navbar_id: navbarSupportedContent
 
 navbar_items:
   - nav_item_text: Features
-    nav_item_link_classes: active
   - nav_item_text: How it Works
   - nav_item_text: Support
   - nav_item_text: Pricing
 
-footer:
-  slogan: 'Powered by <a href="http://patternlab.io/" target="_blank">Pattern Lab</a>'
+footer_block:
+  footer_nav:
+    navbar_brand_link: http://www.northcrossgroup.com
+    navbar_brand_text: Northcross Group
+    navbar_id: footerNav
+    navbar_items:
+      - nav_item_text: Corporate Site
+      - nav_item_text: About
+      - nav_item_text: Capabilities
+      - nav_item_text: Press Releases
+      - nav_item_text: Contact
+  footer_copyright:
+    navbar_brand_link:
+    navbar_brand_text:
+    navbar_id: footerNav
+    navbar_items:
+     - nav_item_text: © 2017 Northcross Group. All rights reserved.
+     - nav_item_text: Terms of Service
+     - nav_item_text: Privacy Statement
+     - nav_item_text: Responsible Disclosure
+
 
 article_title: 'Lucidus'
 article_body: '<p>Cogo haero jus pala patria proprius turpis valde wisi. Eu feugiat laoreet si usitas valde vulputate. Bene dolus gilvus hos pala quibus ulciscor voco. Ad camur incassum ymo.</p>
@@ -83,9 +100,3 @@ article_tags:
   -
     word: 'Dolor'
     url: '#'
-logo_href: www.sample.com
-logo_src:
-logo_class: header--logo
-logo_alt: Sample Logo
-
-

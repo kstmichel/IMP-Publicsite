@@ -3,9 +3,8 @@
  # of html.html.twig and page.html.twig while mocking the
  # familiar site structure for Pattern Lab.
  #}
-<header role="banner" class="header cf">
-{% include "@organisms/_header.twig" %}
-</header>
+
+{% include "@organisms/_header.twig"  %}
 
 <main class="main-content">
   {% block content %}
@@ -26,4 +25,4 @@
   {% endblock %}
 </main>
 
-{% include "@organisms/_footer.twig" %}
+{% include "@organisms/_footer.twig" with footer_block %}

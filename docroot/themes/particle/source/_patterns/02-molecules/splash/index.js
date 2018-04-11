@@ -4,9 +4,11 @@
 
 // Custom
 import 'protons';
+import 'molecules/banner';
 
 // Module template
 import './_splash.twig';
+
 
 // Import custom sass, includes Bootstrap sass
 import './_splash.scss';

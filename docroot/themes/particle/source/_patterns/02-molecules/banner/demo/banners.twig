@@ -1,0 +1,12 @@
+{% extends '@atoms/grid/_grid-1-up.twig' %}
+  {% set container = true %}
+
+  {% block column_1 %}
+      <h1>Banners</h1>
+      <div class="mb-3">
+          {% include '@molecules/_banner.twig' with banner_basic %}
+      </div>
+      <div class="mb-3">
+          {% include '@molecules/_banner.twig' with banner_grid_block %}
+      </div>
+  {% endblock column_1 %}

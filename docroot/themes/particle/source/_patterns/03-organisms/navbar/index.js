@@ -10,6 +10,7 @@ import 'protons';
 
 // Module template
 import './_navbar.twig';
+import './_navbar-footer.twig';
 
 // Import custom sass, includes Bootstrap sass
 import './_navbar.scss';

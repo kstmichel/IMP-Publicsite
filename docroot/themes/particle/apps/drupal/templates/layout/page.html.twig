@@ -46,49 +46,23 @@
 
 <div class="layout-container">
 
-    {#{{ page.primary_menu }}#}
-
-    {#{{ page.highlighted }}#}
-
-  {#<header role="banner">#}
-      {#{% embed '@molecules/jumbotron/_jumbotron.twig' with { jumbotron_fluid: true } %}#}
-          {##}
-          {#{% block jumbotron_branding %}#}
-              {#Chris{{ page.header_branding }}#}
-              {#{{ page.secondary_menu }}#}
-          {#{% endblock jumbotron_branding %}#}
-      {#{% endembed %}#}
-  {#</header>#}
-
+  {{ page.primary_menu }}
 
   {{ page.highlighted }}
 
-  <header role="banner" class="header cf">
-      {% embed '@organisms/header/_header.twig'  %}
-          {% block branding %}
-              {{ page.header_branding }}
-          {% endblock branding %}
-
-          {% block nav %}
-              {{ page.primary_menu }}
-          {% endblock nav %}
-
-          {% block secondary_menu %}
-              {{ page.secondary_menu }}
-          {% endblock secondary_menu%}
-
-      {% endembed %}
-
-
-
+  <header role="banner">
+    {% embed '@molecules/jumbotron/_jumbotron.twig' with { jumbotron_fluid: true } %}
+      {% block jumbotron_branding %}
+        {{ page.header_branding }}
+        {{ page.secondary_menu }}
+      {% endblock jumbotron_branding %}
+    {% endembed %}
   </header>
-
-
 
   {# Help Region not Included by Default. #}
   {{ page.help }}
 
-  <main class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" role="main">
+  <main class="container" role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
     {{ page.breadcrumb }}
     <section class="row">

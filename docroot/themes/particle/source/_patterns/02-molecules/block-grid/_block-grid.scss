@@ -2,85 +2,96 @@
 
 .block.block-grid {
   display: inline-block;
+  text-align: center;
+  margin-bottom: 25px;
 
-  .block-grid--list{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px auto;
-    max-width: $bp-xxxl;
-    float: none;
-  }
+  &.grid-simple{
+    text-align: left;
 
-  .block-grid{
-    text-align: center;
-    margin-bottom: 25px;
-
-    &.grid-stacked .list-item--content{
-      text-align: left;
+    .list-items{
       float: none;
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+
+      li{
+        padding-right: 10px;
+
+        &:last-of-type{
+          padding-right: 0;
+        }
+      }
     }
 
-    &.grid-simple{
+    .grid-content--title, .grid-content--subtitle, .list-item--content{
       text-align: left;
-      margin: 40px 0;
-
-      &--steps{
-        .grid-content--title{
-          font-size: 24px;
-          font-weight: bold;
-        }
-      }
-
-      .grid-content--title{
-        font-size: 28px;
-        font-weight: normal;
-      }
-
-      .list-item--content{
-        text-align: left;
-      }
-
-      &--media{
-        .list-item--content{
-          @media (max-width: $bp-small){
-            text-align: center;
-          }
-        }
-      }
-
-      .grid-icon{
-        float: left;
-        display: inline-block;
-      }
     }
 
-    .grid-content--title{
-      font-size: 24px;
-      font-weight: bold;
+    &--centered{
+      text-align: center;
+    }
+
+    &--media{
+      .list-item--content{
+        @media (max-width: $bp-small){
+          text-align: center;
+        }
+      }
     }
 
     .grid-icon{
-      margin-bottom: 5px;
-      padding-top: 5px;
-
-      img{
-        margin: 0 auto;
-      }
+      display: inline-block;
+      vertical-align: top;
     }
+  }
 
-    .grid-content--title{
-      margin: 10px auto;
-    }
+  &.grid-stacked {
+    .list-items{
+      float: none;
+      list-style-type: disc;
+      display: inline-block;
+      padding-left: 15px;
 
-    .list-wrapper{
-
-      img{
+      li{
+        text-align: left;
         float: none;
+        padding: 0;
       }
     }
+  }
 
-    .btn{
-      margin-top: 25px;
+  .grid-icon{
+    padding-top: 5px;
+    margin: 0 auto;
+
+    img{
+      margin: 0 auto;
+      padding: 0;
     }
+  }
+
+  .grid-content--subtitle{
+    font-weight: normal;
+    margin: 0 auto;
+  }
+
+  .grid-content--title{
+    font-weight: bold;
+    margin: 10px auto;
+  }
+
+  .grid-content{
+    display: inline-block;
+  }
+
+  .list-wrapper{
+
+    img{
+      float: none;
+    }
+  }
+
+  .btn{
+    margin-top: 25px;
   }
 }

@@ -1,0 +1,49 @@
+plain_list:
+  items:
+    - item_text: First item in the list.
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+    - item_text: Second item in the list.
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+    - item_text: Third item in the list.
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+    - item_text: Fourth item in the list.
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+
+title_list:
+  items:
+    - item_text: First item in the list.
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      item_title: Title 1
+    - item_text: Second item in the list.
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      item_title: Title 2
+    - item_text: Third item in the list.
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      item_title: Title 3
+    - item_text: Fourth item in the list.
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      item_title: Title 4
+
+caption_list:
+  items:
+    - item_text:
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      caption:
+        caption_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+        caption_image:
+          class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
+          img:
+            src: ../../../assets/thumb-square-yosemite.jpg
+            alt: Sample Image
+        caption_body: First item in the caption list.
+    - item_text:
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      caption:
+        caption_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+        caption_image:
+          class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
+          img:
+            src: ../../../assets/thumb-square-fire.jpg
+            alt: Sample Image
+        caption_body: Second item in the caption list.
+
