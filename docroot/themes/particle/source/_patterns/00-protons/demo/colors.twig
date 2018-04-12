@@ -12,8 +12,7 @@
         {% set luma = colorValue|rgba_string|luma %}
 
         <div class="col-sm-3">
-          <div
-            class="card mb-3 {% if luma < 200 %}text-white{% endif %} bg-{{ colorName }}">
+          <div class="card mb-3 {% if luma < 200 %}text-white{% endif %} bg-{{ colorName }}">
             <div class="card-header">{{ colorValue }}</div>
             <div class="card-body">
               <h4 class="card-title">{{ colorName }}</h4>

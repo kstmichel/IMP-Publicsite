@@ -42,7 +42,7 @@
     }
 
     .block-banner--text {
-      top: 100px;
+      top: 50px;
       @extend %lw;
       margin: 0 auto;
       padding: 0 15px;
@@ -77,7 +77,7 @@
 
   &--content {
     text-align: center;
-    padding: 40px 15px;
+    padding: 0 15px;
     @extend %lc;
 
     .splash--intro {

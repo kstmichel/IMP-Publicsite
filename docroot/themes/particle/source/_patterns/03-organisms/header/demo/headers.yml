@@ -1,7 +1,16 @@
-header_block:
-  navbar_block:
-    nav_items:
-      - nav_item_text: Features
-      - nav_item_text: How it Works
-      - nav_item_text: Support
-      - nav_item_text: Pricing
+primary_menu:
+  nav_items:
+    - nav_item_text: Features
+      nav_item_link: '#features'
+    - nav_item_text: How it Works
+      nav_item_link: '#works'
+    - nav_item_text: Support
+      nav_item_link: '#support'
+    - nav_item_text: Pricing
+      nav_item_link: '#pricing'
+  navbar_button:
+    button_color: 'highlight'
+    button_outline: true
+    button_other_classes: 'my-2 my-sm-0'
+    button_type: 'submit'
+    button_text: 'Try for Free!'

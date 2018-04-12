@@ -24,6 +24,7 @@ import './features_monthly.png';
 import './features_communicate.png';
 import './banner_works.jpg';
 import './banner_support.jpg';
+import './banner_pricing.jpg';
 import './splash.jpg';
 
 

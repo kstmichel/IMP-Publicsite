@@ -27,3 +27,10 @@ navbar_items:
     nav_item_link_classes:
   - nav_item_text: Disabled
     nav_item_link_classes: disabled
+
+navbar_button:
+  button_color: 'primary'
+  button_outline: true
+  button_other_classes: 'my-2 my-sm-0'
+  button_type: 'submit'
+  button_text: 'Navbar Button'

@@ -6,7 +6,7 @@
 .block-banner {
   display: inline-block;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   &--inner {
     padding: 0;
@@ -25,7 +25,7 @@
 
     &:after {
       content: '';
-      background-image: linear-gradient(to right, rgba(#eef7ff, 0.9) 0%, #fff 50%, rgba(255, 255, 255, 0.7) 100%);
+      background-image: linear-gradient(to right, rgb(245, 245, 245) 0%, #fffffff0 50%, rgba(255, 255, 255, 0.31) 100%);
       position: absolute;
       top: 0;
       left: 0;

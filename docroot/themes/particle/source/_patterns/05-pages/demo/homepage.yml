@@ -1,5 +1,22 @@
 title : Home Page,
 bodyClass: home,
+header:
+  primary_menu:
+    nav_items:
+      - nav_item_text: Features
+        nav_item_link: '#features'
+      - nav_item_text: How it Works
+        nav_item_link: '#works'
+      - nav_item_text: Support
+        nav_item_link: '#support'
+      - nav_item_text: Pricing
+        nav_item_link: '#pricing'
+    navbar_button:
+      button_color: 'highlight'
+      button_outline: true
+      button_other_classes: 'my-2 my-sm-0'
+      button_type: 'submit'
+      button_text: 'Try for Free!'
 content:
   splash_block:
     banner:
@@ -338,13 +355,13 @@ content:
     content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
     block_header_image:
       block_header:
-        img_class: col-lg-3 col-md-3 col-sm-3 col-xs-12
+        img_class:
         class: image-icon img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
         img:
           src: ../../../assets/IMP_logo.png
           alt: Sample Image
       block_content:
-        content_class: col-lg-9 col-md-9 col-sm-9 col-xs-12
+        content_class:
         title: System Architecture
     block_body: IMP is hosted securely in the cloud so you don't have to worry software installation,
                 maintenance, or upgrades on your infrastructure. Each IMP instance is its own container
@@ -365,7 +382,7 @@ content:
       alt: features banner
     content:
       block_class:  grid-simple
-      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      content_class: col-lg-8 col-md-8 col-sm-8 col-xs-12
       block_title:  Support
       block_body: A Partnership for your Incident Management Training – Incident Management Services – Commitment to Continuous Improvement
 
@@ -374,7 +391,7 @@ content:
     content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
     block_header_image:
       block_header:
-        img_class: col-lg-3 col-md-3 col-sm-3 col-xs-12
+        img_class:
         class: image-icon img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
         img:
           src: ../../../assets/IMP_logo.png
@@ -391,6 +408,108 @@ content:
                  organization and industry as well.
                  IMP training is available onsite in a classroom setting, or
                  virtually. On-demand and refresher training is also available.
+
+  training_block_2:
+    block_class: grid-stacked grid-simple col-lg-12 col-md-12 col-sm-12 col-xs-12
+    content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+    block_header_image:
+      block_header:
+        img_class:
+        class: image-icon img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
+        img:
+          src: ../../../assets/IMP_logo.png
+          alt: Sample Image
+      block_content:
+        content_class: col-lg-9 col-md-9 col-sm-9 col-xs-12
+        title: Orchestration Support Model
+    block_body: Our support model is not just focused on using the IMP tools, but on expanding and increasing your organization's incident
+                management capabilities. IMP was developed to augment incident and cybersecurity services, our support model
+                continues our professional service oriented approach.
+    block_list:
+      items:
+        - item_text: Incident Management SME – Training and support from practitioners experienced in incident management and data
+                     breach efforts.
+        - item_text: Information security services – Incident management is part of an organization's overall information security program.
+                     Our cybersecurity experts provide help address incident management within the broader security program context
+                     with services and consultation.
+        - item_text: Mitigation and recovery support services – Support to mitigate and recover from an active incident scenario.
+        - item_text: Data breach forensics support – Services to exhume root cause and understand exposure of an incident.
+
+  training_block_3:
+    block_class: grid-stacked grid-simple col-lg-12 col-md-12 col-sm-12 col-xs-12
+    content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+    block_header_image:
+      block_header:
+        img_class:
+        class: image-icon img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
+        img:
+          src: ../../../assets/IMP_logo.png
+          alt: Sample Image
+      block_content:
+        content_class: col-lg-9 col-md-9 col-sm-9 col-xs-12
+        title: Commitment to Community and Continuous Improvement
+    block_list:
+      items:
+        - item_text: IMP has been developed based on input from dozens of organizations that NCG has supported with
+                     Incident Management services.
+        - item_text: IMP is based on automation that has evolved since 2014 to meet evolving needs to deal with
+                     incidents, data breaches, ransomware, privacy issues, and other challenges to the confidentiality,
+                     integrity, and availability of data and system functions.
+
+
+  pricing_banner:
+    img:
+      src: ../../../assets/banner_pricing.jpg
+      class: image-banner
+      alt: features banner
+    content:
+      block_class:  grid-simple
+      content_class: col-lg-10 col-md-10 col-sm-10 col-xs-12
+      block_title:  Pricing
+      block_body: Add users for $12/month each – volume discounts available.
+
+  pricing_block_1:
+      block_class:  col-lg-12 col-md-12 col-sm-12 col-xs-12
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      block_title: Getting Started
+      block_body: Create a private and secure IMP
+                  instance for your Company. Your
+                  company instance comes with an
+                  administrator account for your
+                  company. $50/month billed annually
+      block_button:
+        button:
+          button_text: Setup
+          button_color: primary
+
+  pricing_block_2:
+      block_class:   col-lg-12 col-md-12 col-sm-12 col-xs-12
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      block_title: Adding Users
+      block_body: Add users from your organization
+                  as needed. If you need to add
+                  third party users for a particular
+                  incident, those accounts are free.
+                  $12 per user/month billed
+                  annually
+      block_button:
+        button:
+          button_text: Setup
+          button_color: primary
+
+  pricing_block_3:
+      block_class:  col-lg-12 col-md-12 col-sm-12 col-xs-12
+      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+      block_title: Getting Training & Support
+      block_body: Standard or tailored training
+                 delivered onsite or online for
+                 IMP and general incident
+                 management.
+                 Custom training starts at $500
+      block_button:
+        button:
+          button_text: Setup
+          button_color: primary
 
 footer_block:
  footer_nav:

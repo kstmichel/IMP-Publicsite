@@ -4,7 +4,9 @@
  # familiar site structure for Pattern Lab.
  #}
 
-{% include "@organisms/_header.twig"  %}
+{% if header %}
+  {% include "@organisms/_header.twig" with header %}
+{% endif %}
 
 <main class="main-content">
   {% block content %}

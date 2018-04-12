@@ -49,9 +49,13 @@ navbar_id: navbarSupportedContent
 
 navbar_items:
   - nav_item_text: Features
+    nav_item_link: '#features'
   - nav_item_text: How it Works
+    nav_item_link: '#works'
   - nav_item_text: Support
+    nav_item_link: '#support'
   - nav_item_text: Pricing
+    nav_item_link: '#pricing'
 
 footer_block:
   footer_nav:

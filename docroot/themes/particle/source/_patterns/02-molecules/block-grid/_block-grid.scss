@@ -8,6 +8,15 @@
   &.grid-simple{
     text-align: left;
 
+    .image-header{
+      padding: 0;
+    }
+
+    .image-header--inner{
+      padding: 0;
+      justify-content: baseline;
+    }
+
     .list-items{
       float: none;
       list-style-type: none;

@@ -1,10 +1,6 @@
 @import '../../00-protons/variables';
 
 .header {
-  position: fixed;
-  z-index: 100;
-  right: 0;
-  left: 0;
   background: $white;
   background-image: linear-gradient(to bottom, $white 0%, #f0f0f0 90%, $p-gray-light 100%);
   padding: 0;
