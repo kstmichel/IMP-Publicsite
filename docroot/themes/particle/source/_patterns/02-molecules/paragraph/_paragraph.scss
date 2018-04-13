@@ -1,0 +1,106 @@
+@import '../../00-protons/variables';
+
+.block.block-grid {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 25px;
+
+  &.grid-simple{
+    text-align: left;
+
+    .image-header{
+      padding: 0;
+    }
+
+    .image-header--inner{
+      padding: 0;
+      justify-content: baseline;
+    }
+
+    .list-items{
+      float: none;
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+
+      li{
+        padding-right: 10px;
+
+        &:last-of-type{
+          padding-right: 0;
+        }
+      }
+    }
+
+    .grid-content--title, .grid-content--subtitle, .list-item--content{
+      text-align: left;
+    }
+
+    &--centered{
+      text-align: center;
+    }
+
+    &--media{
+      .list-item--content{
+        @media (max-width: $bp-small){
+          text-align: center;
+        }
+      }
+    }
+
+    .grid-icon{
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  &.grid-stacked {
+    .list-items{
+      float: none;
+      list-style-type: disc;
+      display: inline-block;
+      padding-left: 15px;
+
+      li{
+        text-align: left;
+        float: none;
+        padding: 0;
+      }
+    }
+  }
+
+  .grid-icon{
+    padding-top: 5px;
+    margin: 0 auto;
+
+    img{
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+
+  .grid-content--subtitle{
+    font-weight: normal;
+    margin: 0 auto;
+  }
+
+  .grid-content--title{
+    font-weight: bold;
+    margin: 10px auto;
+  }
+
+  .grid-content{
+    display: inline-block;
+  }
+
+  .list-wrapper{
+
+    img{
+      float: none;
+    }
+  }
+
+  .btn{
+    margin-top: 25px;
+  }
+}

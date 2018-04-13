@@ -1,0 +1,8 @@
+uuid: 5acc52aa-1e5b-439f-a10a-0e110a2211fe
+langcode: en
+status: true
+dependencies: {  }
+id: footer-copyright
+label: 'Footer Copyright'
+description: 'Copyright section of Footer '
+locked: false

@@ -1,20 +1,21 @@
-uuid: edc3f4db-2e5e-4369-ac79-0a2b83f61dff
+uuid: 8da13930-f030-46c0-a338-a70b95ee454a
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.paragraph.splash_banner
+    - core.entity_view_mode.paragraph.grid_block
     - field.field.paragraph.section.field_body
     - field.field.paragraph.section.field_image
+    - field.field.paragraph.section.field_subtitle
     - field.field.paragraph.section.field_title
     - paragraphs.paragraphs_type.section
   module:
     - image
     - text
-id: paragraph.section.splash_banner
+id: paragraph.section.grid_block
 targetEntityType: paragraph
 bundle: section
-mode: splash_banner
+mode: grid_block
 content:
   field_body:
     type: text_default
@@ -40,4 +41,5 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-hidden: {  }
+hidden:
+  field_subtitle: true

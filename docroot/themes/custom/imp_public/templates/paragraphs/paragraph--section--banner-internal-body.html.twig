@@ -38,28 +38,34 @@
  * @ingroup themeable
  */
 #}
-
-<?php dsm(
 {%
-  set classes = [
-    'paragraph',
-    'paragraph--type--' ~ paragraph.bundle|clean_class,
-    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-  ]
+set classes = [
+'block-banner col-lg-12 col-md-12 col-sm-12 col-xs-12',
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+]
 %}
-{% block paragraph %}
-  <div {{ attributes.addClass(classes) }}>
-    {% block block_grid %}
-        {% include '@molecules/block-grid/_block-grid.twig' with {
-        block_title: content.title,
-        block_subtitle: content.subtitle,
-        block_body: content.body
-        } %}
-        {{ content.title }}
-        {{ content.subtitle }}
+<div class="banner-internal col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    {% block paragraph %}
+        <div{{ attributes.addClass(classes) }} >
+            <div class="block-banner--inner block-banner--background" >
+                {% embed '@molecules/block-grid/_block-grid.twig' with{
+                block_title: content.field_title,
+                block_subtitle: content.field_subtitle
+                }%}
+                    {% block block_header %}
+                        <div class="grid-icon ">
+                            {{ content.field_image}}
+                        </div>
+                    {% endblock block_header %}
 
-      {{ content }}
+                {% endembed %}
 
-    {% endblock %}
-  </div>
-{% endblock paragraph %}
+                {% block block_body %}
+                    <div class="grid-content">{{ content|without('field_title', 'field_subtitle', 'field_image') }}</div>
+                {% endblock %}
+            </div>
+        </div>
+    {% endblock paragraph %}
+</div>

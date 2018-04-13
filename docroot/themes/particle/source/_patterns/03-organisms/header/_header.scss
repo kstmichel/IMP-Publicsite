@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    min-height: 65px;
 
     &--logo {
       max-width: 200px;
@@ -31,8 +32,68 @@
         padding: 10px;
       }
     }
+
+    .navbar, .nav {
+      flex-shrink: 0;
+
+      ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        margin-bottom: 0;
+      }
+
+      li{
+        padding: 0 $pad;
+      }
+
+      a, .nav-link {
+        display: inline-block;
+        font-size: 14px;
+        color: darken($p-gray, 30%);
+        padding: 0;
+
+        &.btn-action{
+          color: $white;
+        }
+      }
+
+      &.active {
+        max-height: 40em;
+      }
+
+      @media all and (min-width: $bp-med) {
+        max-height: none;
+        float: right;
+        clear: none;
+
+        li {
+          float: left;
+        }
+
+        a {
+          border: 0;
+        }
+
+      }
+    }
+
+    .primary_nav{
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+      padding: 0;
+    }
+
+    .secondary_nav{
+      padding: 10px 0;
+      display: inline-block;
+      float: right;
+    }
   }
 }
+
 .nav-toggle {
   float: right;
   display: block;

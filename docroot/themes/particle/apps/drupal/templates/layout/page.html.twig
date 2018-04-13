@@ -54,12 +54,13 @@
         {{ page.header_branding }}
       </div>
 
-      <div class="header-inner--nav col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          {{ page.primary_menu }}
-      </div>
-
-      <div class="header-inner--nav col-lg-3 col-md-3 col-sm-3 col-xs-12">
-          {{ page.secondary_menu }}
+      <div class="header-inner--nav col-lg-9 col-md-9 col-sm-9 col-xs-12">
+         <div class="primary_nav">
+             {{ page.primary_menu }}
+         </div>
+        <div class="secondary_nav">
+            {{ page.secondary_menu }}
+        </div>
       </div>
     </div>
   </header>
@@ -101,6 +102,6 @@
 
 <footer class="footer col-lg-12 col-md-12 col-sm-12 col-xs-12" role="contentinfo">
   <div class="footer-inner">
-      {{ page.footer }}
+        {{ page.footer }}
   </div>
 </footer>

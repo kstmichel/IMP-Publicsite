@@ -7,3 +7,17 @@ $btn-border-radius: 0.25rem;
 @import "~bootstrap/scss/buttons";
 
 // Add custom code here
+
+.btn{
+  &-highlight{
+    color: $white;
+  }
+
+  &-outline-highlight{
+    color: darken($p-green-light, 5%);
+
+    &:hover{
+      color: $white;
+    }
+  }
+}

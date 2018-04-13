@@ -38,28 +38,22 @@
  * @ingroup themeable
  */
 #}
-
-<?php dsm(
 {%
   set classes = [
+    'block-banner col-lg-12 col-md-12 col-sm-12 col-xs-12',
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
   ]
 %}
 {% block paragraph %}
-  <div {{ attributes.addClass(classes) }}>
-    {% block block_grid %}
-        {% include '@molecules/block-grid/_block-grid.twig' with {
-        block_title: content.title,
-        block_subtitle: content.subtitle,
-        block_body: content.body
-        } %}
-        {{ content.title }}
-        {{ content.subtitle }}
-
-      {{ content }}
-
-    {% endblock %}
+  <div{{ attributes.addClass(classes) }} >
+        <div class="block-banner--inner block-banner--background" style="background-image: url('{{ img.src }}');">
+            <div class="block-banner--text col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                {% block block_grid %}
+                    {{ content }}
+                {% endblock block_grid %}
+            </div>
+        </div>
   </div>
 {% endblock paragraph %}

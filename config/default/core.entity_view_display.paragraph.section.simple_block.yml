@@ -11,18 +11,19 @@ dependencies:
     - paragraphs.paragraphs_type.section
   module:
     - image
+    - text
 id: paragraph.section.simple_block
 targetEntityType: paragraph
 bundle: section
 mode: simple_block
 content:
   field_body:
+    type: text_default
     weight: 2
+    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
-    region: content
   field_image:
     weight: 1
     label: hidden

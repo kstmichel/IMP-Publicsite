@@ -29,6 +29,7 @@ import * as header from 'organisms/header';
 import * as listItem from 'molecules/list-item';
 import * as splash from 'molecules/splash';
 import * as captionImg from 'molecules/caption-image';
+import * as paragraph from 'molecules/paragraph';
 import * as headerImg from 'molecules/header-image';
 import * as imageLogo from 'atoms/image-logo';
 
@@ -62,6 +63,7 @@ const components = {
   captionImg,
   headerImg,
   imageLogo,
+  paragraph,
 };
 /**
  * Default export of object containing all components

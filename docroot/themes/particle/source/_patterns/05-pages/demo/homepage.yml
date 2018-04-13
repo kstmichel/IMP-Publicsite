@@ -55,9 +55,11 @@ content:
                caption_image:
                  class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
                  img:
-                   src: ../../../assets/thumb-square-fire.jpg
+                   src: ../../../assets/icon_tools.png
                    alt: Sample Image
-               caption_body: First item in the caption list.
+               caption_body: Tools to manage and target
+                             incident response efforts
+                             backed by expert support
            - item_text:
              content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
              caption:
@@ -65,9 +67,11 @@ content:
                caption_image:
                  class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
                  img:
-                   src: ../../../assets/thumb-square-fire.jpg
+                   src: ../../../assets/icon_steps.png
                    alt: Sample Image
-               caption_body: Second item in the caption list.
+               caption_body: Easy to follow steps for
+                             people to know what to do
+                             and when.
            - item_text:
              content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
              caption:
@@ -75,9 +79,11 @@ content:
                caption_image:
                  class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
                  img:
-                   src: ../../../assets/thumb-square-fire.jpg
+                   src: ../../../assets/icon_communication.png
                    alt: Sample Image
-               caption_body: Third item in the caption list.
+               caption_body: Manage communication,
+                             coordination, and collaboration
+                             with internal and external parties.
 
   background_banner:
     img:
@@ -133,6 +139,41 @@ content:
       content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
       block_title:  Features
       block_body: Empower your teams and be bettered prepared to handle incidents and data breach scenarios
+      block_list:
+        items:
+         - item_text:
+           content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+           caption:
+             caption_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+             caption_image:
+               class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
+               img:
+                 src: ../../../assets/icon_features_structure.png
+                 alt: Sample Image
+             caption_body: Provide structure, consistency, and leverage
+                           best practices for working incidents
+         - item_text:
+           content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+           caption:
+             caption_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+             caption_image:
+               class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
+               img:
+                 src: ../../../assets/icon_features_collaboration.png
+                 alt: Sample Image
+             caption_body: Orchestrate collaboration and coordination
+                           with internal and external partners
+         - item_text:
+           content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+           caption:
+             caption_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
+             caption_image:
+               class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
+               img:
+                 src: ../../../assets/icon_features_communication.png
+                 alt: Sample Image
+             caption_body: Streamline documentation and
+                           manage communication
 
   features_header_image:
     block_header:

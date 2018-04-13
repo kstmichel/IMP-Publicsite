@@ -13,24 +13,30 @@
   'navbar',
 ]) | sort | join(' ') | trim %}
 
-<nav role="navigation" aria-labelledby="{{ navbar_arialebelledby }}" {{ navbar_attributes }} class="{{ navbar_classes }}">
+<nav role="navigation" aria-labelledby="{{ navbar_arialebelledby }}" {{ navbar_attributes }} class="{{ navbar_classes }} col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
   {# navbar #}
   {% block navbar_content %}
     <div class="collapse navbar-collapse" id="{{ navbar_id }}">
-      {% include '@molecules/nav/_nav.twig' with {
-        nav_element: 'ul',
-        nav_other_classes: 'navbar-nav mr-auto',
-        nav_items: navbar_items,
-      } %}
+        <div class="primary_nav pull-left col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
+            {% include '@molecules/nav/_nav.twig' with {
+            nav_element: 'ul',
+            nav_other_classes: 'navbar-nav mr-auto',
+            nav_items: navbar_items,
+            } %}
 
-      <form class="form-inline my-2 my-lg-0">
-          {% if navbar_button %}
-              {% include '@atoms/button/_button.twig' with navbar_button %}
-          {% endif %}
-      </form>
-    </div>
+            <form class="form-inline my-2 my-lg-0">
+                {% if navbar_button %}
+                    {% include '@atoms/button/_button.twig' with navbar_button %}
+                {% endif %}
+            </form>
+
+        </div>
+        <div class="secondary_nav">
+
+        </div>
+      </div>
   {% endblock navbar_content %}
 
 </nav>

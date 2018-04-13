@@ -1,0 +1,10 @@
+uuid: 91e636ce-364c-450d-95fb-6c98c9a8f96d
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.grid_block
+label: 'Grid Block'
+targetEntityType: paragraph
+cache: true

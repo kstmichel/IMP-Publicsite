@@ -5,10 +5,12 @@ dependencies:
   config:
     - field.field.paragraph.section.field_body
     - field.field.paragraph.section.field_image
+    - field.field.paragraph.section.field_subtitle
     - field.field.paragraph.section.field_title
     - paragraphs.paragraphs_type.section
   module:
     - image
+    - text
 id: paragraph.section.default
 targetEntityType: paragraph
 bundle: section
@@ -19,7 +21,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: text_default
     region: content
   field_image:
     weight: 1
@@ -29,6 +31,13 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_subtitle:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   field_title:
     weight: 0

@@ -16,6 +16,7 @@
 {% set navbar_classes = [
   'navbar',
   'navbar-expand-lg',
+  'col-lg-12 col-md-12 col-sm-12 col-xs-12'
 ] | join(' ') | trim %}
 
 {% if content %}
@@ -33,7 +34,17 @@
     {% endblock navbar_brand %}
     {% block navbar_content %}
       <div class="collapse navbar-collapse" id="primary-menu">
-        {{ content }}
+        <div class="primary_nav pull-left col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            {{ content }}
+
+          <form class="form-inline my-2 my-lg-0">
+              {% include '@atoms/button/_button.twig' with{
+              button_text: 'Try it Free!',
+              button_color: 'highlight',
+              } %}
+          </form>
+        </div>
       </div>
     {% endblock navbar_content %}
 

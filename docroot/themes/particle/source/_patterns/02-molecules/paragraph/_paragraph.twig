@@ -1,8 +1,7 @@
-{% block block_grid %}
 <div class="block block-grid {{ block_class }}">
     {% block block_header %}
         {% if block_header %}
-            <div class="grid-icon  block-header">
+            <div class="grid-icon {{ block_header.icon_class }} block-header">
               {% include "@atoms/_image.twig"  with  block_header %}
             </div>
         {% endif %}
@@ -10,12 +9,12 @@
 
     {% block block_body %}
         <div class="grid-content {{ content_class }}">
-            {% if block_title %}
-                <h3 class="grid-content--title">{{ block_title }}</h3>
-            {% endif %}
-
             {% if block_subtitle %}
                 <h4 class="grid-content--subtitle">{{ block_subtitle }}</h4>
+            {% endif %}
+
+            {% if block_title %}
+                <h3 class="grid-content--title">{{ block_title }}</h3>
             {% endif %}
 
             {% if block_header_image %}
@@ -36,4 +35,4 @@
         </div>
     {% endblock block_body %}
 </div>
-{% endblock block_grid %}
+

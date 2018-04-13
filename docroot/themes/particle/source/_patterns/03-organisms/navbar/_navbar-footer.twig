@@ -13,7 +13,7 @@
 'navbar',
 ]) | sort | join(' ') | trim %}
 
-<nav role="navigation" aria-labelledby="{{ navbar_arialebelledby }}" {{ navbar_attributes }} class="{{ navbar_classes }}">
+<nav role="navigation" aria-labelledby="{{ navbar_arialebelledby }}" {{ navbar_attributes }} class="{{ navbar_classes }} col-lg-12 col-md-12 col-sm-12 col-xs-12">
     {% block navbar_brand %}
         {% if navbar_brand_text  %}
             <a class="navbar-brand" href="{{ navbar_brand_link }}">{{ navbar_brand_text }}</a>

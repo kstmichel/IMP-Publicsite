@@ -31,19 +31,19 @@
   {% if items %}
     {% if menu_level == 0 %}
       {# These Classes are added from Particle theme #}
-      <ul{{ attributes.addClass('nav', 'nav-footer', 'nav-primary',  'col-lg-12 col-md-12 col-sm-12 col-xs-12') }}>
+<ul{{ attributes.addClass('nav', 'nav-footer', 'col-lg-12 col-md-12 col-sm-12 col-xs-12') }}>
     {% else %}
-      {# These Classes are added from Particle theme #}
-      <ul class="nav pr-2 justify-content-end col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    {% endif %}
-    {% for item in items %}
-      <li{{ item.attributes.addClass('nav-item') }}>
-        {{ link(item.title, item.url, item.attributes.addClass('nav-link').removeClass('nav-item')) }}
-        {% if item.below %}
-          {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+    {# These Classes are added from Particle theme #}
+    <ul class="nav pr-2 justify-content-end col-lg-12 col-md-12 col-sm-12 col-xs-12">
         {% endif %}
-      </li>
-    {% endfor %}
+        {% for item in items %}
+            <li{{ item.attributes.addClass('nav-item') }}>
+                {{ link(item.title, item.url, item.attributes.addClass('nav-link').removeClass('nav-item')) }}
+                {% if item.below %}
+                    {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+                {% endif %}
+            </li>
+        {% endfor %}
     </ul>
-  {% endif %}
-{% endmacro %}
+    {% endif %}
+    {% endmacro %}

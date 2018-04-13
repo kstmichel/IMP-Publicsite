@@ -13,7 +13,7 @@ _core:
 id: imp_public_mainnavigation
 theme: imp_public
 region: primary_menu
-weight: -7
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:

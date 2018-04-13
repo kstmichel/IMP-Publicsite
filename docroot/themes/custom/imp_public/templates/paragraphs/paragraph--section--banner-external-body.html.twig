@@ -39,16 +39,33 @@
  */
 #}
 {%
-  set classes = [
-    'paragraph',
-    'paragraph--type--' ~ paragraph.bundle|clean_class,
-    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-  ]
+set classes = [
+'block-banner col-lg-12 col-md-12 col-sm-12 col-xs-12',
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+]
 %}
-{% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {% block content %}
-      {{ content }}
-    {% endblock %}
-  </div>
-{% endblock paragraph %}
+<div class="banner-external">
+    {% block paragraph %}
+    <div{{ attributes.addClass(classes) }} >
+        <div class="block-banner--inner block-banner--background" >
+            {% embed '@molecules/block-grid/_block-grid.twig' with{
+            block_title: content.field_title,
+            block_subtitle: content.field_subtitle
+            }%}
+                {% block block_header %}
+                    <div class="grid-icon ">
+                        {{ content.field_image}}
+                    </div>
+                {% endblock block_header %}
+
+            {% endembed %}
+        </div>
+    </div>
+
+        {% block block_body %}
+            <div class="grid-content">{{ content|without('field_title', 'field_subtitle', 'field_image') }}</div>
+        {% endblock %}
+    {% endblock paragraph %}
+</div>

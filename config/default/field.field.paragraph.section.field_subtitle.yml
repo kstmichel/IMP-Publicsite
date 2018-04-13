@@ -1,21 +1,21 @@
-uuid: ec373f19-dc08-4a91-b864-34923337abce
+uuid: 4121c671-55fa-48bf-82ca-1a86c712ac91
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_body
+    - field.storage.paragraph.field_subtitle
     - paragraphs.paragraphs_type.section
   module:
     - text
-id: paragraph.section.field_body
-field_name: field_body
+id: paragraph.section.field_subtitle
+field_name: field_subtitle
 entity_type: paragraph
 bundle: section
-label: Body
+label: Subtitle
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text_long
+field_type: text

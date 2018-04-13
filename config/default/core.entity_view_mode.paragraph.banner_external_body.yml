@@ -1,0 +1,10 @@
+uuid: 8169b50c-e362-4922-8071-ba81f60b41aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.banner_external_body
+label: 'Banner (External Body)'
+targetEntityType: paragraph
+cache: true

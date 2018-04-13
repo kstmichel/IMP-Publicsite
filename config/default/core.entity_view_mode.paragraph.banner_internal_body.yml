@@ -1,0 +1,10 @@
+uuid: 8e3784ad-deee-4616-803e-b10a9e863fc9
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.banner_internal_body
+label: 'Banner (Internal Body)'
+targetEntityType: paragraph
+cache: true

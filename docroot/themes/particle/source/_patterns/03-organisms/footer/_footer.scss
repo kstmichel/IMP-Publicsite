@@ -22,12 +22,17 @@
     margin: 0 auto;
   }
 
-  .nav-link {
-    color: $gray-light;
-    font-size: 13px;
 
-    &:hover, &:f{
-      color: $white;
+
+  .navbar, .nav{
+    a.nav-link {
+      color: $gray-light;
+      font-size: 13px;
+
+      &:hover, &:focus{
+        color: $white;
+        cursor: pointer;
+      }
     }
   }
 
@@ -38,6 +43,12 @@
 //Footer Nav
 .nav-footer {
   padding: 0;
+
+  &.nav-primary{
+    li:first-of-type{
+      font-size: 20px;
+    }
+  }
 
   li {
     border-bottom: 1px solid $gray-dark;

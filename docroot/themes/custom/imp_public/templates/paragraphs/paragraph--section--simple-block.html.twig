@@ -48,19 +48,19 @@
 %}
 
 {% block paragraph %}
-  <div class="block block-grid col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <div class="block-grid--list">
-      <div {{ attributes.addClass(classes) }}>
-        <div class="grid-icon col-lg-3 col-md-3 col-sm-3 col-xs-12">
-          {{ content.field_image}}
-        </div>
+    {% embed '@molecules/block-grid/_block-grid.twig' with{
+        block_title: content.field_title,
+        block_body: content.field_body
+    }%}
 
-        <div class="grid-content row col-lg-9 col-md-9 col-sm-9 col-xs-12">
-          <h2 class="grid-content--title">{{  content.field_title }}</h2>
+        {% block block_header %}
+            <div class="grid-icon col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                {{ content.field_image}}
+            </div>
+        {% endblock block_header %}
 
-          <p class="grid-content--body">{{ content|without('field_title','field_image') }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
+        {% block block_body %}
+            <p class="grid-content--body">{{ content|without('field_title','field_image') }}</p>
+        {% endblock %}
+    {% endembed %}
 {% endblock paragraph %}

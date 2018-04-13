@@ -68,6 +68,7 @@ generated-namespaces:
       - ../../source/_patterns/02-molecules/carousel
       - ../../source/_patterns/02-molecules/jumbotron
       - ../../source/_patterns/02-molecules/list-item
+      - ../../source/_patterns/02-molecules/paragraph
       - ../../source/_patterns/02-molecules/block-grid
       - ../../source/_patterns/02-molecules/pagination
       - ../../source/_patterns/02-molecules/complex-list
