@@ -12,10 +12,8 @@ module:
   contact: 0
   contextual: 0
   ctools: 0
-  ctools_block: 0
   datetime: 0
   dblog: 0
-  devel: 0
   dynamic_page_cache: 0
   editor: 0
   embed: 0
@@ -31,16 +29,11 @@ module:
   history: 0
   image: 0
   inline_entity_form: 0
-  layout_discovery: 0
   link: 0
   menu_ui: 0
   node: 0
   options: 0
   page_cache: 0
-  panelizer: 0
-  panelizer_quickedit: 0
-  panels: 0
-  panels_ipe: 0
   path: 0
   quickedit: 0
   rdf: 0

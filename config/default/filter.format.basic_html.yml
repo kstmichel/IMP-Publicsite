@@ -50,6 +50,13 @@ filters:
     status: true
     weight: -46
     settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: false
+    weight: -42
+    settings:
+      filter_url_length: 72
   filter_autop:
     id: filter_autop
     provider: filter
@@ -68,10 +75,3 @@ filters:
     status: false
     weight: -44
     settings: {  }
-  filter_url:
-    id: filter_url
-    provider: filter
-    status: false
-    weight: -42
-    settings:
-      filter_url_length: 72
