@@ -33,10 +33,3 @@ modules:
   prod:
     enable: [acquia_connector, shield]
     uninstall: [devel, views_ui]
-command-hooks:
-  frontend-reqs:
-    dir: ${docroot}/themes/particle
-    command: 'npm install'
-  frontend-assets:
-    dir: ${docroot}/themes/particle
-    command: 'npm run build:drupal'
