@@ -28,7 +28,8 @@ content:
         block_class: grid-simple
         content_class: col-lg-7 col-md-7 col-sm-7 col-xs-12
         block_title:  Someone has breached your systems—
-        block_body: Your data, your clients' data, your business is at risk…  Do you know what to do?
+        block_subtitle: Your data, your clients' data, your business is at risk…  Do you know what to do?
+        block_body: Example body text for splash section.
     splash_content:
       intro: Every business must be prepared for a data breach or similar incident that puts operations or data at risk.
       header_image:

@@ -39,34 +39,26 @@
  */
 #}
 {%
-  set classes = [
-    'splash--banner col-lg-12 col-md-12 col-sm-12 col-xs-12',
-    'paragraph',
-    'paragraph--type--' ~ paragraph.bundle|clean_class,
-    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-  ]
+set classes = [
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+]
 %}
-{% block paragraph %}
- <div class="splash">
-  <div{{ attributes.addClass(classes) }} >
-        <div class="banner--inner banner--background">
-
-            <div class="banner--text" >
+<figure class="image-caption col-lg-3 col-md-3 col-sm-3 col-xs-12 {{ caption_class }}">
+    {% block paragraph %}
+        <div{{ attributes.addClass(classes) }} >
+            <div class="image-caption--inner">
                 {% embed '@molecules/block-grid/_block-grid.twig' with{
                 block_title: content.field_title,
-                block_subtitle: content.field_subtitle,
                 block_body: content.field_body
                 }%}
                     {% block block_header %}
-                        <div class="grid-icon ">
-                            {{ content.field_image}}
-                        </div>
+                        {{ content.field_image}}
                     {% endblock block_header %}
+
                 {% endembed %}
-
-
             </div>
         </div>
-  </div>
-</div>
-{% endblock paragraph %}
+    {% endblock paragraph %}
+</figure>

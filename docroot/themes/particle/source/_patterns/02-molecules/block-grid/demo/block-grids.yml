@@ -8,6 +8,7 @@ teaser_highlights:
       src: ../../../assets/thumb-square-yosemite.jpg
       alt: Sample Here!!
   block_title:  Teaser Highlights Block
+  block_subtitle: Subtitle example
   block_list:
     items:
      - item_text: First item in the list.

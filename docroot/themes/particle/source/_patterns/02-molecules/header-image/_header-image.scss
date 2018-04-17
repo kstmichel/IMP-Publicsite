@@ -3,17 +3,20 @@
 .image-header{
   display: inline-block;
 
-  &--inner{
+  &--inner .block-grid {
     display: flex;
     align-items: center;
-    margin: 30px auto;
-    padding-top: 30px;
+    margin: 0;
     float: none;
     justify-content: center;
   }
 
   &--title{
     color: $gray-med;
+  }
+
+  &--image{
+    margin-right: 30px;
   }
 
   img{
