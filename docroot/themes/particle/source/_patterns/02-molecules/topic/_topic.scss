@@ -5,8 +5,8 @@
     display: flex;
     text-align: left;
 
-    .topic-content{
-      padding-left: 30px;
+    .topic-image{
+      padding-right: 30px;
     }
   }
 }
@@ -19,8 +19,8 @@
       flex-direction: row;
     }
 
-    .topic-content{
-      padding-right: 30px;
+    .topic-image{
+      padding-left: 30px;
     }
   }
 }
@@ -118,9 +118,7 @@
     justify-content: baseline;
   }
 
-  .topic-content{
-    padding-left: 40px;
-
+  .topic-content--body{
     p{
       text-align: left;
     }
