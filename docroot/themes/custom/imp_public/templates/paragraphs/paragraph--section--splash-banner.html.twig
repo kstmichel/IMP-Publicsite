@@ -40,20 +40,33 @@
 #}
 {%
   set classes = [
-    'block-banner col-lg-12 col-md-12 col-sm-12 col-xs-12',
+    'splash--banner col-lg-12 col-md-12 col-sm-12 col-xs-12',
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
   ]
 %}
 {% block paragraph %}
+ <div class="splash">
   <div{{ attributes.addClass(classes) }} >
-        <div class="block-banner--inner block-banner--background" style="background-image: url('{{ img.src }}');">
-            <div class="block-banner--text col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                {% block block_grid %}
-                    {{ content }}
-                {% endblock block_grid %}
+        <div class="banner--inner banner--background">
+
+            <div class="banner--text" >
+                {% embed '@molecules/topic/_topic.twig' with{
+                title: content.field_title,
+                subtitle: content.field_subtitle,
+                body: content.field_body
+                }%}
+                    {% block topic_head %}
+                        <div class="topic-image ">
+                            {{ content.field_image}}
+                        </div>
+                    {% endblock topic_head %}
+                {% endembed %}
+
+
             </div>
         </div>
   </div>
+</div>
 {% endblock paragraph %}

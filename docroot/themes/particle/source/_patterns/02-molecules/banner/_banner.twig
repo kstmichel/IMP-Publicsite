@@ -1,8 +1,8 @@
-<div class="block-banner col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <div class="block-banner--inner block-banner--background" style="background-image: url('{{ img.src }}');">
+<div class="banner col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="banner--inner banner--background" style="background-image: url('{{ img.src }}');">
         {% if content %}
-            <div class="block-banner--text col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  {% include "@molecules/_block-grid.twig" with content %}
+            <div class="banner--text col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  {% include "@molecules/_topic.twig" with content %}
             </div>
         {% endif %}
     </div>

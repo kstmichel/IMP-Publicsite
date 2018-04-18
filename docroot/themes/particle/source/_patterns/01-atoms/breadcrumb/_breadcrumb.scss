@@ -1,5 +1,8 @@
 // All component Sass needs non-printing base config
 @import '../../00-protons/variables';
+@import '../../00-protons/layout';
+@import '../../00-protons/global-classes';
+
 
 // To change default bootstrap breadcrumb variables, SEE ~bootstrap/scss/variables
 // Add bootstrap variables here
@@ -16,3 +19,21 @@
 @import '~bootstrap/scss/breadcrumb';
 
 // Add custom code here
+
+.breadcrumb{
+  display: block;
+
+  &-wrapper{
+    @extend %lw;
+  }
+
+  &-list{
+    display: flex;
+    margin: 0;
+
+    li{
+      list-style-type: none;
+      padding: 0;
+    }
+  }
+}

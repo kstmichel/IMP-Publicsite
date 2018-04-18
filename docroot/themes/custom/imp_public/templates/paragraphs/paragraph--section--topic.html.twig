@@ -39,34 +39,30 @@
  */
 #}
 {%
-set classes = [
-'paragraph',
-'paragraph--type--' ~ paragraph.bundle|clean_class,
-view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-]
+  set classes = [
+    'topic',
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
 %}
-<div class="banner banner-internal col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    {% block paragraph %}
-        <div{{ attributes.addClass(classes) }} >
-            <div class="banner--inner banner--background" >
-                {% embed '@molecules/block-grid/_block-grid.twig' with{
-                block_title: content.field_title,
-                block_subtitle: content.field_subtitle
-                }%}
-                    {% block block_header %}
-                        <div class="grid-icon ">
-                            {{ content.field_image}}
-                        </div>
-                    {% endblock block_header %}
-                {% endembed %}
 
-                <div class="banner--text col-lg-12 col-md-12 col-sm-12 col-xs-12">
+{% block paragraph %}
+    <div{{ attributes.addClass(classes) }} >
+        {% block topic %}
+            {% embed '@molecules/topic/_topic.twig' with {
+            title: content.field_title,
+            subtitle: content.field_subtitle,
+            body: content.field_body
+            } %}
 
-                    {% block block_body %}
-                        <div class="grid-content">{{ content|without('field_title', 'field_subtitle', 'field_image') }}</div>
-                    {% endblock %}
-                </div>
-            </div>
-        </div>
-    {% endblock paragraph %}
-</div>
+                {% block topic_head %}
+                    <div class="topic-image">
+                        {{ content.field_image }}
+                    </div>
+                {% endblock topic_head %}
+
+        {% endembed %}
+        {% endblock %}
+    </div>
+{% endblock paragraph %}

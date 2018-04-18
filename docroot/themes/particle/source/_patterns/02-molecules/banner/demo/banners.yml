@@ -1,12 +1,12 @@
 banner_basic:
   img:
     src: ../../../assets/banner_features.jpg
-    class: image-banner
     alt: Splash Sample Logo
   content:
     block_class: grid-stacked
     content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
     block_title:  Banner Title
+    block_subtitle:  Banner Subtitle
 
 banner_grid_block:
   img:

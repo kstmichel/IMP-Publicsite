@@ -7,3 +7,22 @@
 //@import "~bootstrap/scss/transitions";
 
 // Add custom code here
+.list-group{
+  border: 2px solid $p-gray;
+  margin: 0 0 20px 0;
+
+  &__link{
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    padding: 10px 10px 0 10px;
+
+    &:first-of-type{
+      border: none;
+    }
+  }
+
+  &__description{
+    margin-left: 0;
+    padding: 0 10px;
+  }
+}

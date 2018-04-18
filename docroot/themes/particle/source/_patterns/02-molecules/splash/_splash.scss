@@ -2,15 +2,15 @@
 @import '../../00-protons/layout';
 @import '../../00-protons/global-classes';
 
-.block-splash {
+.splash {
   display: flex;
   flex-direction: column;
 
-  .block-splash--banner {
+  &--banner {
     margin: 0;
     padding: 0;
 
-    .block-banner--background {
+    .banner--background {
       min-height: 500px;
       display: block;
       position: relative;
@@ -36,15 +36,23 @@
         }
       }
 
-      img {
-        top: -140px;
+      .grid-icon{
+        position: absolute;
+        top: -150px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+
+        img{
+          width: 100%;
+          height: auto;
+          display: block;
+        }
       }
     }
 
-    .block-banner--text {
-      top: 50px;
+    .banner--text {
       @extend %lw;
-      margin: 0 auto;
       padding: 0 15px;
 
       @media(max-width: $bp-med) {
@@ -54,9 +62,12 @@
         display: inline-block;
       }
 
-      .block-grid {
+      .topic {
 
-        .grid-content {
+        .topic-content {
+          padding-top: 60px;
+          text-align: left;
+
           &--title {
             color: $splash-title;
             font-size: 40px;
@@ -104,7 +115,7 @@
       }
     }
 
-    .block-splash--details {
+    &-details {
       margin: 0 auto;
       float: none;
       display: inline-block;
@@ -116,7 +127,7 @@
       }
     }
 
-    .details--highlights {
+    &-highlights {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;

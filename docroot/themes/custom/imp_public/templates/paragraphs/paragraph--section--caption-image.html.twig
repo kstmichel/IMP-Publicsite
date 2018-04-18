@@ -39,28 +39,26 @@
  */
 #}
 {%
-  set classes = [
-    'block-grid grid-simple col-lg-12 col-md-12 col-sm-12 col-xs-12',
-    'paragraph',
-    'paragraph--type--' ~ paragraph.bundle|clean_class,
-    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-  ]
+set classes = [
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+]
 %}
+<figure class="image-caption col-lg-3 col-md-3 col-sm-3 col-xs-12 {{ caption_class }}">
+    {% block paragraph %}
+        <div{{ attributes.addClass(classes) }} >
+            <div class="image-caption--inner">
+                {% embed '@molecules/block-grid/_block-grid.twig' with{
+                block_title: content.field_title,
+                block_body: content.field_body
+                }%}
+                    {% block block_header %}
+                        {{ content.field_image}}
+                    {% endblock block_header %}
 
-{% block paragraph %}
-    {% embed '@molecules/block-grid/_block-grid.twig' with{
-        block_title: content.field_title,
-        block_body: content.field_body
-    }%}
-
-        {% block block_header %}
-            <div class="grid-icon col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                {{ content.field_image}}
+                {% endembed %}
             </div>
-        {% endblock block_header %}
-
-        {% block block_body %}
-            <p class="grid-content--body">{{ content|without('field_title','field_image') }}</p>
-        {% endblock %}
-    {% endembed %}
-{% endblock paragraph %}
+        </div>
+    {% endblock paragraph %}
+</figure>

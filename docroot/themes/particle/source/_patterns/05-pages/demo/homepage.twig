@@ -10,8 +10,8 @@
                   {% block column_1 %}
                       {% include "@molecules/banner/_banner.twig" with content.background_banner %}
                       <div class="page-width">
-                          {% include "@molecules/block-grid/_block-grid.twig" with content.background_block_1 %}
-                          {% include "@molecules/block-grid/_block-grid.twig" with content.background_block_2 %}
+                          {% include "@molecules/topic/_topic.twig" with content.background_block_1 %}
+                          {% include "@molecules/topic/_topic.twig" with content.background_block_2 %}
                       </div>
                   {% endblock column_1 %}
               {% endembed %}
@@ -29,21 +29,21 @@
 
                           {% embed '@atoms/grid/_grid-2-up.twig' %}
                               {% block column_1 %}
-                                 {% include "@molecules/block-grid/_block-grid.twig" with content.features_block_1  %}
+                                 {% include "@molecules/topic/_topic.twig" with content.features_block_1  %}
                               {% endblock column_1 %}
 
                               {% block column_2 %}
-                                 {% include "@molecules/block-grid/_block-grid.twig" with content.features_block_2  %}
+                                 {% include "@molecules/topic/_topic.twig" with content.features_block_2  %}
                               {% endblock column_2 %}
                           {% endembed %}
 
                           {% embed '@atoms/grid/_grid-2-up.twig' %}
                               {% block column_1 %}
-                                  {% include "@molecules/block-grid/_block-grid.twig" with content.features_block_3  %}
+                                  {% include "@molecules/topic/_topic.twig" with content.features_block_3  %}
                               {% endblock column_1 %}
 
                               {% block column_2 %}
-                                  {% include "@molecules/block-grid/_block-grid.twig" with content.features_block_4  %}
+                                  {% include "@molecules/topic/_topic.twig" with content.features_block_4  %}
                               {% endblock column_2 %}
                           {% endembed %}
 
@@ -51,21 +51,21 @@
 
                           {% embed '@atoms/grid/_grid-2-up.twig' %}
                               {% block column_1 %}
-                                  {% include "@molecules/block-grid/_block-grid.twig" with content.features_block_5  %}
+                                  {% include "@molecules/topic/_topic.twig" with content.features_block_5  %}
                               {% endblock column_1 %}
 
                               {% block column_2 %}
-                                  {% include "@molecules/block-grid/_block-grid.twig" with content.features_block_6  %}
+                                  {% include "@molecules/topic/_topic.twig" with content.features_block_6  %}
                               {% endblock column_2 %}
                           {% endembed %}
 
                           {% embed '@atoms/grid/_grid-2-up.twig' %}
                               {% block column_1 %}
-                                  {% include "@molecules/block-grid/_block-grid.twig" with content.features_block_7  %}
+                                  {% include "@molecules/topic/_topic.twig" with content.features_block_7  %}
                               {% endblock column_1 %}
 
                               {% block column_2 %}
-                                  {% include "@molecules/block-grid/_block-grid.twig" with content.features_block_8  %}
+                                  {% include "@molecules/topic/_topic.twig" with content.features_block_8  %}
                               {% endblock column_2 %}
                           {% endembed %}
 
@@ -73,7 +73,7 @@
 
                           {% embed '@atoms/grid/_grid-1-up.twig' %}
                               {% block column_1 %}
-                                  {% include "@molecules/block-grid/_block-grid.twig" with content.features_block_9  %}
+                                  {% include "@molecules/topic/_topic.twig" with content.features_block_9  %}
                               {% endblock column_1 %}
                           {% endembed %}
                       </div>
@@ -93,21 +93,21 @@
               <div class="page-width">
                   {% embed '@atoms/grid/_grid-3-up.twig' %}
                       {% block column_1 %}
-                          {% include "@molecules/block-grid/_block-grid.twig" with content.how_block_1  %}
+                          {% include "@molecules/topic/_topic.twig" with content.how_block_1  %}
                       {% endblock column_1 %}
 
                       {% block column_2 %}
-                          {% include "@molecules/block-grid/_block-grid.twig" with content.how_block_2  %}
+                          {% include "@molecules/topic/_topic.twig" with content.how_block_2  %}
                       {% endblock column_2 %}
 
                       {% block column_3 %}
-                          {% include "@molecules/block-grid/_block-grid.twig" with content.how_block_3  %}
+                          {% include "@molecules/topic/_topic.twig" with content.how_block_3  %}
                       {% endblock column_3 %}
                   {% endembed %}
 
                   {% embed '@atoms/grid/_grid-1-up.twig' %}
                       {% block column_1 %}
-                          {% include "@molecules/block-grid/_block-grid.twig" with content.how_block_4  %}
+                          {% include "@molecules/topic/_topic.twig" with content.how_block_4  %}
                       {% endblock column_1 %}
                   {% endembed %}
               </div>
@@ -124,7 +124,7 @@
               <div class="page-width">
                   {% embed '@atoms/grid/_grid-2-up.twig' %}
                       {% block column_1 %}
-                          {% include "@molecules/block-grid/_block-grid.twig" with content.training_block_1  %}
+                          {% include "@molecules/topic/_topic.twig" with content.training_block_1  %}
                       {% endblock column_1 %}
 
                       {% block column_2 %}
@@ -135,14 +135,14 @@
               <div class="page-width">
                   {% embed '@atoms/grid/_grid-1-up.twig' %}
                       {% block column_1 %}
-                          {% include "@molecules/block-grid/_block-grid.twig" with content.training_block_2  %}
+                          {% include "@molecules/topic/_topic.twig" with content.training_block_2  %}
                       {% endblock column_1 %}
                   {% endembed %}
               </div>
               <div class="page-width">
                   {% embed '@atoms/grid/_grid-2-up.twig' %}
                       {% block column_1 %}
-                          {% include "@molecules/block-grid/_block-grid.twig" with content.training_block_3  %}
+                          {% include "@molecules/topic/_topic.twig" with content.training_block_3  %}
                       {% endblock column_1 %}
                   {% endembed %}
               </div>
@@ -160,15 +160,15 @@
               <div class="page-width">
                   {% embed '@atoms/grid/_grid-3-up.twig' %}
                       {% block column_1 %}
-                          {% include "@molecules/block-grid/_block-grid.twig" with content.pricing_block_1  %}
+                          {% include "@molecules/topic/_topic.twig" with content.pricing_block_1  %}
                       {% endblock column_1 %}
 
                       {% block column_2 %}
-                          {% include "@molecules/block-grid/_block-grid.twig" with content.pricing_block_2  %}
+                          {% include "@molecules/topic/_topic.twig" with content.pricing_block_2  %}
                       {% endblock column_2 %}
 
                       {% block column_3 %}
-                          {% include "@molecules/block-grid/_block-grid.twig" with content.pricing_block_3  %}
+                          {% include "@molecules/topic/_topic.twig" with content.pricing_block_3  %}
                       {% endblock column_3 %}
                   {% endembed %}
               </div>
