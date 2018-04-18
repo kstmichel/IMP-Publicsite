@@ -49,20 +49,20 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     {% block paragraph %}
     <div{{ attributes.addClass(classes) }} >
         <div class="banner--inner banner--background" >
-                {% embed '@molecules/block-grid/_block-grid.twig' with{
-                block_title: content.field_title,
-                block_subtitle: content.field_subtitle
+                {% embed '@molecules/topic/_topic.twig' with{
+                title: content.field_title,
+                subtitle: content.field_subtitle
                 }%}
-                    {% block block_header %}
-                        <div class="grid-icon ">
+                    {% block topic_head %}
+                        <div class="topic-image">
                             {{ content.field_image}}
                         </div>
-                    {% endblock block_header %}
+                    {% endblock topic_head %}
                 {% endembed %}
         </div>
 
-            {% block block_body %}
-                <div class="banner--text col-lg-12 col-md-12 col-sm-12 col-xs-12">{{ content|without('field_image') }}</div>
+            {% block content %}
+                <div class="banner--text col-lg-12 col-md-12 col-sm-12 col-xs-12">{{ content|without('field_image', 'field_title') }}</div>
             {% endblock %}
 
     </div>

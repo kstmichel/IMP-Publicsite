@@ -2,15 +2,14 @@
 @import '../../00-protons/layout';
 @import '../../00-protons/global-classes';
 @import '../../01-atoms/image/_image.scss';
-
 .banner {
   display: inline-block;
   padding: 0;
   margin-bottom: 40px;
 
-  &.banner-external, &.banner-internal{
+  &.banner-external, &.banner-internal {
 
-    .grid-icon{
+    .topic-image {
       padding-top: 5px;
       margin: 0 auto;
       position: absolute;
@@ -19,24 +18,26 @@
       bottom: 0;
       z-index: -1;
 
-      img{
+      img {
         position: relative;
         width: 100%;
         height: auto;
+        max-width: none;
+        margin: 0;
       }
     }
 
-    .grid-content{
+    .topic-content {
       @extend %lw;
     }
 
-    ul{
+    ul {
       display: flex;
       list-style-type: none;
       justify-content: space-between;
       padding: 0;
 
-      li{
+      li {
         width: 30%;
         padding: 0 15px;
       }
@@ -71,12 +72,12 @@
       z-index: -1;
     }
 
-    .banner-image{
+    .banner-image {
       position: absolute;
       left: 0;
       right: 0;
 
-      img{
+      img {
         width: 100%;
         display: block;
       }
@@ -87,65 +88,63 @@
     @extend %lw;
     padding: 0 15px;
     z-index: 5;
+  }
 
-    .image-header{
-      &--inner{
-        justify-content: baseline;
-        padding: 0;
-      }
-
-      &--title{
-        font-size: 24px;
-      }
+  .image-header {
+    &--inner {
+      justify-content: baseline;
+      padding: 0;
     }
 
-    .topic {
-      text-align: left;
-      margin: 0;
-      padding: 0;
+    &--title {
+      font-size: 24px;
+    }
+  }
 
-      &-content{
-        text-align: left;
+  .topic {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
 
-        &--title {
-          color: $p-blue-dark;
-          font-weight: bold;
-          font-size: 34px;
-        }
+  .topic-content {
+    text-align: left;
+  }
 
-        &--body {
-          color: $p-blue-light;
-          line-height: 1.6em;
-          font-size: 20px;
-          text-shadow: 2px 2px 2px $white;
-        }
-      }
+  .topic-content--title {
+    color: $p-blue-dark;
+    font-weight: bold;
+  }
 
-      .list-wrapper li {
-        list-style-type: none;
-        display: inline-block;
-        float: left;
-      }
+  .topic-content--subtitle {
+    color: $p-blue-light;
+    line-height: 1.6em;
+    text-shadow: 2px 2px 2px $white;
+  }
 
-      .list-item--icon {
-        margin: 0;
+  .list-wrapper li {
+    list-style-type: none;
+    display: inline-block;
+    float: left;
+  }
 
-        img {
-          @extend %image-small;
-        }
-      }
+  .list-item--icon {
+    margin: 0;
 
-      .list-item--content {
-        padding: 0 15px;
-      }
+    img {
+      @extend %image-small;
+    }
+  }
 
-      .image-caption {
-        text-align: center;
+  .list-item--content {
+    padding: 0 15px;
+  }
 
-        img {
-          @extend %image-small;
-        }
-      }
+  .image-caption {
+    text-align: center;
+
+    img {
+      @extend %image-small;
     }
   }
 
