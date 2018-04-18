@@ -11,7 +11,11 @@
     justify-content: center;
   }
 
-  &--title{
+  .topic .topic-content {
+    padding-left: 10px;
+  }
+
+  .topic-content--title {
     color: $gray-med;
   }
 
