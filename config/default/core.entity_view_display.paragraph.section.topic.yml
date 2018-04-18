@@ -1,9 +1,9 @@
-uuid: 8da13930-f030-46c0-a338-a70b95ee454a
+uuid: 38a02407-c0f4-437d-8367-c5bb9d7f7dcc
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.paragraph.grid_block
+    - core.entity_view_mode.paragraph.topic
     - field.field.paragraph.section.field_body
     - field.field.paragraph.section.field_image
     - field.field.paragraph.section.field_subtitle
@@ -12,26 +12,34 @@ dependencies:
   module:
     - image
     - text
-id: paragraph.section.grid_block
+id: paragraph.section.topic
 targetEntityType: paragraph
 bundle: section
-mode: grid_block
+mode: topic
 content:
   field_body:
-    type: text_default
-    weight: 2
-    region: content
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    type: text_default
+    region: content
   field_image:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_subtitle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_title:
     weight: 0
@@ -41,5 +49,4 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-hidden:
-  field_subtitle: true
+hidden: {  }

@@ -1,10 +1,10 @@
-uuid: b9dc9994-f6c3-4421-9f2b-60ac8b9c761e
+uuid: 7a192fd0-0cda-452d-981a-0d98c151e218
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.simple_block
-label: 'Simple Block'
+id: paragraph.action
+label: 'Call to Action'
 targetEntityType: paragraph
 cache: true
