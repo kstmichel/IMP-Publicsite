@@ -14,7 +14,12 @@ type_settings:
   entity_type: paragraph
   bundles:
     - section
-  display_plugins: {  }
+  display_plugins:
+    - 'view_mode:paragraph.banner_external_body'
+    - 'view_mode:paragraph.banner_internal_body'
+    - 'view_mode:paragraph.grid_block'
+    - 'view_mode:paragraph.simple_block'
+    - 'view_mode:paragraph.splash_banner'
   entity_browser: sections
   entity_browser_settings:
     display_review: false
