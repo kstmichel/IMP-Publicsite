@@ -49,6 +49,7 @@
 %}
 {% block paragraph %}
   <div {{ attributes.addClass(classes) }}>
+    {{ content.contextual_links }}
     {% block block_grid %}
         {% include '@molecules/block-grid/_block-grid.twig' with {
         block_title: content.title,
@@ -58,7 +59,7 @@
         {{ content.title }}
         {{ content.subtitle }}
 
-      {{ content }}
+      {{ content|without('contextual_links') }}
 
     {% endblock block_grid %}
   </div>

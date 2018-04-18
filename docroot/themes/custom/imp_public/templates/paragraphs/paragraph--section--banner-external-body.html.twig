@@ -48,6 +48,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 <div class="banner banner-external col-lg-12 col-md-12 col-sm-12 col-xs-12">
     {% block paragraph %}
     <div{{ attributes.addClass(classes) }} >
+        {{ content.contextual_links }}
         <div class="banner--inner banner--background" >
                 {% embed '@molecules/topic/_topic.twig' with{
                 title: content.field_title,
@@ -62,7 +63,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
         </div>
 
             {% block content %}
-                <div class="banner--text col-lg-12 col-md-12 col-sm-12 col-xs-12">{{ content|without('field_image', 'field_title') }}</div>
+                <div class="banner--text col-lg-12 col-md-12 col-sm-12 col-xs-12">{{ content|without('contextual_links', 'field_image', 'field_title') }}</div>
             {% endblock %}
 
     </div>

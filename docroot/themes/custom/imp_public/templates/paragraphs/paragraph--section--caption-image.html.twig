@@ -46,6 +46,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 ]
 %}
 <figure class="image-caption {{ caption_class }}">
+    {{ content.contextual_links }}
     {% block paragraph %}
         <div{{ attributes.addClass(classes) }} >
             <div class="image-caption--inner">
