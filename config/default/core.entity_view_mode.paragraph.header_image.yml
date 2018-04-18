@@ -1,0 +1,10 @@
+uuid: b8f63f84-6c16-4406-a68c-aa6fd19fb756
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.header_image
+label: 'Logo Image with Title'
+targetEntityType: paragraph
+cache: true

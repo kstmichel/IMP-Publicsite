@@ -1,10 +1,10 @@
-uuid: 91e636ce-364c-450d-95fb-6c98c9a8f96d
+uuid: cd5d242a-1fc8-4f16-852b-6c37c3fe3e97
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.grid_block
-label: 'Grid Block'
+id: paragraph.topic
+label: Topic
 targetEntityType: paragraph
 cache: true

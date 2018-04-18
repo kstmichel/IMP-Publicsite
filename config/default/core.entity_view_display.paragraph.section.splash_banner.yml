@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.paragraph.splash_banner
     - field.field.paragraph.section.field_body
     - field.field.paragraph.section.field_image
+    - field.field.paragraph.section.field_subtitle
     - field.field.paragraph.section.field_title
     - paragraphs.paragraphs_type.section
   module:
@@ -18,13 +19,13 @@ mode: splash_banner
 content:
   field_body:
     type: text_default
-    weight: 2
+    weight: 3
     region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
   field_image:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       image_style: ''
@@ -32,6 +33,14 @@ content:
     third_party_settings: {  }
     type: image
     region: content
+  field_subtitle:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_title:
     weight: 0
     label: hidden

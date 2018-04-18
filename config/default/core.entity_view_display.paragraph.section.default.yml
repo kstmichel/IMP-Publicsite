@@ -17,14 +17,14 @@ bundle: section
 mode: default
 content:
   field_body:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_image:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       image_style: ''
@@ -33,11 +33,12 @@ content:
     type: image
     region: content
   field_subtitle:
-    weight: 3
-    label: above
-    settings: {  }
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    type: text_default
+    type: string
     region: content
   field_title:
     weight: 0

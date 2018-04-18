@@ -34,11 +34,12 @@ content:
     type: image
     region: content
   field_subtitle:
-    type: text_default
+    type: string
     weight: 1
     region: content
     label: hidden
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
   field_title:
     weight: 0

@@ -1,55 +1,52 @@
-uuid: 421f1443-8895-4517-a454-2a1fe1ac2694
+uuid: 6de0aac8-45c3-40d4-adef-93c462fa710d
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.action
     - field.field.paragraph.section.field_body
     - field.field.paragraph.section.field_image
     - field.field.paragraph.section.field_subtitle
     - field.field.paragraph.section.field_title
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.section
   module:
     - image
     - text
-id: paragraph.section.default
+id: paragraph.section.action
 targetEntityType: paragraph
 bundle: section
-mode: default
+mode: action
 content:
   field_body:
     weight: 3
-    settings:
-      rows: 5
-      placeholder: ''
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
-    type: text_textarea
+    type: text_default
     region: content
   field_image:
     weight: 2
+    label: hidden
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    type: image_image
+    type: image
     region: content
   field_subtitle:
     weight: 1
+    label: hidden
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: string_textfield
+    type: string
     region: content
   field_title:
     weight: 0
+    label: hidden
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: string_textfield
+    type: string
     region: content
-hidden:
-  created: true
-  status: true
-  uid: true
+hidden: {  }
