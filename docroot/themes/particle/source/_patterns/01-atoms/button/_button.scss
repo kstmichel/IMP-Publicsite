@@ -8,9 +8,22 @@ $btn-border-radius: 0.25rem;
 
 // Add custom code here
 
-.btn{
+.btn, button, .button, %button {
+  border-radius: 3px;
+  background-color: $p-gray-lighter;
+  color: darken($p-blue-gray, 5%);
+  display: inline-block;
+  border: 1px solid $p-gray;
+  padding: 5px 10px;
+
+  &:hover{
+    cursor: pointer;
+  }
+
   &-highlight{
     color: $white;
+    background-color: $p-green-light;
+    border-color: darken($p-green-light, 15%);
   }
 
   &-outline-highlight{
@@ -19,5 +32,13 @@ $btn-border-radius: 0.25rem;
     &:hover{
       color: $white;
     }
+  }
+}
+
+.dropbutton-widget{
+  @extend %button;
+
+  .dropbutton-action{
+    padding: 0;
   }
 }

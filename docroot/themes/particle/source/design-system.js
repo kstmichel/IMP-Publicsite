@@ -23,15 +23,16 @@ import * as footer from 'organisms/footer';
 import * as navbar from 'organisms/navbar';
 import * as basicPage from 'templates/basic-page';
 import * as banner from 'molecules/banner';
-import * as blockGrid from 'molecules/block-grid';
+import * as topic from 'molecules/topic';
 import * as complexList from 'molecules/complex-list';
 import * as header from 'organisms/header';
 import * as listItem from 'molecules/list-item';
 import * as splash from 'molecules/splash';
 import * as captionImg from 'molecules/caption-image';
-import * as paragraph from 'molecules/paragraph';
 import * as headerImg from 'molecules/header-image';
 import * as imageLogo from 'atoms/image-logo';
+import * as table from 'atoms/table';
+
 
 const components = {
   alert,
@@ -55,7 +56,7 @@ const components = {
   navbar,
   basicPage,
   banner,
-  blockGrid,
+  topic,
   header,
   complexList,
   listItem,
@@ -63,7 +64,7 @@ const components = {
   captionImg,
   headerImg,
   imageLogo,
-  paragraph,
+  table,
 };
 /**
  * Default export of object containing all components

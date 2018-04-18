@@ -1,0 +1,40 @@
+{#
+  Table:
+
+  parent_element: String: ul|ol|div The html element that will contain the list.
+  list_id: String: a unique id for the list.
+  items: Object: The items you wish you put into a list.
+  item_element: String: li|a|div The html element that the item will use.
+  item_classes: Array: Accepts active, disabled, list-group-item-action, list-group-item-(color). See https://getbootstrap.com/docs/4.0/components/list-group/#with-badges for examples. See https://getbootstrap.com/docs/4.0/utilities/flex/ for flex options
+  item_text: String: The text of the list item.
+  item_badge: Array: See the documentation for badges in source/_patterns/01-atoms/badge/_badge.twig.
+  list_flush: Boolean: True|False Only use this variable if the list is on a card. this will make it align properly.
+
+  see https://getbootstrap.com/docs/4.0/components/list-group/
+#}
+
+{% set parent_element = parent_element | default('table') %}
+
+
+{% if table_id %}
+    {% set table_id = 'id="' ~ table_id ~ '"' %}
+{% endif %}
+
+<{{ parent_element }} class="table col-lg-12 col-md-12 col-sm-12 col-xs-12" {{ table_id }}>
+    <thead>
+        <tr>
+            {% for cell in head %}
+                <th>{{ cell.content }}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in body %}
+            <tr>
+                {% for cell in body.row %}
+                    <td>{{ cell.content }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</{{ parent_element }}>

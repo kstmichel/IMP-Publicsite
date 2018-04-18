@@ -30,6 +30,7 @@ component-libraries:
       - ../../source/_patterns/01-atoms/alert
       - ../../source/_patterns/01-atoms/badge
       - ../../source/_patterns/01-atoms/image
+      - ../../source/_patterns/01-atoms/table
       - ../../source/_patterns/01-atoms/button
       - ../../source/_patterns/01-atoms/branding
       - ../../source/_patterns/01-atoms/dropdown
@@ -41,13 +42,12 @@ component-libraries:
       - ../../source/_patterns/02-molecules
       - ../../source/_patterns/02-molecules/nav
       - ../../source/_patterns/02-molecules/card
+      - ../../source/_patterns/02-molecules/topic
       - ../../source/_patterns/02-molecules/banner
       - ../../source/_patterns/02-molecules/splash
       - ../../source/_patterns/02-molecules/carousel
       - ../../source/_patterns/02-molecules/jumbotron
       - ../../source/_patterns/02-molecules/list-item
-      - ../../source/_patterns/02-molecules/paragraph
-      - ../../source/_patterns/02-molecules/block-grid
       - ../../source/_patterns/02-molecules/pagination
       - ../../source/_patterns/02-molecules/complex-list
       - ../../source/_patterns/02-molecules/header-image

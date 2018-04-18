@@ -28,7 +28,6 @@
 
     .grid-content{
       @extend %lw;
-      margin: 0 auto;
     }
 
     ul{
@@ -86,7 +85,6 @@
 
   &--text {
     @extend %lw;
-    margin: 0 auto;
     padding: 0 15px;
     z-index: 5;
 
@@ -101,22 +99,26 @@
       }
     }
 
-    .block-grid {
+    .topic {
       text-align: left;
       margin: 0;
       padding: 0;
 
-      .grid-content--title {
-        color: $p-blue-dark;
-        font-weight: bold;
-        font-size: 34px;
-      }
+      &-content{
+        text-align: left;
 
-      .grid-content--body {
-        color: $p-blue-light;
-        line-height: 1.6em;
-        font-size: 20px;
-        text-shadow: 2px 2px 2px $white;
+        &--title {
+          color: $p-blue-dark;
+          font-weight: bold;
+          font-size: 34px;
+        }
+
+        &--body {
+          color: $p-blue-light;
+          line-height: 1.6em;
+          font-size: 20px;
+          text-shadow: 2px 2px 2px $white;
+        }
       }
 
       .list-wrapper li {
@@ -147,11 +149,7 @@
     }
   }
 
-  .grid-content{
-    text-align: left;
-  }
-
-  .block.block-grid {
+  .topic {
     display: inline-block;
     width: 100%;
     max-width: 1170px;

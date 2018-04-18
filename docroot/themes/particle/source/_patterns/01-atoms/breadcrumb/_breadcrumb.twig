@@ -10,14 +10,16 @@
   see https://getbootstrap.com/docs/4.0/components/breadcrumb/ for more details
 #}
 
-<nav aria-label="breadcrumb" role="navigation">
-  <ol class="breadcrumb">
-    {% for item in breadcrumb %}
-      {% if loop.last %}
-        <li class="breadcrumb-item active is-active" aria-current="page">{{ item.text }}</li>
-      {% else %}
-        <li class="breadcrumb-item"><a href="{{ (pl) ? '#' : item.url }}">{{ item.text }}</a></li>
-      {% endif %}
-    {% endfor %}
-  </ol>
+<nav aria-label="breadcrumb" class="breadcrumb" role="navigation">
+    <div class="breadcrumb-wrapper">
+        <ol class="breadcrumb-list col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            {% for item in breadcrumb %}
+                {% if loop.last %}
+                    <li class="breadcrumb-item active is-active" aria-current="page">{{ item.text }}</li>
+                {% else %}
+                    <li class="breadcrumb-item"><a href="{{ (pl) ? '#' : item.url }}">{{ item.text }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ol>
+    </div>
 </nav>

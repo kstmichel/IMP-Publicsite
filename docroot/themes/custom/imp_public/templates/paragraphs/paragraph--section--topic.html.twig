@@ -40,7 +40,7 @@
 #}
 {%
   set classes = [
-    'block-grid grid-simple',
+    'topic',
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
@@ -49,23 +49,20 @@
 
 {% block paragraph %}
     <div{{ attributes.addClass(classes) }} >
-            {% embed '@molecules/block-grid/_block-grid.twig' with {
-            block_title: content.field_title,
-            block_subtitle: content.field_subtitle,
-            block_body: content.field_body
+        {% block topic %}
+            {% embed '@molecules/topic/_topic.twig' with {
+            title: content.field_title,
+            subtitle: content.field_subtitle,
+            body: content.field_body
             } %}
 
-            {% block block_header %}
-                <div class="grid-icon">
-                    {{ content.field_image }}
-                </div>
-            {% endblock block_header %}
+                {% block topic_head %}
+                    <div class="topic-image">
+                        {{ content.field_image }}
+                    </div>
+                {% endblock topic_head %}
 
-            {% block block_body %}
-                <div class="grid-content {{ content_class }}">
-                    {{ content|without( 'field_image') }}
-                </div>
-            {% endblock block_body %}
         {% endembed %}
+        {% endblock %}
     </div>
 {% endblock paragraph %}

@@ -48,28 +48,20 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 
 {% block paragraph %}
     <div{{ attributes.addClass(classes) }} >
+        {% embed '@molecules/topic/_topic.twig' with {
+        title: content.field_title,
+        subtitle: content.field_subtitle,
+        body: content.field_body,
+        class: 'call-to-action'
+        } %}
 
-        {% block block_grid %}
-            {% embedded '@molecules/block-grid/_block-grid.twig' with {
-            block_title: content.field_title,
-            block_subtitle: content.field_subtitle,
-            block_body: content.field_body
-            } %}
-
-            {% block block_header %}
-                {% if block_header %}
-                    <div class="grid-icon">
-                        {{ content.field_image }}
-                    </div>
-                {% endif %}
-            {% endblock block_header %}
-
-            {% block block_body %}
-                <div class="grid-content {{ content_class }}">
-                    {{ content|without('field_image') }}
+            {% block topic_head %}
+                <div class="topic-image">
+                    {{ content.field_image }}
                 </div>
-            {% endblock block_body %}
-            {% endembed %}
-        {% endblock block_grid %}
+            {% endblock topic_head %}
+
+
+        {% endembed %}
     </div>
 {% endblock paragraph %}
