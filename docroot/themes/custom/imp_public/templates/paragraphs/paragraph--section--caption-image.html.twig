@@ -45,17 +45,17 @@ set classes = [
 view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 ]
 %}
-<figure class="image-caption col-lg-3 col-md-3 col-sm-3 col-xs-12 {{ caption_class }}">
+<figure class="image-caption {{ caption_class }}">
     {% block paragraph %}
         <div{{ attributes.addClass(classes) }} >
             <div class="image-caption--inner">
-                {% embed '@molecules/block-grid/_block-grid.twig' with{
-                block_title: content.field_title,
-                block_body: content.field_body
+                {% embed '@molecules/topic/_topic.twig' with{
+                title: content.field_title,
+                body: content.field_body
                 }%}
-                    {% block block_header %}
+                    {% block topic_head %}
                         {{ content.field_image}}
-                    {% endblock block_header %}
+                    {% endblock topic_head %}
 
                 {% endembed %}
             </div>

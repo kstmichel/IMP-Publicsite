@@ -20,6 +20,16 @@
   float: none;
 }
 
+.heading-passive{
+  color: darken($p-gray, 25%);
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+.grid-flex{
+  display: flex;
+}
+
 .page-width{
   max-width: $page-width;
   margin: 0 auto;

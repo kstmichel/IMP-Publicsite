@@ -4,7 +4,7 @@
   display: inline-block;
   float: left;
 
-  &--inner{
+  .topic{
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -17,8 +17,11 @@
     display: block;
     height: 100px;
   }
+  .topic-content{
+    padding: 0;
+  }
 
-  p{
+  .topic-content--body p{
     line-height: 1.4em;
     color: darken($p-gray, 30%);
     text-align: center;
