@@ -1,17 +1,18 @@
 <div class="image-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="image-header--inner col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        {% block block_header %}
-            {% if block_header %}
+        {% block image %}
+            {% if image %}
             <div class="image-header--image {{  block_header.img_class }}">
                 {% include "@atoms/image-logo/_image-logo.twig" with block_header %}
             </div>
             {% endif %}
         {% endblock %}
 
-        {% block block_content %}
-            {% if block_content %}
-                <div class="image-header--content {{ block_content.content_class }}">
-                    <h2 class="image-header--title">{{ block_content.title }}</h2>
+        {% block content %}
+            {% if content %}
+                <div class="image-header--content ">
+                    <h2 class="image-header--title">{{ title }}</h2>
+                    <p>{{ body }}</p>
                 </div>
             {% endif %}
         {% endblock %}
