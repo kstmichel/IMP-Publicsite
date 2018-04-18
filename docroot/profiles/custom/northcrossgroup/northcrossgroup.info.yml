@@ -14,6 +14,8 @@ dependencies:
   - maillog
   - toolbar
   - path
+  - paragraphs
+  - paragraphs_edit
   - image
   - ckeditor
   - components
