@@ -59,7 +59,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 30px;
 
     &:after {
       content: '';
@@ -76,10 +75,12 @@
       position: absolute;
       left: 0;
       right: 0;
+      z-index: -1;
 
       img {
         width: 100%;
         display: block;
+        height: auto;
       }
     }
   }

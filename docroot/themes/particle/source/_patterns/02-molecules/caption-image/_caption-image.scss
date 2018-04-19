@@ -1,8 +1,10 @@
 @import '../../00-protons/variables';
 
 .image-caption{
-  display: inline-block;
-  float: left;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 
   .topic{
     display: flex;
@@ -17,6 +19,11 @@
     display: block;
     height: 100px;
   }
+  .caption {
+    line-height: 1.4em;
+    color: darken($p-gray, 30%);
+  }
+
   .topic-content{
     padding: 0;
   }

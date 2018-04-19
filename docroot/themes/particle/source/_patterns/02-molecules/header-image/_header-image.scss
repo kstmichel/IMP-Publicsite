@@ -1,7 +1,18 @@
 @import '../../00-protons/variables';
+@import '../../00-protons/layout';
+@import '../../00-protons/global-classes';
 
 .image-header{
   display: inline-block;
+
+  &--inner {
+    display: flex;
+    align-items: center;
+    @extend %lw;
+    margin: 30px auto;
+    float: none;
+    justify-content: center;
+  }
 
   &--inner .topic {
     display: flex;
@@ -11,12 +22,16 @@
     justify-content: center;
   }
 
-  .topic .topic-content {
-    padding-left: 10px;
+  &--content {
+    padding-left: 40px;
+
+    h2{
+      color: $gray-med;
+    }
   }
 
-  .topic-content--title {
-    color: $gray-med;
+  .topic .topic-content {
+    padding-left: 10px;
   }
 
   &--image{
