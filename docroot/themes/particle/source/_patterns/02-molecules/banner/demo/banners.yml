@@ -1,7 +1,4 @@
 banner_basic:
-  banner_header:
-    src: ../../../assets/banner_features.jpg
-    alt: Splash Sample Logo
   img:
     src: ../../../assets/banner_features.jpg
     alt: Splash Sample Logo
@@ -50,4 +47,4 @@ banner_grid_block:
              img:
                src: ../../../assets/thumb-square-fire.jpg
                alt: Sample Image
-           caption_body: Third item in the caption list. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.
+           caption_body: Third item in the caption list. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
