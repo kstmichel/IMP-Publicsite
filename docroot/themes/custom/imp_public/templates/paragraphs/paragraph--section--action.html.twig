@@ -56,11 +56,13 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
         } %}
 
             {% block topic_head %}
-                <div class="topic-image">
+                <div class="topic-image col-lg-5 col-md-5 col-sm-5 col-xs-12">
                     {{ content.field_image }}
                 </div>
             {% endblock topic_head %}
-
+            {% block title %}
+                <h3 class="topic-content--title">{{ title }}</h3>
+            {% endblock %}
 
         {% endembed %}
     </div>

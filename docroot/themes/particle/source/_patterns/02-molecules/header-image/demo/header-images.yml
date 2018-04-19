@@ -1,5 +1,5 @@
 header_image_example:
-  image:
+  header:
     href: www.sample.com
     class: header--logo image-icon img-responsive
     img:

@@ -10,9 +10,11 @@
 
     {% block content %}
         <div class="topic-content">
+            {% block title %}
             {% if title %}
                 <h2 class="topic-content--title">{{ title }}</h2>
             {% endif %}
+            {% endblock %}
 
             {% if subtitle %}
                 <h4 class="topic-content--subtitle">{{ subtitle }}</h4>

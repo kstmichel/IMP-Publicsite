@@ -1,4 +1,7 @@
 banner_basic:
+  banner_header:
+    src: ../../../assets/banner_features.jpg
+    alt: Splash Sample Logo
   img:
     src: ../../../assets/banner_features.jpg
     alt: Splash Sample Logo

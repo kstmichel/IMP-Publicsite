@@ -45,24 +45,20 @@ set classes = [
 view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 ]
 %}
-<div class="banner banner-internal col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="banner-internal col-lg-12 col-md-12 col-sm-12 col-xs-12">
     {% block paragraph %}
         <div{{ attributes.addClass(classes) }} >
-            <div class="banner--inner banner--background" >
-                {% embed '@molecules/topic/_topic.twig' with{
-                title: content.field_title,
-                subtitle: content.field_subtitle,
-                body: content.field_body
-                }%}
-                    {% block topic_head %}
-                        <div class="topic-image">
-                            {{ content.field_image}}
-                        </div>
-                    {% endblock topic_head %}
-                {% endembed %}
-
-
-            </div>
+            {% embed '@molecules/banner/_banner.twig' with{
+            title: content.field_title,
+            subtitle: content.field_subtitle,
+            body: content.field_body
+            }%}
+                {% block banner_header %}
+                    <div class="banner-image">
+                        {{ content.field_image}}
+                    </div>
+                {% endblock %}
+            {% endembed %}
         </div>
     {% endblock paragraph %}
 </div>

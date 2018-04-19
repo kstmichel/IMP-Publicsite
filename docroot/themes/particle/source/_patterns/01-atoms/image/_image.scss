@@ -15,48 +15,7 @@
 .image-icon {
   margin-bottom: 20px;
 }
-.image-header {
-  display: inline-block;
 
-  &--inner {
-    display: flex;
-    align-items: center;
-    @extend %lw;
-    margin: 30px auto;
-    padding-top: 30px;
-    float: none;
-    justify-content: center;
-  }
-
-  &--title {
-    color: $gray-med;
-  }
-
-  &--content {
-    padding-left: 40px;
-  }
-
-  img {
-    margin: 0 auto;
-  }
-}
-.image-caption {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-
-  img {
-    margin: 10px auto;
-    width: auto;
-    height: 100px;
-  }
-
-  .caption {
-    line-height: 1.4em;
-    color: darken($p-gray, 30%);
-  }
-}
 .block-banner {
   display: inline-block;
   padding: 0;

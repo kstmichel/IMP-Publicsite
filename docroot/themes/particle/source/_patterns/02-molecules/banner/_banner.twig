@@ -1,9 +1,16 @@
 <div class="banner col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="banner--inner banner--background" style="background-image: url('{{ img.src }}');">
-        {% if content %}
-            <div class="banner--text col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  {% include "@molecules/topic/_topic.twig" with content %}
+        {% block banner_header %}
+            <div class="banner-image">
+                {% include "@atoms/_image.twig" with content %}
             </div>
-        {% endif %}
+        {% endblock %}
+        {% block content %}
+            {% if content %}
+                <div class="banner--text col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      {% include "@molecules/topic/_topic.twig" with content %}
+                </div>
+            {% endif %}
+        {% endblock %}
     </div>
 </div>
