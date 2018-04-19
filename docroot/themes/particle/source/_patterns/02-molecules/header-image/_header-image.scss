@@ -4,6 +4,7 @@
 
 .image-header{
   display: inline-block;
+  padding: 0;
 
   &--inner {
     display: flex;
@@ -32,10 +33,6 @@
 
   .topic .topic-content {
     padding-left: 10px;
-  }
-
-  &--image{
-    margin-right: 30px;
   }
 
   img{
