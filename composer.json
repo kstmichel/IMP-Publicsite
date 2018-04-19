@@ -12,7 +12,9 @@
         "drupal/paragraphs": "^1.2",
         "drupal/components": "^1.0",
         "drupal/smtp": "^1.0@beta",
-        "drupal/maillog": "1.x-dev"
+        "drupal/maillog": "1.x-dev",
+        "drupal/paragraphs_edit": "^2.0@alpha",
+        "drupal/core": "^8.5"
     },
     "require-dev": {},
     "extra": {
@@ -22,6 +24,9 @@
             "npm-asset"
         ],
         "patches": {
+            "drupal/core": {
+                "fix quickedit default theme use": "https://www.drupal.org/files/issues/2018-04-18/2587119-quickedit-admin_theme_not_used_correctly.patch"
+            },
             "drupal/smtp": {
                 "fix config file format": "https://cgit.drupalcode.org/smtp/patch/?id=c9496a9d2b7d1eea35c3b3ef21b8cbe6482a9f44"
             }

@@ -40,3 +40,6 @@ target-hooks:
   frontend-build:
     dir: ${docroot}/themes/particle
     command: 'npm run build:drupal'
+  post-deploy-build:
+    dir: ${deploy.dir}/docroot/themes/particle
+    command: npm install && npm run build:drupal && git add -f ${deploy.dir}/docroot/themes/particle/dist

@@ -45,7 +45,8 @@ set classes = [
 view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 ]
 %}
-<div class="banner-internal col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="banner banner-internal col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    {{ content.contextual_links }}
     {% block paragraph %}
         <div{{ attributes.addClass(classes) }} >
             {% embed '@molecules/banner/_banner.twig' with{

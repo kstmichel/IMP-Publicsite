@@ -48,16 +48,17 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 
 {% block paragraph %}
 <div{{ attributes.addClass(classes) }} >
-        {% embed '@molecules/header-image/_header-image.twig' with{
-        title: content.field_title,
-        body: content.field_body
-        }%}
-            {% block header %}
-                <div class="image-header--image">
-                    {{ content.field_image}}
-                </div>
-            {% endblock %}
-        {% endembed %}
+  {{ content.contextual_links }}
+  {% embed '@molecules/header-image/_header-image.twig' with{
+    title: content.field_title,
+    body: content.field_body
+    }%}
+        {% block header %}
+            <div class="image-header--image">
+                {{ content.field_image}}
+            </div>
+        {% endblock %}
+    {% endembed %}
 </div>
 {% endblock paragraph %}
 
