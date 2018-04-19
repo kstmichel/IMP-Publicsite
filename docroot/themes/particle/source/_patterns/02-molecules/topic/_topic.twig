@@ -10,13 +10,17 @@
 
         {% block content %}
             <div class="topic-content">
-                {% if title %}
-                    <h2 class="topic-content--title">{{ title }}</h2>
-                {% endif %}
+                 {% block title %}
+                    {% if title %}
+                        <h2 class="topic-content--title">{{ title }}</h2>
+                    {% endif %}
+                {% endblock %}
 
-                {% if subtitle %}
-                    <h4 class="topic-content--subtitle">{{ subtitle }}</h4>
-                {% endif %}
+                {% block subtitle %}
+                    {% if subtitle %}
+                        <h4 class="topic-content--subtitle">{{ subtitle }}</h4>
+                    {% endif %}
+                {% endblock %}
 
                 {% if header_image %}
                     <div class="topic-content--header-image">
@@ -25,8 +29,17 @@
                 {% endif %}
 
                 {% if body %}
-                    <div class="topic-content--body">{{ body }}</div>
+                    <div class="topic-content--body"><p>{{ body }}</p></div>
                 {% endif %}
+
+                {% if caption_images %}
+                    <div class="topic-content--caption-images">
+                        {% for item in caption_images %}
+                        {% include "@molecules/caption-image/_caption-image.twig" with item  %}
+                         {% endfor %}
+                    </div>
+                {% endif %}
+
 
                 {% if list %}
                     {% include "@molecules/list-item/_list-item.twig" with list  %}

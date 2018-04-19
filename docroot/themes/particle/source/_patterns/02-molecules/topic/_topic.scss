@@ -74,6 +74,14 @@
           text-align: center;
         }
       }
+
+      .topic-content--caption-images{
+        display: flex;
+
+        .image-caption{
+          padding: 0 15px;
+        }
+      }
     }
 
     ul li{
@@ -92,7 +100,7 @@
     }
   }
 
-  .topic-image{
+  .topic-content--image{
     display: inline-block;
     vertical-align: top;
 
@@ -104,23 +112,19 @@
     }
   }
 
-  .image-header--image{
-    padding: 0;
-
-    img{
-      margin: 0;
-    }
-  }
-
-  .image-header--inner{
-    padding: 0;
-    margin: 15px 0;
-    justify-content: baseline;
-  }
-
   .topic-content--body{
     p{
       text-align: left;
+    }
+  }
+
+  .topic-content--caption-images{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    .image-caption{
+      padding: 0 15px;
     }
   }
 }

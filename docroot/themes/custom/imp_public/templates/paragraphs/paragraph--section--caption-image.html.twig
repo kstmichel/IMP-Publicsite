@@ -45,21 +45,19 @@ set classes = [
 view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 ]
 %}
-<figure class="image-caption {{ caption_class }}">
-    {{ content.contextual_links }}
-    {% block paragraph %}
-        <div{{ attributes.addClass(classes) }} >
-            <div class="image-caption--inner">
-                {% embed '@molecules/topic/_topic.twig' with{
-                title: content.field_title,
-                body: content.field_body
-                }%}
-                    {% block topic_head %}
-                        {{ content.field_image}}
-                    {% endblock topic_head %}
+{{ content.contextual_links }}
+{% block paragraph %}
+    <div{{ attributes.addClass(classes) }} >
+            {% embed '@molecules/caption-image/_caption-image.twig' with{
+            title: content.field_title,
+            body: content.field_body
+            }%}
+                {% block block_image %}
+                    {% if block_image %}
+                        {{  content.field_image }}
+                    {% endif %}
+                {% endblock %}
 
-                {% endembed %}
-            </div>
-        </div>
-    {% endblock paragraph %}
-</figure>
+            {% endembed %}
+    </div>
+{% endblock paragraph %}

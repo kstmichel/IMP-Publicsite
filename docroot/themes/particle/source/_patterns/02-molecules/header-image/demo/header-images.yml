@@ -5,6 +5,17 @@ header_image_example:
     img:
       src: ../../../assets/IMP_logo.png
       alt: Sample Logo
-  block_content:
-    content_class: col-lg-9 col-md-9 col-sm-9 col-xs-12
     title: Incident Management Portal
+  block_content:
+    title: Topic title
+    subtitle: Topic Subtitle
+    body: Here is the topic body
+  caption_images:
+    - img:
+        src: ../../../assets/thumb-square-fire.jpg
+        alt: Sample 1 Image
+      body: This is sample 1 content for a caption with image.
+    - img:
+        src: ../../../assets/thumb-square-fire.jpg
+        alt: Sample 2 Image
+      body: This is sample 2 content for a caption with image.

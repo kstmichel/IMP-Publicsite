@@ -13,15 +13,17 @@
     justify-content: center;
   }
 
-  img{
+  img {
     margin: 10px auto;
     width: auto;
     display: block;
     height: 100px;
   }
+
   .caption {
     line-height: 1.4em;
     color: darken($p-gray, 30%);
+    text-align: center;
   }
 
   .topic-content{

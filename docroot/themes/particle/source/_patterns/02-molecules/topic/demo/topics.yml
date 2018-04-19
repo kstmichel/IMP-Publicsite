@@ -36,7 +36,7 @@ descriptive_block:
 
 simple_highlights:
   class: grid-stacked simple
-  topic_header:
+  topic_head:
     icon_class: col-lg-2 col-md-2 col-sm-2 col-xs-12
     class: img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
     img:
@@ -57,7 +57,7 @@ simple_highlights:
 
 simple_grid_body:
   class:  simple
-  topic_header:
+  topic_head:
     icon_class: col-lg-2 col-md-2 col-sm-2 col-xs-12
     class: img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
     img:
@@ -73,47 +73,27 @@ simple_grid_body:
 
 simple_captions:
   class:  simple
-  topic_header:
+  topic_head:
     icon_class: col-lg-2 col-md-2 col-sm-2 col-xs-12
     class: img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
     img:
       src: ../../../assets/thumb-square-fire.jpg
       alt: Sample Here!!
   title:  Simple Block with Captions
-  list:
-    items:
-     - item_text:
-       caption:
-         caption_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
-         caption_image:
-           class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
-           img:
-             src: ../../../assets/thumb-square-fire.jpg
-             alt: Sample Image
-         caption_body: First item in the caption list. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.
-     - item_text:
-       caption:
-         caption_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
-         caption_image:
-           class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
-           img:
-             src: ../../../assets/thumb-square-fire.jpg
-             alt: Sample Image
-         caption_body: Second item in the caption list. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.
-     - item_text:
-       caption:
-         caption_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
-         caption_image:
-           class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
-           img:
-             src: ../../../assets/thumb-square-fire.jpg
-             alt: Sample Image
-         caption_body: Third item in the caption list. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.
+  caption_images:
+    - img:
+        src: ../../../assets/thumb-square-fire.jpg
+        alt: Sample 1 Image
+      body: This is sample 1 content for a caption with image.
+    - img:
+        src: ../../../assets/thumb-square-fire.jpg
+        alt: Sample 2 Image
+      body: This is sample 2 content for a caption with image.
 
 
 simple_captions_body:
   class:  simple
-  topic_header:
+  topic_head:
     icon_class: col-lg-2 col-md-2 col-sm-2 col-xs-12
     class: img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
     img:
@@ -121,35 +101,6 @@ simple_captions_body:
       alt: Sample Here!!
   title:  Simple Block with Body and Captions
   topic_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.
-  list:
-    items:
-     - item_text:
-       caption:
-         caption_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
-         caption_image:
-           class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
-           img:
-             src: ../../../assets/thumb-square-fire.jpg
-             alt: Sample Image
-         caption_body: First item in the caption list. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.
-     - item_text:
-       caption:
-         caption_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
-         caption_image:
-           class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
-           img:
-             src: ../../../assets/thumb-square-fire.jpg
-             alt: Sample Image
-         caption_body: Second item in the caption list. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.
-     - item_text:
-       caption:
-         caption_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
-         caption_image:
-           class: image-icon img-responsive col-lg-10 col-md-10 col-sm-10 col-xs-12
-           img:
-             src: ../../../assets/thumb-square-fire.jpg
-             alt: Sample Image
-         caption_body: Third item in the caption list. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.
 
 simple_header_image:
   class:  simple
