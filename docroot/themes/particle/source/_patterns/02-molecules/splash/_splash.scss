@@ -74,8 +74,9 @@
       .topic {
 
         .topic-content {
-          padding-top: 60px;
+          padding: 50px;
           text-align: left;
+          max-width: 55%;
         }
 
         .topic-content--title {
@@ -93,6 +94,16 @@
             font-size: 24px;
             text-shadow: 2px 2px 2px $splash-body-shadow;
           }
+        }
+      }
+    }
+
+    .embedded-entity{
+      &:nth-of-type(2){
+        border: 1px solid red;
+
+        .topic .topic-content--title{
+          @extend %heading-passive;
         }
       }
     }

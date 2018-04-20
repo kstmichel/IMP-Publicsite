@@ -2,12 +2,16 @@
     <div class="image-caption--inner">
         {% block block_image %}
             {% if block_image %}
-                {% include "@atoms/_image.twig" with block_image %}
+                <div class="caption-image">
+                    {% include "@atoms/image/_image.twig" with block_image %}
+                </div>
             {% endif %}
         {% endblock %}
 
-        {% if body %}
-            <p class="caption">{{ body }}</p>
-        {% endif %}
+        <p class="caption">{{ caption_body }}</p>
     </div>
 </figure>
+
+
+
+

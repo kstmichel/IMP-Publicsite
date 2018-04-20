@@ -3,10 +3,11 @@ caption_1:
     img:
       src: ../../../assets/thumb-square-yosemite.jpg
       alt: Sample Image
-  body: This is sample content for a caption with image.
+  caption_body: This is sample content for a caption with image.
 
 caption_2:
-  img:
-    src: ../../../assets/thumb-square-fire.jpg
-    alt: Sample Image
-  body: This is sample content for a caption with image.
+  block_image:
+    img:
+      src: ../../../assets/thumb-square-fire.jpg
+      alt: Sample Image
+  caption_body: This is sample content for a caption with image.

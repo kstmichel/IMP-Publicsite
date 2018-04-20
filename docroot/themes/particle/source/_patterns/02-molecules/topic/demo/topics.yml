@@ -81,14 +81,16 @@ simple_captions:
       alt: Sample Here!!
   title:  Simple Block with Captions
   caption_images:
-    - img:
-        src: ../../../assets/thumb-square-fire.jpg
-        alt: Sample 1 Image
-      body: This is sample 1 content for a caption with image.
-    - img:
-        src: ../../../assets/thumb-square-fire.jpg
-        alt: Sample 2 Image
-      body: This is sample 2 content for a caption with image.
+    - block_image:
+        img:
+          src: ../../../assets/thumb-square-fire.jpg
+          alt: Sample 1 Image
+      caption_body: This is sample 1 content for a caption with image.
+    - block_image:
+        img:
+          src: ../../../assets/thumb-square-fire.jpg
+          alt: Sample 2 Image
+      caption_body: This is sample 2 content for a caption with image.
 
 
 simple_captions_body:

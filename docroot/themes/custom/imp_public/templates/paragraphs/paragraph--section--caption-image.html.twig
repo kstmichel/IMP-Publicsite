@@ -38,26 +38,23 @@
  * @ingroup themeable
  */
 #}
-{%
-set classes = [
+{% set classes = [
 'paragraph',
 'paragraph--type--' ~ paragraph.bundle|clean_class,
 view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-]
-%}
+] %}
 {{ content.contextual_links }}
 {% block paragraph %}
     <div{{ attributes.addClass(classes) }} >
-            {% embed '@molecules/caption-image/_caption-image.twig' with{
-            title: content.field_title,
-            body: content.field_body
-            }%}
-                {% block block_image %}
-                    {% if block_image %}
-                        {{  content.field_image }}
-                    {% endif %}
-                {% endblock %}
-
-            {% endembed %}
+        {% embed '@molecules/caption-image/_caption-image.twig' with{
+        title: content.field_title,
+        caption_body: content.field_body
+        } %}
+            {% block block_image %}
+                <div class="caption-image">
+                    {{ content.field_image }}
+                </div>
+            {% endblock %}
+        {% endembed %}
     </div>
 {% endblock paragraph %}
