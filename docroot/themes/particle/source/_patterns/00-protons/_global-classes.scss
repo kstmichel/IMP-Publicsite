@@ -29,12 +29,21 @@
 .grid-flex{
   display: flex;
   flex-wrap: wrap;
+
+  @media(max-width: $bp-large) {
+    flex-direction: column;
+  }
 }
 
 .page-width{
   max-width: $page-width;
   margin: 0 auto;
 }
+
+.contextual-region h1{
+  @extend %lw;
+}
+
 /* Completely remove from the flow and screen readers. */
 .is-hidden {
   display: none;

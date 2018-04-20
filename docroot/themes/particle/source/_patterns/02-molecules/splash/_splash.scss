@@ -22,32 +22,31 @@
       min-height: 500px;
       display: block;
       position: relative;
+      border-bottom: 2px solid $p-gray-light;
 
-      @media(max-width: $bp-med) {
+      @media(max-width: $bp-large) {
         background-position: right -150px;
         background-size: auto;
-        min-height: 100vh;
+        min-height: 800px;
       }
 
       &:after {
         content: '';
-        background-image: linear-gradient(to top right, rgba(#becede, 0.2) 0%, rgba($white, 0.3) 30%, transparent 100%);
+        background-image: none;
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
-        border-bottom: 2px solid #c8def1;
         height: 100%;
 
-        @media(max-width: $bp-med) {
-          background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2) 0%, rgb(255, 255, 255) 30%, transparent 100%);
+        @media(max-width: $bp-large) {
+          background-image: none;
         }
       }
 
       .topic-image{
         position: absolute;
         bottom: 0;
-        top: 0;
         right: 0;
         z-index: -1;
 
@@ -63,12 +62,11 @@
     .banner--text {
       @extend %lw;
       padding: 0 15px;
+      position: relative;
+      min-height: 500px;
 
-      @media(max-width: $bp-med) {
-        top: 360px;
-        background-color: #fff;
-        padding-bottom: 20px;
-        display: inline-block;
+      @media(max-width: $bp-large) {
+        min-height: 800px;
       }
 
       .topic {
@@ -76,7 +74,12 @@
         .topic-content {
           padding: 50px;
           text-align: left;
-          max-width: 55%;
+          max-width: 50%;
+
+          @media(max-width: $bp-large) {
+            max-width: none;
+            padding: 50px 20px;
+          }
         }
 
         .topic-content--title {
@@ -94,16 +97,6 @@
             font-size: 24px;
             text-shadow: 2px 2px 2px $splash-body-shadow;
           }
-        }
-      }
-    }
-
-    .embedded-entity{
-      &:nth-of-type(2){
-        border: 1px solid red;
-
-        .topic .topic-content--title{
-          @extend %heading-passive;
         }
       }
     }
@@ -160,6 +153,38 @@
         display: flex;
         flex-direction: column;
       }
+    }
+  }
+
+  .splash-content--main {
+    padding-top: 30px;
+    margin: 0 auto;
+
+    .topic .topic-content--title{
+      @extend %heading-passive;
+    }
+
+    .image-header .head_section{
+      flex-direction: column;
+
+      img{
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .splash-content--secondary {
+    @extend %lw;
+
+
+    .topic-content--title{
+      font-size: 28px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .grid-flex{
+      padding-top: 20px;
     }
   }
 }

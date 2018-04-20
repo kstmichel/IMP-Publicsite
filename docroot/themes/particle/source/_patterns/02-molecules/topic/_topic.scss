@@ -34,7 +34,6 @@
 
 .topic {
   display: flex;
-  margin-bottom: 25px;
 
   &.call-to-action{
     display: flex;
@@ -115,6 +114,12 @@
   .topic-content--body{
     p{
       text-align: left;
+    }
+
+    .caption p, .caption {
+      line-height: 1.4em;
+      color: #757575;
+      text-align: center;
     }
   }
 
