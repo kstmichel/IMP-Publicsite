@@ -1,0 +1,22 @@
+uuid: e60ce621-2180-4acc-bbbe-10e4f8c416e1
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access in-place editing'
+  - 'access sections entity browser pages'
+  - 'access shortcuts'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'create page content'
+  - 'edit any page content'
+  - 'use text format full_html'
+  - 'view own unpublished content'
