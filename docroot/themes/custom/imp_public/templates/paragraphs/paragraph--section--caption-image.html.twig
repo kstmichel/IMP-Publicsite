@@ -46,9 +46,9 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 ]
 %}
 <figure class="image-caption {{ caption_class }}">
-    {{ content.contextual_links }}
     {% block paragraph %}
         <div{{ attributes.addClass(classes) }} >
+            {{ content.contextual_links }}
             <div class="image-caption--inner">
                 {% embed '@molecules/topic/_topic.twig' with{
                 title: content.field_title,
