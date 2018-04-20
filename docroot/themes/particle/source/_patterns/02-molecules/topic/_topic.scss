@@ -1,4 +1,6 @@
 @import '../../00-protons/variables';
+@import '../../00-protons/layout';
+@import '../../00-protons/global-classes';
 
 .embedded-entity.align-right{
   .topic:not(.call-to-action) {
@@ -109,6 +111,11 @@
       max-width: 300px;
       height: auto;
     }
+  }
+
+  .topic-content{
+    @extend %lw;
+    padding: 0 15px;
   }
 
   .topic-content--body{

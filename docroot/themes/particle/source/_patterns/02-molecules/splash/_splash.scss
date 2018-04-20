@@ -75,6 +75,7 @@
           padding: 50px;
           text-align: left;
           max-width: 50%;
+          margin: 0;
 
           @media(max-width: $bp-large) {
             max-width: none;

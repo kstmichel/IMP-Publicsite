@@ -44,6 +44,19 @@
   @extend %lw;
 }
 
+.node-form, .form-group{
+  @extend %lw;
+}
+
+.form-group{
+  margin: 20px 0;
+}
+
+.contextual-region nav{
+  @extend %lw;
+  margin: 15px auto;
+}
+
 /* Completely remove from the flow and screen readers. */
 .is-hidden {
   display: none;
