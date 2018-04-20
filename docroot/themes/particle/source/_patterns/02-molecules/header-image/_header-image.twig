@@ -1,20 +1,20 @@
 <div class="image-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="image-header--inner col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        {% block header %}
-            {% if header %}
-            <div class="image-header--image {{  header.img_class }}">
-                {% include "@atoms/image-logo/_image-logo.twig" with header %}
-            </div>
-            {% endif %}
-        {% endblock %}
-
-        {% block content %}
-            {% if content %}
-                <div class="image-header--content">
-                    <h3 class="image-header--title">{{ title }}</h3>
-                    <p>{{ body }}</p>
+        {% block block_header %}
+            {% if block_header %}
+                <div class="head_section">
+                    <div class="image-header--image {{  block_header.img_class }}">
+                        {% include "@atoms/image/_image.twig" with block_header %}
+                    </div>
+                    <h2 class="image-header--title">{{ block_header.title }}</h2>
                 </div>
             {% endif %}
         {% endblock %}
+
+        {% if block_content %}
+            <div class="body">
+               {% include "@molecules/topic/_topic.twig" with block_content %}
+            </div>
+        {% endif %}
     </div>
 </div>

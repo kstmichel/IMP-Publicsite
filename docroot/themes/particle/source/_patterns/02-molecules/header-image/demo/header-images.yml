@@ -1,10 +1,23 @@
 header_image_example:
-  header:
+  block_header:
     href: www.sample.com
     class: header--logo image-icon img-responsive
     img:
       src: ../../../assets/IMP_logo.png
       alt: Sample Logo
-  content:
     title: Incident Management Portal
-    body: Text area
+  block_content:
+    title: Topic title
+    subtitle: Topic Subtitle
+    body: Here is the topic body
+  caption_images:
+    - block_image:
+        img:
+          src: ../../../assets/thumb-square-fire.jpg
+          alt: Sample 1 Image
+      caption_body: This is sample 1 content for a caption with image.
+    - block_image:
+        img:
+          src: ../../../assets/thumb-square-fire.jpg
+          alt: Sample 2 Image
+      caption_body: This is sample 2 content for a caption with image.

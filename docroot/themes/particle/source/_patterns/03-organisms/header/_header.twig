@@ -2,12 +2,13 @@
     <div class="header-inner">
         <div class="header-inner--logo col-lg-3 col-md-3 col-sm-3 col-xs-12">
             {% block branding %}
-                {% include "@atoms/_branding.twig" with {
-                url: '#',
+                {% embed "@atoms/_branding.twig" with {
+                url: {{ front_page }},
                 logo_img_src: paths.assets ~ '/ncg_logo.png',
                 site_name: '',
                 site_slogan: '',
                 } %}
+                  {% endembed %}
             {% endblock branding%}
         </div>
 

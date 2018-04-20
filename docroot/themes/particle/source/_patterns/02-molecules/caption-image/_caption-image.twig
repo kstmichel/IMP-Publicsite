@@ -1,11 +1,17 @@
-<figure class="image-caption {{ caption_class }}">
-        <div class="image-caption--inner">
-            {% if caption_image %}
-                 {% include "@atoms/_image.twig" with caption_image %}
+<div class="image-caption">
+    <div class="image-caption--inner">
+        {% block block_image %}
+            {% if block_image %}
+                <div class="caption-image">
+                    {% include "@atoms/image/_image.twig" with block_image %}
+                </div>
             {% endif %}
+        {% endblock %}
 
-            {% if caption_body %}
-                <p class="caption">{{ caption_body }}</p>
-            {% endif %}
-        </div>
-</figure>
+        <div class="caption">{{ caption_body }}</div>
+    </div>
+</div>
+
+
+
+

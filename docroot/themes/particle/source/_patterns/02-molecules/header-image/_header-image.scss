@@ -4,43 +4,29 @@
 
 .image-header{
   display: inline-block;
+  padding: 0;
 
   &--inner {
-    display: flex;
-    align-items: center;
-    @extend %lw;
+    display: block;
     margin: 30px auto;
-    float: none;
-    justify-content: center;
+    @extend %lw;
   }
 
-  &--inner .topic {
+  .head_section{
     display: flex;
     align-items: center;
-    margin: 0;
-    float: none;
     justify-content: center;
-  }
+    padding-left: 15px;
 
-  &--content {
-    padding-left: 40px;
-
-    h2{
-      color: $gray-med;
+    img{
+      margin: 0 auto;
+      max-height: 75px;
+      width: auto;
     }
-  }
 
-  .topic .topic-content {
-    padding-left: 10px;
-  }
-
-  &--image{
-    margin-right: 30px;
-  }
-
-  img{
-    margin: 0 auto;
-    max-height: 75px;
-    width: auto;
+    .image-header--title{
+      color: $p-gray--dark;
+      padding-left: 15px;
+    }
   }
 }

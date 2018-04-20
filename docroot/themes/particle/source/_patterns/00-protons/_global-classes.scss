@@ -20,7 +20,7 @@
   float: none;
 }
 
-.heading-passive{
+%heading-passive{
   color: darken($p-gray, 25%);
   font-weight: 300;
   line-height: 1.4em;
@@ -29,12 +29,34 @@
 .grid-flex{
   display: flex;
   flex-wrap: wrap;
+
+  @media(max-width: $bp-large) {
+    flex-direction: column;
+  }
 }
 
 .page-width{
   max-width: $page-width;
   margin: 0 auto;
 }
+
+.contextual-region h1{
+  @extend %lw;
+}
+
+.node-form, .form-group{
+  @extend %lw;
+}
+
+.form-group{
+  margin: 20px 0;
+}
+
+.contextual-region nav{
+  @extend %lw;
+  margin: 15px auto;
+}
+
 /* Completely remove from the flow and screen readers. */
 .is-hidden {
   display: none;

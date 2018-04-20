@@ -40,7 +40,6 @@
 #}
 {%
   set classes = [
-    'topic',
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
@@ -50,7 +49,6 @@
 {% block paragraph %}
     <div{{ attributes.addClass(classes) }} >
       {{ content.contextual_links }}
-      {% block topic %}
             {% embed '@molecules/topic/_topic.twig' with {
             title: content.field_title,
             subtitle: content.field_subtitle,
@@ -58,12 +56,13 @@
             } %}
 
                 {% block topic_head %}
-                    <div class="topic-image">
-                        {{ content.field_image }}
-                    </div>
+                    {% if topic_head %}
+                        <div class="topic-image">
+                            {{ content.field_image }}
+                          </div>
+                     {% endif %}
                 {% endblock topic_head %}
 
         {% endembed %}
-        {% endblock %}
     </div>
 {% endblock paragraph %}

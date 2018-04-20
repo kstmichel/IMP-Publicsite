@@ -1,4 +1,6 @@
 @import '../../00-protons/variables';
+@import '../../00-protons/layout';
+@import '../../00-protons/global-classes';
 
 // To change default bootstrap nav variables,
 // copy from ~bootstrap/scss/variables to here
@@ -24,6 +26,7 @@ $nav-link-disabled-color: $gray-600;
   }
 
   &-tabs{
+    @extend %lw;
     display: block;
     margin-top: 20px;
 

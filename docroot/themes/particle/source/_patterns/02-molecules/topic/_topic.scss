@@ -1,4 +1,6 @@
 @import '../../00-protons/variables';
+@import '../../00-protons/layout';
+@import '../../00-protons/global-classes';
 
 .embedded-entity.align-right{
   .topic:not(.call-to-action) {
@@ -34,7 +36,6 @@
 
 .topic {
   display: flex;
-  margin-bottom: 25px;
 
   &.call-to-action{
     display: flex;
@@ -74,6 +75,14 @@
           text-align: center;
         }
       }
+
+      .topic-content--caption-images{
+        display: flex;
+
+        .image-caption{
+          padding: 0 15px;
+        }
+      }
     }
 
     ul li{
@@ -92,7 +101,7 @@
     }
   }
 
-  .topic-image{
+  .topic-content--image{
     display: inline-block;
     vertical-align: top;
 
@@ -104,23 +113,30 @@
     }
   }
 
-  .image-header--image{
-    padding: 0;
-
-    img{
-      margin: 0;
-    }
-  }
-
-  .image-header--inner{
-    padding: 0;
-    margin: 15px 0;
-    justify-content: baseline;
+  .topic-content{
+    @extend %lw;
+    padding: 0 15px;
   }
 
   .topic-content--body{
     p{
       text-align: left;
+    }
+
+    .caption p, .caption {
+      line-height: 1.4em;
+      color: #757575;
+      text-align: center;
+    }
+  }
+
+  .topic-content--caption-images{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    .image-caption{
+      padding: 0 15px;
     }
   }
 }

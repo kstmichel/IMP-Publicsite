@@ -1,4 +1,6 @@
 @import '../../00-protons/variables';
+@import '../../00-protons/layout';
+@import '../../00-protons/global-classes';
 
 // To change default bootstrap list-item variables,
 // copy from ~bootstrap/scss/variables to here
@@ -8,8 +10,9 @@
 
 // Add custom code here
 .list-group{
+  @extend %lw;
   border: 2px solid $p-gray;
-  margin: 0 0 20px 0;
+  margin: 20px auto;
 
   &__link{
     font-weight: bold;

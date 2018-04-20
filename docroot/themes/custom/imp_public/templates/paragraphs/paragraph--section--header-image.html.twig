@@ -51,11 +51,15 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
   {{ content.contextual_links }}
   {% embed '@molecules/header-image/_header-image.twig' with{
     title: content.field_title,
+    subtitle: content.field_subtitle,
     body: content.field_body
     }%}
-        {% block header %}
-            <div class="image-header--image">
-                {{ content.field_image}}
+        {% block block_header %}
+            <div class="head_section">
+                <div class="image-header--image ">
+                    {{ content.field_image}}
+                </div>
+                <h2 class="image-header--title">{{ title }}</h2>
             </div>
         {% endblock %}
     {% endembed %}
