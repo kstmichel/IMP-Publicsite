@@ -3,8 +3,8 @@
         <div class="header-inner--logo col-lg-3 col-md-3 col-sm-3 col-xs-12">
             {% block branding %}
                 {% embed "@atoms/_branding.twig" with {
-                url: {{ front_page }},
-                logo_img_src: paths.assets ~ '/ncg_logo.png',
+                url: url('<front>'),
+                logo_img_src: paths.assets ~ '/IMP_logo.png',
                 site_name: '',
                 site_slogan: '',
                 } %}
@@ -12,7 +12,7 @@
             {% endblock branding%}
         </div>
 
-        <div class="header-inner--nav col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        <div class="header-inner--nav col-lg-8 col-md-8 col-sm-8 col-xs-12">
             {% block primary_menu %}
                 {% if primary_menu %}
                      {% include "@organisms/_navbar.twig"  with primary_menu %}

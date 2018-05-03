@@ -32,7 +32,7 @@ import * as captionImg from 'molecules/caption-image';
 import * as headerImg from 'molecules/header-image';
 import * as imageLogo from 'atoms/image-logo';
 import * as table from 'atoms/table';
-
+import * as heading from 'atoms/heading';
 
 const components = {
   alert,
@@ -65,6 +65,7 @@ const components = {
   headerImg,
   imageLogo,
   table,
+  heading,
 };
 /**
  * Default export of object containing all components

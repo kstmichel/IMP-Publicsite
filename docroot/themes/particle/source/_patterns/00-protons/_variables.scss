@@ -57,8 +57,8 @@ $warning: #fff664;
 $information: #000db5;
 
 //Palette
-$p-blue-darker: #113048;
-$p-blue-dark: #124c78;
+$p-blue-darker: #113d66;
+$p-blue-dark: #155591;
 $p-blue: #1876be;
 $p-blue-light: #0094d6;
 $p-blue-lighter: #7ac5ef;
@@ -66,17 +66,14 @@ $white: #fff;
 $p-gray-lighter: #f4f4f4;
 $p-gray-light: #e8e8e8;
 $p-gray: #c1c1c1;
-$p-gray--dark: #545454;
+$p-gray--dark: #616061;
 $p-blue-gray-light: #5189a5;
 $p-blue-gray: #506576;
 $p-green-light: #70b85d;
 $p-green-dark: #267929;
 
 //Page Variables
-$splash-title: $p-blue-dark;
-$splash-title-shadow: $white;
-$splash-body: $p-blue;
-$splash-body-shadow: $white;
+$p-paragraph: $p-gray--dark;
 
 //Typography
 $font: "HelveticaNeue", "Helvetica", "Arial", sans-serif;

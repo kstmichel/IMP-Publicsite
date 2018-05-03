@@ -40,7 +40,7 @@
 #}
 {%
   set classes = [
-    'splash--banner col-lg-12 col-md-12 col-sm-12 col-xs-12',
+    'splash--banner',
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
@@ -49,23 +49,52 @@
 {% block paragraph %}
  <div class="splash">
   <div{{ attributes.addClass(classes) }} >
-        <div class="banner--inner banner--background">
-          {{ content.contextual_links }}
+      {{ content.contextual_links }}
 
-            <div class="banner--text" >
-                {% embed '@molecules/topic/_topic.twig' with{
-                title: content.field_title,
-                subtitle: content.field_subtitle,
-                body: content.field_body
-                }%}
-                    {% block topic_head %}
-                        <div class="topic-image ">
-                            {{ content.field_image}}
-                        </div>
-                    {% endblock topic_head %}
-                {% endembed %}
-            </div>
-        </div>
+      {% embed "@molecules/_banner.twig" with {
+          img: content.field_body
+      } %}
+          {% block img %}
+              {% if img %}
+                  <div class="banner-image">
+                      {{ content.field_body }}
+                  </div>
+              {% endif %}
+          {% endblock %}
+      {% endembed %}
+
+      <div class="container">
+          <div class="row">
+              <div class="col-7">
+                  <div class="splash--content">
+                      {% embed "@molecules/topic/_topic.twig" with {
+                      title: content.field_title,
+                      subtitle: content.field_subtitle
+                      } %}
+
+                          {% block title %}
+                              {% if title %}
+                                  <h1 class="topic-title display-3">{{ title }}</h1>
+                              {% endif %}
+                          {% endblock %}
+
+                          {% block subtitle %}
+                              {% if subtitle %}
+                                  <h2 class="topic-content--subtitle gamma">{{ subtitle }}</h2>
+                              {% endif %}
+                          {% endblock %}
+                      {% endembed %}
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-12">
+                  <div class="splash--graphic">
+                      {{ content.field_image }}
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
 </div>
 {% endblock paragraph %}

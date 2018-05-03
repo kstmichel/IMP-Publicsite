@@ -3,28 +3,14 @@
 @import '../../00-protons/global-classes';
 
 .embedded-entity.align-right{
-  .topic:not(.call-to-action) {
-    display: flex;
-    text-align: left;
-
-    .topic-image{
-      padding-right: 30px;
-    }
-  }
+  margin-left: auto;
+  padding-left: 30px;
+  order: 2;
 }
+
 .embedded-entity.align-left{
-  .topic:not(.call-to-action) {
-    display: flex;
-    flex-direction: row-reverse;
-
-    .image-header--inner .topic {
-      flex-direction: row;
-    }
-
-    .topic-image{
-      padding-left: 30px;
-    }
-  }
+  margin-right: auto;
+  padding-right: 30px;
 }
 
 .embedded-entity.align-center{
@@ -35,7 +21,8 @@
 }
 
 .topic {
-  display: flex;
+  display: inline-block;
+  text-align: left;
 
   &.call-to-action{
     display: flex;
@@ -101,42 +88,25 @@
     }
   }
 
-  .topic-content--image{
-    display: inline-block;
-    vertical-align: top;
+  .topic-head{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
 
-    img{
-      margin: 20px;
-      margin-right: 40px;
-      max-width: 300px;
-      height: auto;
+    .topic-image{
+      display: inline-block;
+      vertical-align: top;
+
+      img{
+        max-width: 150px;
+        height: auto;
+        padding: 0;
+      }
     }
   }
 
   .topic-content{
-    @extend %lw;
     padding: 0 15px;
-  }
-
-  .topic-content--body{
-    p{
-      text-align: left;
-    }
-
-    .caption p, .caption {
-      line-height: 1.4em;
-      color: #757575;
-      text-align: center;
-    }
-  }
-
-  .topic-content--caption-images{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-
-    .image-caption{
-      padding: 0 15px;
-    }
   }
 }

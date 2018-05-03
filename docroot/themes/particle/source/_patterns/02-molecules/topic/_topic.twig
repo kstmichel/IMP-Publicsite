@@ -1,21 +1,23 @@
 {% block topic %}
-    <div class="topic {{ class }}">
-        {% block topic_head %}
+    <div class="topic">
+        <div class="topic-head">
             {% if topic_head %}
                 <div class="topic-image">
-                    {% include "@atoms/_image.twig"  with topic_head  %}
+                    {% block topic_image %}
+                         {% include "@atoms/_image.twig"  with topic_head  %}
+                    {% endblock %}
                 </div>
             {% endif %}
-        {% endblock topic_head %}
+
+            {% block title %}
+                {% if title %}
+                    <h2 class="topic-title">{{ title }}</h2>
+                {% endif %}
+            {% endblock %}
+        </div>
 
         {% block content %}
             <div class="topic-content">
-                 {% block title %}
-                    {% if title %}
-                        <h2 class="topic-content--title">{{ title }}</h2>
-                    {% endif %}
-                {% endblock %}
-
                 {% block subtitle %}
                     {% if subtitle %}
                         <h4 class="topic-content--subtitle">{{ subtitle }}</h4>
@@ -29,7 +31,7 @@
                 {% endif %}
 
                 {% if body %}
-                    <div class="topic-content--body">{{ body }}</div>
+                    <div class="topic-content--body"><p>{{ body }}</p></div>
                 {% endif %}
 
                 {% if caption_images %}
@@ -38,11 +40,6 @@
                         {% include "@molecules/caption-image/_caption-image.twig" with item  %}
                          {% endfor %}
                     </div>
-                {% endif %}
-
-
-                {% if list %}
-                    {% include "@molecules/list-item/_list-item.twig" with list  %}
                 {% endif %}
 
                 {% if button %}

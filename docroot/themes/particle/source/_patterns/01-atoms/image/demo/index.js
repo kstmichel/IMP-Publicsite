@@ -26,12 +26,8 @@ import './icon_features_collaboration.png';
 import './icon_features_structure.png';
 import './icon_features_communication.png';
 import './icon_communication.png';
-import './icon_steps.png';
-import './icon_tools.png';
-import './banner_works.jpg';
-import './banner_support.jpg';
-import './banner_pricing.jpg';
-import './splash.jpg';
+import './splash_bg.jpg';
+import './IMP_responsive.png';
 
 
 import imageImgMarkdown from './image-img.md';

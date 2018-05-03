@@ -1,11 +1,6 @@
 @import '../../00-protons/variables';
-
 .header {
-  background: $white;
-  background-image: linear-gradient(to bottom, $white 0%, #f0f0f0 90%, $p-gray-light 100%);
-  padding: 0;
-  border-bottom: 1px solid #dbdbdb;
-  max-width: none;
+  background: transparent;
 
   &-inner {
     max-width: $page-width;
@@ -15,46 +10,22 @@
     justify-content: space-between;
     min-height: 65px;
 
-    &--logo {
-      max-width: 200px;
-    }
-
-    img {
-      float: left;
-      max-width: 8rem;
-      margin: 0.4rem;
-
-      @media all and (min-width: $bp-med) {
-        max-width: 160px;
-      }
-
-      img {
-        padding: 10px;
-      }
-    }
-
     .navbar, .nav {
-      flex-shrink: 0;
 
-      ul{
+      ul {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        list-style-type: none;
-        margin-bottom: 0;
       }
 
-      li{
+      li {
         padding: 0 $pad;
       }
 
       a, .nav-link {
-        display: inline-block;
-        font-size: 14px;
-        color: darken($p-gray, 30%);
-        padding: 0;
+        color: $p-gray--dark;
 
-        &.btn-action{
+        &.btn-action {
           color: $white;
         }
       }
@@ -75,25 +46,32 @@
         a {
           border: 0;
         }
-
       }
-    }
-
-    .primary_nav{
-      align-items: center;
-      justify-content: space-between;
-      display: flex;
-      padding: 0;
-    }
-
-    .secondary_nav{
-      padding: 10px 0;
-      display: inline-block;
-      float: right;
     }
   }
 }
 
+.primary_nav {
+  align-items: center;
+  display: flex;
+  padding: 0;
+  justify-content: flex-end;
+
+  .navbar-nav {
+    padding-right: 50px;
+  }
+}
+.secondary_nav {
+  .nav .nav-item a {
+    font-size: 14px;
+    padding: 0;
+    color: #979797;
+
+    &:hover{
+      color: $p-paragraph;
+    }
+  }
+}
 .nav-toggle {
   float: right;
   display: block;

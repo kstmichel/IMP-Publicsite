@@ -66,8 +66,7 @@ $nav-link-disabled-color: $gray-600;
   a {
     display: inline-block;
     border-top: 1px solid $gray-light-2;
-    font-size: 14px;
-    color: darken($p-gray, 30%);
+    font-size: 16px;
 
     &.btn-action {
       color: $white;

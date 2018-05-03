@@ -25,6 +25,11 @@
   min-height: 100vh;
 }
 
+.page-flex{
+  @extend %lw;
+  display: flex;
+}
+
 .vertical-tabs{
   &__panes{
     padding: 30px;

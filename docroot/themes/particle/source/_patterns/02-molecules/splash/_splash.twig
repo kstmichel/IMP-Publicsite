@@ -1,29 +1,37 @@
 <div class="splash">
     {% if banner %}
         <div class="splash--banner col-lg-12 col-md-12 col-sm-12 col-xs-12">
-             {% include "@molecules/_banner.twig" with banner %}
-        </div>
-    {% endif %}
+            {% include "@molecules/banner/_banner.twig" with banner only  %}
 
-    <div class="splash--content col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="splash--intro col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <h4 class="heading-passive">{{ splash_content.intro }}</h4>
-        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="splash--content">
+                            {% embed "@molecules/topic/_topic.twig" with topic %}
+                                {% block title %}
+                                    {% if title %}
+                                        <h1 class="topic-title display-3">{{ title }}</h1>
+                                    {% endif %}
+                                {% endblock %}
 
-        {% if splash_content.header_image %}
-            <div class="splash--logo col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                {% include "@molecules/_header-image.twig" with splash_content.header_image %}
-            </div>
-        {% endif %}
-
-        {% if splash_content.details %}
-            <div class="splash--content-details row col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h3 class="splash--content-title col-lg-6 col-md-6 col-sm-6 col-sm-6 col-xs-12">{{ splash_content.details.header }}</h3>
-
-                <div class="splash--content-highlights row col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    {% include "@molecules/_topic.twig" with splash_content.details %}
+                                {% block subtitle %}
+                                    {% if subtitle %}
+                                        <h2 class="topic-content--subtitle gamma">{{ subtitle }}</h2>
+                                    {% endif %}
+                                {% endblock %}
+                            {% endembed %}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="splash--graphic">
+                            {% include '@atoms/_image.twig' with img %}
+                        </div>
+                    </div>
                 </div>
             </div>
-        {% endif %}
-    </div>
+
+        </div>
+    {% endif %}
 </div>

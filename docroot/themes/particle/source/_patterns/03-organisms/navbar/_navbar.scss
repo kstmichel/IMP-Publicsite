@@ -14,12 +14,12 @@ $navbar-brand-font-size: $font-size-lg;
 
   /* Links */
   a {
-    color: $gray-dark;
+    color: $p-paragraph;
     text-decoration: none;
     outline: 0;
 
     &:hover, &:focus {
-      color: $gray;
+      text-decoration: underline;
     }
   }
 }

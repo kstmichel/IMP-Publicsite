@@ -32,6 +32,7 @@ component-libraries:
       - ../../source/_patterns/01-atoms/image
       - ../../source/_patterns/01-atoms/table
       - ../../source/_patterns/01-atoms/button
+      - ../../source/_patterns/01-atoms/heading
       - ../../source/_patterns/01-atoms/branding
       - ../../source/_patterns/01-atoms/dropdown
       - ../../source/_patterns/01-atoms/breadcrumb
@@ -57,8 +58,8 @@ component-libraries:
     paths:
       - ../../source/_patterns/03-organisms
       - ../../source/_patterns/03-organisms/footer
-      - ../../source/_patterns/03-organisms/header
       - ../../source/_patterns/03-organisms/navbar
+      - ../../source/_patterns/03-organisms/header
       - ../../source/_patterns/03-organisms/article
       - ../../source/_patterns/03-organisms/accordion
       - ../../source/_patterns/03-organisms/card-grid

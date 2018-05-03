@@ -13,11 +13,19 @@ $btn-border-radius: 0.25rem;
   background-color: $p-gray-lighter;
   color: darken($p-blue-gray, 5%);
   display: inline-block;
-  border: 1px solid $p-gray;
+  border: 2px solid $p-gray;
   padding: 5px 10px;
 
   &:hover{
     cursor: pointer;
+  }
+}
+
+.btn{
+  &-primary{
+    color: $white;
+    background-color: $p-blue;
+    border-color: $p-blue;
   }
 
   &-highlight{
@@ -27,7 +35,9 @@ $btn-border-radius: 0.25rem;
   }
 
   &-outline-highlight{
-    color: darken($p-green-light, 5%);
+    color: $p-green-light;
+    border-color: $p-green-light;
+    background-color: transparent;
 
     &:hover{
       color: $white;

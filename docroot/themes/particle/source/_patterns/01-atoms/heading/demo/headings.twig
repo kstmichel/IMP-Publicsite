@@ -1,0 +1,67 @@
+{% extends '@atoms/grid/_grid-1-up.twig' %}
+  {% set container = true %}
+
+  {% block column_1 %}
+    <h1>Headings</h1>
+    <p class="lead">
+      These are heading styles, including both element and classed version.
+      Use the element version in markup following Accessibility guidelines.
+      Use the class version to match font styling of heading.
+      See <a href="https://webaim.org/techniques/semanticstructure/ " target="_blank">WebAim</a> for details.
+    </p>
+    <table class="table table-responsive-sm">
+      <thead>
+      <tr>
+        <th scope="col">Header</th>
+        <th scope="col">Code</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for i in range(1, 6) %}
+        <tr>
+          <th scope="row"><h{{ i }} contenteditable>{{ headline.short }}</h{{ i }}></th>
+          <td><code>&lt;h{{ i }} contenteditable&gt;h1. {{ headline.short }}&lt;/h{{ i }}&gt;</code></td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    <p class="my-4">You can use these as either the element or as a class. For example:</p>
+    <table class="table table-responsive-sm">
+      <thead>
+      <tr>
+        <th scope="col">Paragraph</th>
+        <th scope="col">Code</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for i in range(1, 6) %}
+        <tr>
+          <th scope="row"><p class="h{{ i }}">{{ headline.short }}</p{{ i }}></th>
+          <td><code>&lt;p class="h{{ i }}"&gt;p{{ i }}. {{ headline.short }}&lt;/p&gt;</code></td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    <hr>
+
+    <h1>Display headings</h1>
+    <p class="my-4">Bootstrap style for larger headlines. For example:</p>
+
+    <table class="table table-responsive-sm">
+      <thead>
+      <tr>
+        <th scope="col">Display Heading</th>
+        <th scope="col">Code</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for i in range(1, 4) %}
+        <tr>
+          <th scope="row"><h1 class="display-{{ i }}">{{ headline.two }}</h1></th>
+          <td><code>&lt;h1 class="display-{{ i }}"&gt;{{ headline.two }}&lt;/h1&gt;</code></td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    <hr>
+  {% endblock column_1 %}

@@ -45,7 +45,7 @@ set classes = [
 view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 ]
 %}
-<div class="banner banner-external col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="banner banner-external col-12">
     {% block paragraph %}
     <div{{ attributes.addClass(classes) }} >
         {{ content.contextual_links }}
@@ -53,16 +53,18 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
                 title: content.field_title,
                 subtitle: content.field_subtitle
                 }%}
-                    {% block topic_head %}
-                        <div class="topic-image">
-                            {{ content.field_image}}
+                    {% block img %}
+                        <div class="banner-image">
+                            {{ content.field_image }}
                         </div>
-                    {% endblock topic_head %}
-                {% endembed %}
-            {% block content %}
-                <div class="banner--text col-lg-12 col-md-12 col-sm-12 col-xs-12">{{ content|without('contextual_links', 'field_image', 'field_title') }}</div>
-            {% endblock %}
+                    {% endblock %}
 
+                    {% if content %}
+                        <div class="banner--text col-12">
+                            {{ content|without('contextual_links', 'field_image', 'field_title') }}
+                        </div>
+                    {% endif %}
+                {% endembed %}
     </div>
     {% endblock paragraph %}
 </div>

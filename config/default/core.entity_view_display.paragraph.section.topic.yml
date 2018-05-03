@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.section.field_image
     - field.field.paragraph.section.field_subtitle
     - field.field.paragraph.section.field_title
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.section
   module:
     - image
@@ -28,7 +29,7 @@ content:
     weight: 2
     label: hidden
     settings:
-      image_style: ''
+      image_style: thumbnail
       image_link: ''
     third_party_settings: {  }
     type: image

@@ -6,7 +6,7 @@ header_image_example:
       src: ../../../assets/IMP_logo.png
       alt: Sample Logo
     title: Incident Management Portal
-  block_content:
+  body:
     title: Topic title
     subtitle: Topic Subtitle
     body: Here is the topic body

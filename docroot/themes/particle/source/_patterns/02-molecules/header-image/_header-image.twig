@@ -11,9 +11,9 @@
             {% endif %}
         {% endblock %}
 
-        {% if block_content %}
+        {% if content %}
             <div class="body">
-               {% include "@molecules/topic/_topic.twig" with block_content %}
+               {% include "@molecules/topic/_topic.twig" with content %}
             </div>
         {% endif %}
     </div>

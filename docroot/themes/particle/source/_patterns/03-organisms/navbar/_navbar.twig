@@ -22,8 +22,10 @@
 
             {% include '@molecules/nav/_nav.twig' with {
             nav_element: 'ul',
-            nav_other_classes: 'navbar-nav mr-auto',
+            nav_other_classes: 'navbar-nav',
             nav_items: navbar_items,
+            button_color: 'highlight',
+            button_outline: true,
             } %}
 
             <form class="form-inline my-2 my-lg-0">

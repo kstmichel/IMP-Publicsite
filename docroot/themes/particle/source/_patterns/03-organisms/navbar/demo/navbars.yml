@@ -29,7 +29,7 @@ navbar_items:
     nav_item_link_classes: disabled
 
 navbar_button:
-  button_color: 'primary'
+  button_color: 'highlight'
   button_outline: true
   button_other_classes: 'my-2 my-sm-0'
   button_type: 'submit'

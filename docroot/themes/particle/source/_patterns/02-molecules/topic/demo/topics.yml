@@ -3,10 +3,11 @@ teaser_highlights:
   topic_head:
     class: img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
     img:
-      src: ../../../assets/thumb-square-yosemite.jpg
+      src: ../../../assets/IMP_logo.png
       alt: Sample Here!!
   title:  Teaser Highlights Block
   subtitle: Subtitle example
+  body: orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor.
   list:
     items:
      - item_text: First item in the list.
@@ -22,7 +23,7 @@ call_to_action:
       src: ../../../assets/thumb-square-yosemite.jpg
       alt: Sample Here!!
   title:  Call to Action
-  topic_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor.
+  body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor.
   button:
     button:
       button_text: Sign Up Now!
@@ -32,7 +33,7 @@ descriptive_block:
   class: grid-stacked simple
   title:  Simple Block with Body
   subtitle: Subtitle for Third Block
-  topic_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor.
+  body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor.
 
 simple_highlights:
   class: grid-stacked simple
@@ -102,7 +103,7 @@ simple_captions_body:
       src: ../../../assets/thumb-square-fire.jpg
       alt: Sample Here!!
   title:  Simple Block with Body and Captions
-  topic_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.
+  body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque consequat. Integer a vestibulum dolor. Sed tincidunt ex eget enim interdum consequat.
 
 simple_header_image:
   class:  simple
@@ -122,4 +123,4 @@ simple_header_image:
       src: ../../../assets/thumb-square-fire.jpg
       alt: Sample Here!!
   title:  Simple Block with Header Image
-  topic_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque co
+  body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus scelerisque co

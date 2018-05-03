@@ -31,7 +31,13 @@
 }
 
 ul{
+
   li p{
     margin: 0;
+    color: $p-blue-gray;
   }
+}
+
+li{
+  color: $p-blue-gray;
 }

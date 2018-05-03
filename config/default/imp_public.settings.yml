@@ -8,6 +8,6 @@ features:
   favicon: true
 logo:
   use_default: false
-  path: themes/custom/imp_public/logo.png
+  path: 'public://IMP_logo_3.png'
 favicon:
   use_default: true
