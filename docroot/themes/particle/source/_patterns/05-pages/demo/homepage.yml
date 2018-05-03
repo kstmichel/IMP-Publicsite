@@ -32,25 +32,26 @@ content:
       alt: IMP Responsive graphic
 
 
-  background_banner:
-    img:
-      src: ../../../assets/banner_background.jpg
-      class: image-banner
-      alt: Splash Sample Logo
-    content:
-      block_class:  simple
-      content_class: col-lg-12 col-md-12 col-sm-12 col-xs-12
-      block_title:  Background
-      block_header_image:
-        block_header:
-          img_class: col-lg-2 col-md-2 col-sm-2 col-xs-12
-          class: image-icon img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
+  intro_block:
+    subtitle: Every business must be prepared for a data breach or similar incident that puts operations or data at risk.
+    caption_images:
+      - block_image:
           img:
-            src: ../../../assets/IMP_logo.png
-            alt: Sample Image
-        block_content:
-          content_class: col-lg-6 col-md-6 col-sm-6 col-xs-12
-          title: IMP was developed by NCG built from decades of incident management and data breach response efforts.
+            src: ../../../assets/intro_tools.png
+            alt: Tools to manage incidents icon
+        caption_body: Tools to manage and target incident response efforts backed by expert support.
+      - block_image:
+          img:
+            src: ../../../assets/intro_steps.png
+            alt: Easy steps to follow icon
+        caption_body: Easy to follow steps for people to know what to do and when.
+      - block_image:
+          img:
+            src: ../../../assets/intro_message.png
+            alt: Communication Icon
+        caption_body: Manage communication, coordination, and collaboration  with internal and external parties.
+
+
 
   background_block_1:
     block_class: simple grid-stacked col-lg-12 col-md-12 col-sm-12 col-xs-12

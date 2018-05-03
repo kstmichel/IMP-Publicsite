@@ -1,51 +1,60 @@
-{% block topic %}
-    <div class="topic">
-        <div class="topic-head">
-            {% if topic_head %}
-                <div class="topic-image">
-                    {% block topic_image %}
-                         {% include "@atoms/_image.twig"  with topic_head  %}
-                    {% endblock %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            {% block topic %}
+                <div class="topic">
+                    <div class="topic-head">
+                        {% if topic_head %}
+                            <div class="topic-image">
+                                {% block topic_image %}
+                                    {% include "@atoms/_image.twig"  with topic_head  %}
+                                {% endblock %}
+                            </div>
+                        {% endif %}
+
+                        {% block title %}
+                            {% if title %}
+                                <h2 class="topic-title">{{ title }}</h2>
+                            {% endif %}
+                        {% endblock %}
+                    </div>
+
+                    {% block content %}
+                        <div class="topic-content">
+                            {% block subtitle %}
+                                {% if subtitle %}
+                                    <h3 class="topic-content--subtitle">{{ subtitle }}</h3>
+                                {% endif %}
+                            {% endblock %}
+
+                            {% if header_image %}
+                                <div class="topic-content--header-image">
+                                    {% include "@molecules/header-image/_header-image.twig" with header_image  %}
+                                </div>
+                            {% endif %}
+
+                            {% if body %}
+                                <div class="topic-content--body"><p>{{ body }}</p></div>
+                            {% endif %}
+
+                            {% if caption_images %}
+                                <div class="topic-content--caption-images row">
+                                    {% for item in caption_images %}
+                                        <div class="col">
+                                            {% include "@molecules/caption-image/_caption-image.twig" with item  %}
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+
+
+                            {% if button %}
+                                {% include "@atoms/button/_button.twig" with button %}
+                            {% endif %}
+                        </div>
+                    {% endblock content %}
                 </div>
-            {% endif %}
-
-            {% block title %}
-                {% if title %}
-                    <h2 class="topic-title">{{ title }}</h2>
-                {% endif %}
-            {% endblock %}
+            {% endblock topic %}
         </div>
-
-        {% block content %}
-            <div class="topic-content">
-                {% block subtitle %}
-                    {% if subtitle %}
-                        <h4 class="topic-content--subtitle">{{ subtitle }}</h4>
-                    {% endif %}
-                {% endblock %}
-
-                {% if header_image %}
-                    <div class="topic-content--header-image">
-                        {% include "@molecules/header-image/_header-image.twig" with header_image  %}
-                    </div>
-                {% endif %}
-
-                {% if body %}
-                    <div class="topic-content--body"><p>{{ body }}</p></div>
-                {% endif %}
-
-                {% if caption_images %}
-                    <div class="topic-content--caption-images">
-                        {% for item in caption_images %}
-                        {% include "@molecules/caption-image/_caption-image.twig" with item  %}
-                         {% endfor %}
-                    </div>
-                {% endif %}
-
-                {% if button %}
-                    {% include "@atoms/button/_button.twig" with button %}
-                {% endif %}
-            </div>
-        {% endblock content %}
     </div>
-{% endblock topic %}
+</div>

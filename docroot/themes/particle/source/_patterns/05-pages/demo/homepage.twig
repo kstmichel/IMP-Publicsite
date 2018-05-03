@@ -5,4 +5,10 @@
       {% endif %}
 
 
+      <div class="intro_section">
+      {% if content.intro_block %}
+              {% include "@molecules/topic/_topic.twig" with content.intro_block only %}
+      {% endif %}
+      </div>
+
   {% endblock %}

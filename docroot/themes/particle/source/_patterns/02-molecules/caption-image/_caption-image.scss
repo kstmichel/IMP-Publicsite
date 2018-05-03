@@ -21,10 +21,11 @@
     height: 100px;
   }
 
-  .caption {
+  .caption p {
     line-height: 1.4em;
-    color: darken($p-gray, 30%);
+    color: $white;
     text-align: center;
+    margin-top: 20px;
   }
 
   .topic-content{

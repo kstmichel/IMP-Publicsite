@@ -22,13 +22,11 @@ import './features_manage_team.png';
 import './features_dashboard.png';
 import './features_monthly.png';
 import './features_communicate.png';
-import './icon_features_collaboration.png';
-import './icon_features_structure.png';
-import './icon_features_communication.png';
-import './icon_communication.png';
 import './splash_bg.jpg';
 import './IMP_responsive.png';
-
+import './intro_message.png';
+import './intro_steps.png';
+import './intro_tools.png';
 
 import imageImgMarkdown from './image-img.md';
 import imageImgTwig from './image-img.twig';

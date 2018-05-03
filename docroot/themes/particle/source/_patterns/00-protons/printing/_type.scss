@@ -14,9 +14,10 @@ p {
   color: $p-blue-gray;
   line-height: 1.8em;
 }
+
 p, li {
   letter-spacing: 0.04em;
-  font-size: 16px;
+  font-size: 18px;
   color: $p-blue-gray;
 }
 /* Blockquote */
@@ -46,11 +47,13 @@ h1, .alpha {
   font-weight: 300;
 }
 h2, .beta {
+  font-size: 2.3rem;
   line-height: 1.2;
   color: $p-blue;
   font-weight: 300;
 }
 h3, .gamma {
+  font-size: 2.3rem;
   font-weight: 300;
   line-height: 1.2;
   color: $p-gray--dark;
@@ -68,18 +71,3 @@ h6, .zeta {
   font-family: $font-secondary;
   font-weight: normal;
 }
-.heading {
-  &-passive {
-    font-style: italic;
-    line-height: 1.6em;
-    color: rgba($p-blue-gray, 0.7);
-  }
-}
-.heading {
-  &-passive {
-    font-style: italic;
-    line-height: 1.6em;
-    color: rgba($p-blue-gray, 0.7);
-  }
-}
-
