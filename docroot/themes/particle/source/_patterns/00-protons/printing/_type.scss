@@ -10,9 +10,9 @@
 
 /* Text-Related Elements */
 p {
-  margin-bottom: 1.4em;
+  margin-bottom: $space;
   color: $p-blue-gray;
-  line-height: 2em;
+  line-height: 1.8em;
 
   strong{
     color: $p-blue;
