@@ -52,12 +52,16 @@
             {% embed '@molecules/topic/_topic.twig' with {
             title: content.field_title,
             subtitle: content.field_subtitle,
-            topic_head: content.field_image,
+            topic_image:  content.field_image,
             body: content.field_body
             } %}
 
                 {% block topic_image %}
-                    {{ content.field_image }}
+                   {% if topic_image is not empty %}
+                        <div class="topic-image">
+                            {{ topic_image}}
+                        </div>
+                      {% endif %}
                 {% endblock %}
 
         {% endembed %}

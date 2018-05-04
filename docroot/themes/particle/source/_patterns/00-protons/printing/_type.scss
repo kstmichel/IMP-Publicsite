@@ -10,9 +10,13 @@
 
 /* Text-Related Elements */
 p {
-  margin-bottom: $space;
+  margin-bottom: 1.4em;
   color: $p-blue-gray;
-  line-height: 1.8em;
+  line-height: 2em;
+
+  strong{
+    color: $p-blue;
+  }
 }
 
 p, li {
@@ -47,19 +51,23 @@ h1, .alpha {
   font-weight: 300;
 }
 h2, .beta {
-  font-size: 2.3rem;
+  font-size: 3rem;
   line-height: 1.2;
-  color: $p-blue;
-  font-weight: 300;
+  color: $p-blue-dark;
+  font-weight: bold;
 }
 h3, .gamma {
   font-size: 2.3rem;
   font-weight: 300;
   line-height: 1.2;
-  color: $p-gray--dark;
+  color: $p-blue;
 }
-h4, .delta {
-  color: $p-blue-gray;
+h4 {
+  font-size: 1.8rem;
+  color: $p-gray--dark;
+  font-weight: 300;
+  line-height: 1.3em;
+  margin-bottom: 25px;
 }
 h5, .epsilon {
   color: $gray-med;
@@ -70,4 +78,8 @@ h6, .zeta {
 .subheading {
   font-family: $font-secondary;
   font-weight: normal;
+}
+
+.delta{
+  color: $p-gray--dark;
 }

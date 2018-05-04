@@ -1,39 +1,19 @@
 @import '../../00-protons/variables';
 @import '../../00-protons/layout';
 @import '../../00-protons/global-classes';
-
-.embedded-entity.align-right{
-  margin-left: auto;
-  padding-left: 30px;
-  order: 2;
-}
-
-.embedded-entity.align-left{
-  margin-right: auto;
-  padding-right: 30px;
-}
-
-.embedded-entity.align-center{
-  .topic:not(.call-to-action) {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
 .topic {
-  display: inline-block;
-  text-align: left;
+  padding: 20px 0;
 
-  &.call-to-action{
+  &.call-to-action {
     display: flex;
     flex-direction: column;
     text-align: center;
 
-    .topic-image{
+    .topic-image {
       padding-top: 5px;
       margin: 0 auto;
 
-      img{
+      img {
         margin: 0 auto;
         padding: 0;
         height: auto;
@@ -42,63 +22,63 @@
       }
     }
 
-    .topic-content{
+    .topic-content {
       padding: 0;
       display: inline-block;
       text-align: center;
 
-      &--title{
+      &--title {
         font-weight: bold;
         margin: 10px auto;
       }
 
-      &--subtitle{
+      &--subtitle {
         font-weight: normal;
         margin: 0 auto;
       }
 
-      &--body{
-        p{
+      &--body {
+        p {
           text-align: center;
         }
       }
 
-      .topic-content--caption-images{
+      .topic-content--caption-images {
         display: flex;
 
-        .image-caption{
+        .image-caption {
           padding: 0 15px;
         }
       }
     }
 
-    ul li{
+    ul li {
       text-align: left;
     }
 
-    .list-wrapper{
+    .list-wrapper {
 
-      img{
+      img {
         float: none;
       }
     }
 
-    .btn{
+    .btn {
       margin-top: 25px;
     }
   }
 
-  .topic-head{
+  .topic-head {
     display: flex;
     align-items: center;
     padding: 15px;
     margin-bottom: 10px;
 
-    .topic-image{
+    .topic-image {
       display: inline-block;
       vertical-align: top;
 
-      img{
+      img {
         max-width: 150px;
         height: auto;
         padding: 0;
@@ -106,7 +86,50 @@
     }
   }
 
-  .topic-content{
+  .topic-content {
     padding: 0 15px;
+  }
+}
+.embedded-entity {
+  padding: 40px 0;
+
+  &.align-center {
+    padding: 0;
+
+    .topic {
+      text-align: center;
+      justify-content: center;
+      flex-direction: column-reverse;
+    }
+
+    .topic-content--body p{
+      text-align: left;
+    }
+
+    .caption p{
+      text-align: center;
+    }
+  }
+
+  &.align-left {
+    .topic {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    .topic-image {
+      padding-left: 50px;
+    }
+  }
+
+  &.align-right {
+    .topic {
+      flex-direction: row;
+      text-align: left;
+    }
+
+    .topic-image {
+      padding-right: 50px;
+    }
   }
 }

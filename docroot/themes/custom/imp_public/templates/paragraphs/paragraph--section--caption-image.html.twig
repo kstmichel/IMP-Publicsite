@@ -48,16 +48,12 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 {% block paragraph %}
     <div{{ attributes.addClass(classes) }} >
         {{ content.contextual_links }}
-            {% embed '@molecules/_caption-image.twig' %}
+            {% embed '@molecules/_caption-image.twig' with{
+            caption_body: content.field_body
+            }%}
                 {% block block_image %}
                     <div class="caption-image">
                         {{ content.field_image}}
-                    </div>
-                {% endblock %}
-
-                {% block caption_body %}
-                    <div class="caption">
-                        <p>{{ content.field_body }} </p>
                     </div>
                 {% endblock %}
 

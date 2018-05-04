@@ -5,7 +5,6 @@
 .banner {
   display: inline-block;
   padding: 0;
-  margin: 40px 0;
 
   &.banner-external, &.banner-internal {
 
@@ -52,7 +51,7 @@
   &--background {
     position: relative;
     overflow: hidden;
-    min-height: 200px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -60,16 +59,6 @@
     background-size: cover;
     background-position: center;
 
-    &:after {
-      content: '';
-      background-image: linear-gradient(to right, rgb(245, 245, 245) 0%, #fffffff0 50%, rgba(255, 255, 255, 0.31) 100%);
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      z-index: -1;
-    }
 
     .banner-image {
       position: absolute;

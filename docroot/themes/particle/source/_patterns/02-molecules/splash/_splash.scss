@@ -34,20 +34,24 @@
           background-image: none;
         }
       }
+    }
 
-      .topic-image{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
+    .topic-image{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
 
-        img{
-          width: 100%;
-          height: auto;
-          display: block;
-          max-width: none;
-        }
+      img{
+        width: 100%;
+        height: auto;
+        display: block;
+        max-width: none;
       }
+    }
+
+    .topic-content--subtitle{
+      margin-top: 25px;
     }
   }
 

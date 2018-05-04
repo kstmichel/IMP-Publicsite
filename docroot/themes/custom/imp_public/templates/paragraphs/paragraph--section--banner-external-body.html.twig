@@ -51,16 +51,17 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
         {{ content.contextual_links }}
                 {% embed '@molecules/banner/_banner.twig' with{
                 title: content.field_title,
-                subtitle: content.field_subtitle
+                subtitle: content.field_subtitle,
+                img:  content.field_image
                 }%}
                     {% block img %}
                         <div class="banner-image">
-                            {{ content.field_image }}
+                            {{ img }}
                         </div>
                     {% endblock %}
 
                     {% if content %}
-                        <div class="banner--text col-12">
+                        <div class="banner--text banner--background col-12">
                             {{ content|without('contextual_links', 'field_image', 'field_title') }}
                         </div>
                     {% endif %}

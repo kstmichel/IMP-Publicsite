@@ -27,6 +27,7 @@ import './IMP_responsive.png';
 import './intro_message.png';
 import './intro_steps.png';
 import './intro_tools.png';
+import './intro_logos.png';
 
 import imageImgMarkdown from './image-img.md';
 import imageImgTwig from './image-img.twig';

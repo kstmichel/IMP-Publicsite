@@ -1,7 +1,6 @@
 teaser_highlights:
   class:
-  topic_head:
-    class: img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12
+  topic_image:
     img:
       src: ../../../assets/IMP_logo.png
       alt: Sample Here!!

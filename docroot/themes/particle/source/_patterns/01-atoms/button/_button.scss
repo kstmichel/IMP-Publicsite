@@ -9,12 +9,12 @@ $btn-border-radius: 0.25rem;
 // Add custom code here
 
 .btn, button, .button, %button {
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: $p-gray-lighter;
   color: darken($p-blue-gray, 5%);
   display: inline-block;
   border: 2px solid $p-gray;
-  padding: 5px 10px;
+  padding: 8px 25px;
 
   &:hover{
     cursor: pointer;
@@ -26,18 +26,41 @@ $btn-border-radius: 0.25rem;
     color: $white;
     background-color: $p-blue;
     border-color: $p-blue;
+
+    &.btn-outline{
+      background-color: $white;
+      color: $p-blue;
+      border: 2px solid $p-blue-dark;
+
+      &:hover{
+        border-color: lighten($p-blue, 25%);
+        cursor: pointer;
+      }
+    }
   }
 
   &-highlight{
     color: $white;
     background-color: $p-green-light;
     border-color: darken($p-green-light, 15%);
+
+    &.btn-outline{
+      color: $p-green-light;
+      border-color: $p-green-light;
+      background-color: $white;
+
+      &:hover{
+        color: $white;
+        background-color: $p-green-light;
+        cursor: pointer;
+      }
+    }
   }
 
   &-outline-highlight{
     color: $p-green-light;
     border-color: $p-green-light;
-    background-color: transparent;
+    background-color: $white;
 
     &:hover{
       color: $white;
